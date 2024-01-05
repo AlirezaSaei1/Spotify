@@ -1,0 +1,11 @@
+F:\University 7\Web\Spotify\Spotify\Spotify.Data\bin\Debug\net7.0\Spotify.Data.deps.json
+F:\University 7\Web\Spotify\Spotify\Spotify.Data\bin\Debug\net7.0\Spotify.Data.dll
+F:\University 7\Web\Spotify\Spotify\Spotify.Data\bin\Debug\net7.0\Spotify.Data.pdb
+F:\University 7\Web\Spotify\Spotify\Spotify.Data\obj\Debug\net7.0\Spotify.Data.GeneratedMSBuildEditorConfig.editorconfig
+F:\University 7\Web\Spotify\Spotify\Spotify.Data\obj\Debug\net7.0\Spotify.Data.AssemblyInfoInputs.cache
+F:\University 7\Web\Spotify\Spotify\Spotify.Data\obj\Debug\net7.0\Spotify.Data.AssemblyInfo.cs
+F:\University 7\Web\Spotify\Spotify\Spotify.Data\obj\Debug\net7.0\Spotify.Data.csproj.CoreCompileInputs.cache
+F:\University 7\Web\Spotify\Spotify\Spotify.Data\obj\Debug\net7.0\Spotify.Data.dll
+F:\University 7\Web\Spotify\Spotify\Spotify.Data\obj\Debug\net7.0\refint\Spotify.Data.dll
+F:\University 7\Web\Spotify\Spotify\Spotify.Data\obj\Debug\net7.0\Spotify.Data.pdb
+F:\University 7\Web\Spotify\Spotify\Spotify.Data\obj\Debug\net7.0\ref\Spotify.Data.dll

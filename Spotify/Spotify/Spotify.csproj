@@ -6,4 +6,10 @@
         <ImplicitUsings>enable</ImplicitUsings>
     </PropertyGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\Spotify.Core\Spotify.Core.csproj" />
+      <ProjectReference Include="..\Spotify.Data\Spotify.Data.csproj" />
+      <ProjectReference Include="..\Spotify.Services\Spotify.Services.csproj" />
+    </ItemGroup>
+
 </Project>

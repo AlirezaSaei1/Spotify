@@ -28,3 +28,11 @@ F:\University 7\Web\Spotify\Spotify\Spotify\obj\Debug\net7.0\refint\Spotify.dll
 F:\University 7\Web\Spotify\Spotify\Spotify\obj\Debug\net7.0\Spotify.pdb
 F:\University 7\Web\Spotify\Spotify\Spotify\obj\Debug\net7.0\Spotify.genruntimeconfig.cache
 F:\University 7\Web\Spotify\Spotify\Spotify\obj\Debug\net7.0\ref\Spotify.dll
+F:\University 7\Web\Spotify\Spotify\Spotify\bin\Debug\net7.0\Spotify.Core.dll
+F:\University 7\Web\Spotify\Spotify\Spotify\bin\Debug\net7.0\Spotify.Data.dll
+F:\University 7\Web\Spotify\Spotify\Spotify\bin\Debug\net7.0\Spotify.Services.dll
+F:\University 7\Web\Spotify\Spotify\Spotify\bin\Debug\net7.0\Spotify.Core.pdb
+F:\University 7\Web\Spotify\Spotify\Spotify\bin\Debug\net7.0\Spotify.Data.pdb
+F:\University 7\Web\Spotify\Spotify\Spotify\bin\Debug\net7.0\Spotify.Services.pdb
+F:\University 7\Web\Spotify\Spotify\Spotify\obj\Debug\net7.0\Spotify.csproj.AssemblyReference.cache
+F:\University 7\Web\Spotify\Spotify\Spotify\obj\Debug\net7.0\Spotify.csproj.CopyComplete

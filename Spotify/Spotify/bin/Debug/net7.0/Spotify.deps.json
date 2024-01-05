@@ -7,14 +7,49 @@
   "targets": {
     ".NETCoreApp,Version=v7.0": {
       "Spotify/1.0.0": {
+        "dependencies": {
+          "Spotify.Core": "1.0.0",
+          "Spotify.Data": "1.0.0",
+          "Spotify.Services": "1.0.0"
+        },
         "runtime": {
           "Spotify.dll": {}
+        }
+      },
+      "Spotify.Core/1.0.0": {
+        "runtime": {
+          "Spotify.Core.dll": {}
+        }
+      },
+      "Spotify.Data/1.0.0": {
+        "runtime": {
+          "Spotify.Data.dll": {}
+        }
+      },
+      "Spotify.Services/1.0.0": {
+        "runtime": {
+          "Spotify.Services.dll": {}
         }
       }
     }
   },
   "libraries": {
     "Spotify/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Spotify.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Spotify.Data/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Spotify.Services/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

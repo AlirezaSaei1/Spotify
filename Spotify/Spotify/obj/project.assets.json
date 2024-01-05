@@ -1,11 +1,62 @@
 {
   "version": 3,
   "targets": {
-    "net7.0": {}
+    "net7.0": {
+      "Spotify.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/Spotify.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Spotify.Core.dll": {}
+        }
+      },
+      "Spotify.Data/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/Spotify.Data.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Spotify.Data.dll": {}
+        }
+      },
+      "Spotify.Services/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/Spotify.Services.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Spotify.Services.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "Spotify.Core/1.0.0": {
+      "type": "project",
+      "path": "../Spotify.Core/Spotify.Core.csproj",
+      "msbuildProject": "../Spotify.Core/Spotify.Core.csproj"
+    },
+    "Spotify.Data/1.0.0": {
+      "type": "project",
+      "path": "../Spotify.Data/Spotify.Data.csproj",
+      "msbuildProject": "../Spotify.Data/Spotify.Data.csproj"
+    },
+    "Spotify.Services/1.0.0": {
+      "type": "project",
+      "path": "../Spotify.Services/Spotify.Services.csproj",
+      "msbuildProject": "../Spotify.Services/Spotify.Services.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net7.0": []
+    "net7.0": [
+      "Spotify.Core >= 1.0.0",
+      "Spotify.Data >= 1.0.0",
+      "Spotify.Services >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\ASUS\\.nuget\\packages\\": {}
@@ -31,7 +82,17 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "F:\\University 7\\Web\\Spotify\\Spotify\\Spotify.Core\\Spotify.Core.csproj": {
+              "projectPath": "F:\\University 7\\Web\\Spotify\\Spotify\\Spotify.Core\\Spotify.Core.csproj"
+            },
+            "F:\\University 7\\Web\\Spotify\\Spotify\\Spotify.Data\\Spotify.Data.csproj": {
+              "projectPath": "F:\\University 7\\Web\\Spotify\\Spotify\\Spotify.Data\\Spotify.Data.csproj"
+            },
+            "F:\\University 7\\Web\\Spotify\\Spotify\\Spotify.Services\\Spotify.Services.csproj": {
+              "projectPath": "F:\\University 7\\Web\\Spotify\\Spotify\\Spotify.Services\\Spotify.Services.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
