@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "F:\\University 7\\Web\\Spotify\\Spotify\\Spotify.Services\\Spotify.Services.csproj": {}
+    "D:\\UI\\term 7\\Web\\Spotify\\Spotify\\Spotify.Services\\Spotify.Services.csproj": {}
   },
   "projects": {
-    "F:\\University 7\\Web\\Spotify\\Spotify\\Spotify.Services\\Spotify.Services.csproj": {
+    "D:\\UI\\term 7\\Web\\Spotify\\Spotify\\Spotify.Services\\Spotify.Services.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\University 7\\Web\\Spotify\\Spotify\\Spotify.Services\\Spotify.Services.csproj",
+        "projectUniqueName": "D:\\UI\\term 7\\Web\\Spotify\\Spotify\\Spotify.Services\\Spotify.Services.csproj",
         "projectName": "Spotify.Services",
-        "projectPath": "F:\\University 7\\Web\\Spotify\\Spotify\\Spotify.Services\\Spotify.Services.csproj",
-        "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-        "outputPath": "F:\\University 7\\Web\\Spotify\\Spotify\\Spotify.Services\\obj\\",
+        "projectPath": "D:\\UI\\term 7\\Web\\Spotify\\Spotify\\Spotify.Services\\Spotify.Services.csproj",
+        "packagesPath": "C:\\Users\\ALFA RAYAN\\.nuget\\packages\\",
+        "outputPath": "D:\\UI\\term 7\\Web\\Spotify\\Spotify\\Spotify.Services\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\ALFA RAYAN\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
@@ -53,7 +53,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.404\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
         }
       }
     }
