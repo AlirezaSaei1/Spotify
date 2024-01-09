@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\UI\\term 7\\Web\\Spotify\\Spotify\\Spotify.Core\\Spotify.Core.csproj": {}
+    "d:\\UI\\term 7\\Web\\Spotify\\Spotify\\Spotify.Core\\Spotify.Core.csproj": {}
   },
   "projects": {
-    "D:\\UI\\term 7\\Web\\Spotify\\Spotify\\Spotify.Core\\Spotify.Core.csproj": {
+    "d:\\UI\\term 7\\Web\\Spotify\\Spotify\\Spotify.Core\\Spotify.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\UI\\term 7\\Web\\Spotify\\Spotify\\Spotify.Core\\Spotify.Core.csproj",
+        "projectUniqueName": "d:\\UI\\term 7\\Web\\Spotify\\Spotify\\Spotify.Core\\Spotify.Core.csproj",
         "projectName": "Spotify.Core",
-        "projectPath": "D:\\UI\\term 7\\Web\\Spotify\\Spotify\\Spotify.Core\\Spotify.Core.csproj",
+        "projectPath": "d:\\UI\\term 7\\Web\\Spotify\\Spotify\\Spotify.Core\\Spotify.Core.csproj",
         "packagesPath": "C:\\Users\\ALFA RAYAN\\.nuget\\packages\\",
-        "outputPath": "D:\\UI\\term 7\\Web\\Spotify\\Spotify\\Spotify.Core\\obj\\",
+        "outputPath": "d:\\UI\\term 7\\Web\\Spotify\\Spotify\\Spotify.Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ALFA RAYAN\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -37,6 +37,12 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.14, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

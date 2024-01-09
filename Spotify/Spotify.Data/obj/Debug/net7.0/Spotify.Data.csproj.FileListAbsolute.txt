@@ -9,3 +9,14 @@ F:\University 7\Web\Spotify\Spotify\Spotify.Data\obj\Debug\net7.0\Spotify.Data.d
 F:\University 7\Web\Spotify\Spotify\Spotify.Data\obj\Debug\net7.0\refint\Spotify.Data.dll
 F:\University 7\Web\Spotify\Spotify\Spotify.Data\obj\Debug\net7.0\Spotify.Data.pdb
 F:\University 7\Web\Spotify\Spotify\Spotify.Data\obj\Debug\net7.0\ref\Spotify.Data.dll
+D:\UI\term 7\Web\Spotify\Spotify\Spotify.Data\bin\Debug\net7.0\Spotify.Data.deps.json
+D:\UI\term 7\Web\Spotify\Spotify\Spotify.Data\bin\Debug\net7.0\Spotify.Data.dll
+D:\UI\term 7\Web\Spotify\Spotify\Spotify.Data\bin\Debug\net7.0\Spotify.Data.pdb
+D:\UI\term 7\Web\Spotify\Spotify\Spotify.Data\obj\Debug\net7.0\Spotify.Data.GeneratedMSBuildEditorConfig.editorconfig
+D:\UI\term 7\Web\Spotify\Spotify\Spotify.Data\obj\Debug\net7.0\Spotify.Data.AssemblyInfoInputs.cache
+D:\UI\term 7\Web\Spotify\Spotify\Spotify.Data\obj\Debug\net7.0\Spotify.Data.AssemblyInfo.cs
+D:\UI\term 7\Web\Spotify\Spotify\Spotify.Data\obj\Debug\net7.0\Spotify.Data.csproj.CoreCompileInputs.cache
+D:\UI\term 7\Web\Spotify\Spotify\Spotify.Data\obj\Debug\net7.0\Spotify.Data.dll
+D:\UI\term 7\Web\Spotify\Spotify\Spotify.Data\obj\Debug\net7.0\refint\Spotify.Data.dll
+D:\UI\term 7\Web\Spotify\Spotify\Spotify.Data\obj\Debug\net7.0\Spotify.Data.pdb
+D:\UI\term 7\Web\Spotify\Spotify\Spotify.Data\obj\Debug\net7.0\ref\Spotify.Data.dll
