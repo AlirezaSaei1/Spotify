@@ -74,3 +74,5 @@ D:\UI\term 7\Web\Spotify\Spotify\Spotify\obj\Debug\net7.0\refint\Spotify.dll
 D:\UI\term 7\Web\Spotify\Spotify\Spotify\obj\Debug\net7.0\Spotify.pdb
 D:\UI\term 7\Web\Spotify\Spotify\Spotify\obj\Debug\net7.0\Spotify.genruntimeconfig.cache
 D:\UI\term 7\Web\Spotify\Spotify\Spotify\obj\Debug\net7.0\ref\Spotify.dll
+F:\University 7\Web\Spotify\Spotify\Spotify\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.dll
+F:\University 7\Web\Spotify\Spotify\Spotify\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Abstractions.dll

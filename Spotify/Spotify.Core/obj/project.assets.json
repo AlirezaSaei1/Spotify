@@ -518,19 +518,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ALFA RAYAN\\.nuget\\packages\\": {}
+    "C:\\Users\\ASUS\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\UI\\term 7\\Web\\Spotify\\Spotify\\Spotify.Core\\Spotify.Core.csproj",
+      "projectUniqueName": "F:\\University 7\\Web\\Spotify\\Spotify\\Spotify.Core\\Spotify.Core.csproj",
       "projectName": "Spotify.Core",
-      "projectPath": "D:\\UI\\term 7\\Web\\Spotify\\Spotify\\Spotify.Core\\Spotify.Core.csproj",
-      "packagesPath": "C:\\Users\\ALFA RAYAN\\.nuget\\packages\\",
-      "outputPath": "D:\\UI\\term 7\\Web\\Spotify\\Spotify\\Spotify.Core\\obj\\",
+      "projectPath": "F:\\University 7\\Web\\Spotify\\Spotify\\Spotify.Core\\Spotify.Core.csproj",
+      "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
+      "outputPath": "F:\\University 7\\Web\\Spotify\\Spotify\\Spotify.Core\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\ALFA RAYAN\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
@@ -575,7 +575,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.404\\RuntimeIdentifierGraph.json"
       }
     }
   }

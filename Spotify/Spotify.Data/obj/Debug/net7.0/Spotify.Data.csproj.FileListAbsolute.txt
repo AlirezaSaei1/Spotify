@@ -20,3 +20,4 @@ D:\UI\term 7\Web\Spotify\Spotify\Spotify.Data\obj\Debug\net7.0\Spotify.Data.dll
 D:\UI\term 7\Web\Spotify\Spotify\Spotify.Data\obj\Debug\net7.0\refint\Spotify.Data.dll
 D:\UI\term 7\Web\Spotify\Spotify\Spotify.Data\obj\Debug\net7.0\Spotify.Data.pdb
 D:\UI\term 7\Web\Spotify\Spotify\Spotify.Data\obj\Debug\net7.0\ref\Spotify.Data.dll
+F:\University 7\Web\Spotify\Spotify\Spotify.Data\obj\Debug\net7.0\Spotify.Data.csproj.AssemblyReference.cache
