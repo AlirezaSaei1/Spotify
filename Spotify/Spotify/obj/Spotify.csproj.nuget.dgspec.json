@@ -4,183 +4,6 @@
     "F:\\University 7\\Web\\Spotify\\Spotify\\Spotify\\Spotify.csproj": {}
   },
   "projects": {
-    "F:\\University 7\\Web\\Spotify\\Spotify\\Spotify.Core\\Spotify.Core.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "F:\\University 7\\Web\\Spotify\\Spotify\\Spotify.Core\\Spotify.Core.csproj",
-        "projectName": "Spotify.Core",
-        "projectPath": "F:\\University 7\\Web\\Spotify\\Spotify\\Spotify.Core\\Spotify.Core.csproj",
-        "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-        "outputPath": "F:\\University 7\\Web\\Spotify\\Spotify\\Spotify.Core\\obj\\",
-        "projectStyle": "PackageReference",
-        "configFilePaths": [
-          "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config"
-        ],
-        "originalTargetFrameworks": [
-          "net7.0"
-        ],
-        "sources": {
-          "https://api.nuget.org/v3/index.json": {}
-        },
-        "frameworks": {
-          "net7.0": {
-            "targetAlias": "net7.0",
-            "projectReferences": {}
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        }
-      },
-      "frameworks": {
-        "net7.0": {
-          "targetAlias": "net7.0",
-          "dependencies": {
-            "Microsoft.EntityFrameworkCore": {
-              "target": "Package",
-              "version": "[7.0.14, )"
-            }
-          },
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48",
-            "net481"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.404\\RuntimeIdentifierGraph.json"
-        }
-      }
-    },
-    "F:\\University 7\\Web\\Spotify\\Spotify\\Spotify.Data\\Spotify.Data.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "F:\\University 7\\Web\\Spotify\\Spotify\\Spotify.Data\\Spotify.Data.csproj",
-        "projectName": "Spotify.Data",
-        "projectPath": "F:\\University 7\\Web\\Spotify\\Spotify\\Spotify.Data\\Spotify.Data.csproj",
-        "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-        "outputPath": "F:\\University 7\\Web\\Spotify\\Spotify\\Spotify.Data\\obj\\",
-        "projectStyle": "PackageReference",
-        "configFilePaths": [
-          "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config"
-        ],
-        "originalTargetFrameworks": [
-          "net7.0"
-        ],
-        "sources": {
-          "https://api.nuget.org/v3/index.json": {}
-        },
-        "frameworks": {
-          "net7.0": {
-            "targetAlias": "net7.0",
-            "projectReferences": {}
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        }
-      },
-      "frameworks": {
-        "net7.0": {
-          "targetAlias": "net7.0",
-          "dependencies": {
-            "Microsoft.EntityFrameworkCore": {
-              "target": "Package",
-              "version": "[7.0.14, )"
-            }
-          },
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48",
-            "net481"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.404\\RuntimeIdentifierGraph.json"
-        }
-      }
-    },
-    "F:\\University 7\\Web\\Spotify\\Spotify\\Spotify.Services\\Spotify.Services.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "F:\\University 7\\Web\\Spotify\\Spotify\\Spotify.Services\\Spotify.Services.csproj",
-        "projectName": "Spotify.Services",
-        "projectPath": "F:\\University 7\\Web\\Spotify\\Spotify\\Spotify.Services\\Spotify.Services.csproj",
-        "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-        "outputPath": "F:\\University 7\\Web\\Spotify\\Spotify\\Spotify.Services\\obj\\",
-        "projectStyle": "PackageReference",
-        "configFilePaths": [
-          "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config"
-        ],
-        "originalTargetFrameworks": [
-          "net7.0"
-        ],
-        "sources": {
-          "https://api.nuget.org/v3/index.json": {}
-        },
-        "frameworks": {
-          "net7.0": {
-            "targetAlias": "net7.0",
-            "projectReferences": {}
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        }
-      },
-      "frameworks": {
-        "net7.0": {
-          "targetAlias": "net7.0",
-          "dependencies": {
-            "Microsoft.EntityFrameworkCore": {
-              "target": "Package",
-              "version": "[7.0.14, )"
-            }
-          },
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48",
-            "net481"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.404\\RuntimeIdentifierGraph.json"
-        }
-      }
-    },
     "F:\\University 7\\Web\\Spotify\\Spotify\\Spotify\\Spotify.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -202,17 +25,7 @@
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
-            "projectReferences": {
-              "F:\\University 7\\Web\\Spotify\\Spotify\\Spotify.Core\\Spotify.Core.csproj": {
-                "projectPath": "F:\\University 7\\Web\\Spotify\\Spotify\\Spotify.Core\\Spotify.Core.csproj"
-              },
-              "F:\\University 7\\Web\\Spotify\\Spotify\\Spotify.Data\\Spotify.Data.csproj": {
-                "projectPath": "F:\\University 7\\Web\\Spotify\\Spotify\\Spotify.Data\\Spotify.Data.csproj"
-              },
-              "F:\\University 7\\Web\\Spotify\\Spotify\\Spotify.Services\\Spotify.Services.csproj": {
-                "projectPath": "F:\\University 7\\Web\\Spotify\\Spotify\\Spotify.Services\\Spotify.Services.csproj"
-              }
-            }
+            "projectReferences": {}
           }
         },
         "warningProperties": {
@@ -225,7 +38,23 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
-            "Microsoft.EntityFrameworkCore": {
+            "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.14, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.14, )"
+            },
+            "Microsoft.AspNetCore.Identity.UI": {
+              "target": "Package",
+              "version": "[7.0.14, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[7.0.14, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
               "target": "Package",
               "version": "[7.0.14, )"
             }

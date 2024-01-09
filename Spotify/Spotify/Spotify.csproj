@@ -4,16 +4,19 @@
         <TargetFramework>net7.0</TargetFramework>
         <Nullable>enable</Nullable>
         <ImplicitUsings>enable</ImplicitUsings>
+        <UserSecretsId>aspnet-Spotify-127E0F0B-B6CA-4E02-9FF3-A70C9CC8E9CB</UserSecretsId>
     </PropertyGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\Spotify.Core\Spotify.Core.csproj" />
-      <ProjectReference Include="..\Spotify.Data\Spotify.Data.csproj" />
-      <ProjectReference Include="..\Spotify.Services\Spotify.Services.csproj" />
+        <None Update="app.db" CopyToOutputDirectory="PreserveNewest" ExcludeFromSingleFile="true"/>
     </ItemGroup>
 
     <ItemGroup>
-      <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.14" />
+        <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="7.0.14"/>
+        <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="7.0.14"/>
+        <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="7.0.14"/>
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="7.0.14"/>
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.14"/>
     </ItemGroup>
 
 </Project>

@@ -1,12 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spotify", "Spotify\Spotify.csproj", "{3886FD69-E10A-44D6-952C-2222C9DD206E}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spotify.Core", "Spotify.Core\Spotify.Core.csproj", "{F8B2ED97-FEDE-42EE-9247-7B97751A2E13}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spotify.Data", "Spotify.Data\Spotify.Data.csproj", "{B91AF61B-4875-46DA-9AD1-096AA2266FE3}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spotify.Services", "Spotify.Services\Spotify.Services.csproj", "{1905C403-B654-41F1-B371-0F3C2189B14F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spotify", "Spotify\Spotify.csproj", "{91FF5FB1-1180-49A9-8558-ACCD74405516}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -14,21 +8,9 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{3886FD69-E10A-44D6-952C-2222C9DD206E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3886FD69-E10A-44D6-952C-2222C9DD206E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3886FD69-E10A-44D6-952C-2222C9DD206E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3886FD69-E10A-44D6-952C-2222C9DD206E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F8B2ED97-FEDE-42EE-9247-7B97751A2E13}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F8B2ED97-FEDE-42EE-9247-7B97751A2E13}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F8B2ED97-FEDE-42EE-9247-7B97751A2E13}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F8B2ED97-FEDE-42EE-9247-7B97751A2E13}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B91AF61B-4875-46DA-9AD1-096AA2266FE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B91AF61B-4875-46DA-9AD1-096AA2266FE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B91AF61B-4875-46DA-9AD1-096AA2266FE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B91AF61B-4875-46DA-9AD1-096AA2266FE3}.Release|Any CPU.Build.0 = Release|Any CPU
-		{1905C403-B654-41F1-B371-0F3C2189B14F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1905C403-B654-41F1-B371-0F3C2189B14F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1905C403-B654-41F1-B371-0F3C2189B14F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1905C403-B654-41F1-B371-0F3C2189B14F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91FF5FB1-1180-49A9-8558-ACCD74405516}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91FF5FB1-1180-49A9-8558-ACCD74405516}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91FF5FB1-1180-49A9-8558-ACCD74405516}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91FF5FB1-1180-49A9-8558-ACCD74405516}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

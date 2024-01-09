@@ -2,7 +2,109 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<style>
+    body {
+        background-color: #121212;
+        color: #1DB954;
+    }
+
+    .container {
+        background-color: #121212;
+        color: #1DB954;
+        border-radius: 10px;
+        padding: 20px;
+    }
+
+    .list-group-item {
+        background-color: #121212;
+        color: #1DB954;
+        border: none;
+    }
+
+    .list-group-item:hover {
+        background-color: #1DB954;
+        color: #121212;
+    }
+
+    .display-4 {
+        color: #1DB954;
+    }
+
+    .btn-primary {
+        background-color: #1DB954;
+        color: #121212;
+    }
+
+    .btn-primary:hover {
+        background-color: #44B867;
+        color: #121212;
+    }
+
+    .img-fluid {
+        max-width: 100%;
+        height: auto;
+    }
+</style>
+
+<div class="container mt-5">
+    <div class="row">
+        <!-- Sidebar -->
+        <div class="col-md-2">
+            <!-- Show sidebar only if the user is logged in -->
+            @if (User.Identity.IsAuthenticated)
+            {
+                <h3>Sidebar</h3>
+                <ul class="list-group">
+                    <li class="list-group-item">Home</li>
+                    <li class="list-group-item">Browse</li>
+                    <li class="list-group-item">Your Library</li>
+                    <!-- Add more sidebar items as needed -->
+                </ul>
+            }
+        </div>
+
+        <!-- Main Content -->
+        <div class="col-md-10">
+            <!-- Check if the user is authenticated -->
+            @if (User.Identity.IsAuthenticated)
+            {
+                <!-- Display content for authenticated users -->
+
+                <!-- Header -->
+                <div class="text-center mb-4">
+                    <h1 class="display-4">Welcome to Your Spotify-Like App</h1>
+                </div>
+
+                <!-- Featured Artists or Playlists -->
+                <div class="row mb-4">
+                    <div class="col-md-3">
+                        <img src="https://via.placeholder.com/150" alt="Featured Artist 1" class="img-fluid">
+                        <h4>Featured Artist 1</h4>
+                    </div>
+                    <!-- Add more featured artists or playlists as needed -->
+                </div>
+
+                <!-- Recent Releases -->
+                <h2>Recent Releases</h2>
+                <div class="row">
+                    <div class="col-md-3">
+                        <img src="https://via.placeholder.com/150" alt="Recent Release 1" class="img-fluid">
+                        <h5>Recent Release 1</h5>
+                    </div>
+                    <!-- Add more recent releases as needed -->
+                </div>
+            }
+            else
+            {
+                <!-- Display content for non-authenticated users (landing page) -->
+
+                <!-- Landing Page Content -->
+                <div class="text-center">
+                    <h1 class="display-4">Welcome to Our Music Platform</h1>
+                    <p>Log in to access more features!</p>
+                    <a class="btn btn-primary" href="Identity/Account/Login">Login</a>
+                </div>
+            }
+        </div>
+    </div>
 </div>
