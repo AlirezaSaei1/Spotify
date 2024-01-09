@@ -4,7 +4,7 @@
         <TargetFramework>net7.0</TargetFramework>
         <Nullable>enable</Nullable>
         <ImplicitUsings>enable</ImplicitUsings>
-        <UserSecretsId>aspnet-Spotify-127E0F0B-B6CA-4E02-9FF3-A70C9CC8E9CB</UserSecretsId>
+        <UserSecretsId>aspnet-Spotify-F903C4EA-C3E0-4A4F-8CDA-49DBE9DDE7B7</UserSecretsId>
     </PropertyGroup>
 
     <ItemGroup>
@@ -16,9 +16,7 @@
         <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="7.0.14"/>
         <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="7.0.14"/>
         <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="7.0.14"/>
-        <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.15" />
         <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.14"/>
-        <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="7.0.11" />
     </ItemGroup>
 
 </Project>

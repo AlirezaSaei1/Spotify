@@ -9,36 +9,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="07c5e579-ecf9-416b-9082-daa697de8d89" name="Changes" comment="">
+    <list default="true" id="6845310d-c7e7-459a-b8cf-35421b5f6c02" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Spotify/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Spotify/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spotify.sln" beforeDir="false" afterPath="$PROJECT_DIR$/Spotify.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spotify/Areas/Identity/Pages/Account/ResetPassword.cshtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spotify/Areas/Identity/Pages/Account/ResetPassword.cshtml.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spotify/Areas/Identity/Pages/Account/_StatusMessage.cshtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spotify/Areas/Identity/Pages/Account/_ViewImports.cshtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spotify/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spotify/Areas/Identity/Pages/_ViewImports.cshtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spotify/Data/ApplicationDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Spotify/Data/ApplicationDbContext.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spotify/Models/ApplicationUser.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Spotify/Models/ApplicationUser.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Spotify/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Spotify/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spotify/Properties/launchSettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/Spotify/Properties/launchSettings.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Spotify/Spotify.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Spotify/Spotify.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Spotify/Views/Home/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Spotify/Views/Home/Index.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Spotify/Views/Shared/_Layout.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Spotify/Views/Shared/_Layout.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spotify/Views/Shared/_LoginPartial.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Spotify/Views/Shared/_LoginPartial.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Spotify/app.db" beforeDir="false" afterPath="$PROJECT_DIR$/Spotify/app.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spotify/bin/Debug/net7.0/Microsoft.EntityFrameworkCore.Abstractions.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Spotify/bin/Debug/net7.0/Microsoft.EntityFrameworkCore.Abstractions.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spotify/bin/Debug/net7.0/Microsoft.EntityFrameworkCore.Relational.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Spotify/bin/Debug/net7.0/Microsoft.EntityFrameworkCore.Relational.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spotify/bin/Debug/net7.0/Microsoft.EntityFrameworkCore.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Spotify/bin/Debug/net7.0/Microsoft.EntityFrameworkCore.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spotify/bin/Debug/net7.0/Spotify.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/Spotify/bin/Debug/net7.0/Spotify.deps.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spotify/bin/Debug/net7.0/Spotify.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Spotify/bin/Debug/net7.0/Spotify.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spotify/bin/Debug/net7.0/Spotify.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Spotify/bin/Debug/net7.0/Spotify.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spotify/bin/Debug/net7.0/app.db" beforeDir="false" afterPath="$PROJECT_DIR$/Spotify/bin/Debug/net7.0/app.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spotify/obj/Debug/net7.0/Spotify.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/Spotify/obj/Debug/net7.0/Spotify.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spotify/obj/Debug/net7.0/Spotify.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Spotify/obj/Debug/net7.0/Spotify.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spotify/obj/Debug/net7.0/Spotify.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Spotify/obj/Debug/net7.0/Spotify.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spotify/obj/Debug/net7.0/Spotify.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Spotify/obj/Debug/net7.0/Spotify.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spotify/obj/Debug/net7.0/Spotify.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Spotify/obj/Debug/net7.0/Spotify.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spotify/obj/Debug/net7.0/Spotify.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Spotify/obj/Debug/net7.0/Spotify.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spotify/obj/Debug/net7.0/Spotify.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Spotify/obj/Debug/net7.0/Spotify.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spotify/obj/Debug/net7.0/ref/Spotify.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Spotify/obj/Debug/net7.0/ref/Spotify.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spotify/obj/Debug/net7.0/refint/Spotify.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Spotify/obj/Debug/net7.0/refint/Spotify.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spotify/obj/Spotify.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Spotify/obj/Spotify.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spotify/obj/Spotify.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/Spotify/obj/Spotify.csproj.nuget.g.props" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spotify/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/Spotify/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spotify/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Spotify/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spotify/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Spotify/obj/project.packagespec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spotify/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/Spotify/obj/rider.project.model.nuget.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spotify/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Spotify/obj/rider.project.restore.info" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,35 +37,35 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 2
-}</component>
-  <component name="ProjectId" id="2aiwBEnoJyLsGBaLKiiGzUnTluW" />
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 4
+}]]></component>
+  <component name="ProjectId" id="2ajBbunrozky1bFpRh7CLjTqVUW" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;.NET Launch Settings Profile.Spotify: http.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;Alireza&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    ".NET Launch Settings Profile.Spotify: http.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "AlirezaSaei",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;rider.external.source.directories&quot;: [
-      &quot;C:\\Users\\ASUS\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\DecompilerCache&quot;,
-      &quot;C:\\Users\\ASUS\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\SourcesCache&quot;,
-      &quot;C:\\Users\\ASUS\\AppData\\Local\\Symbols\\src&quot;
+  "keyToStringList": {
+    "rider.external.source.directories": [
+      "C:\\Users\\ASUS\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\DecompilerCache",
+      "C:\\Users\\ASUS\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\SourcesCache",
+      "C:\\Users\\ASUS\\AppData\\Local\\Symbols\\src"
     ]
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected=".NET Launch Settings Profile.Spotify: http">
     <configuration name="Spotify: IIS Express" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/Spotify/Spotify.csproj" />
@@ -127,13 +116,12 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="07c5e579-ecf9-416b-9082-daa697de8d89" name="Changes" comment="" />
-      <created>1704814570802</created>
+      <changelist id="6845310d-c7e7-459a-b8cf-35421b5f6c02" name="Changes" comment="" />
+      <created>1704822183211</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1704814570802</updated>
-      <workItem from="1704814572052" duration="2525000" />
-      <workItem from="1704819119007" duration="306000" />
+      <updated>1704822183211</updated>
+      <workItem from="1704822185531" duration="655000" />
     </task>
     <servers />
   </component>
