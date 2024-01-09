@@ -10,24 +10,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6845310d-c7e7-459a-b8cf-35421b5f6c02" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Spotify/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Spotify/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spotify.sln" beforeDir="false" afterPath="$PROJECT_DIR$/Spotify.sln" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spotify/Areas/Identity/Pages/Account/ResetPassword.cshtml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spotify/Areas/Identity/Pages/Account/ResetPassword.cshtml.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spotify/Areas/Identity/Pages/Account/_StatusMessage.cshtml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spotify/Areas/Identity/Pages/Account/_ViewImports.cshtml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spotify/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spotify/Areas/Identity/Pages/_ViewImports.cshtml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spotify/Data/ApplicationDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Spotify/Data/ApplicationDbContext.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spotify/Models/ApplicationUser.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Spotify/Models/ApplicationUser.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spotify/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Spotify/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spotify/Properties/launchSettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/Spotify/Properties/launchSettings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spotify/Spotify.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Spotify/Spotify.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spotify/Views/Home/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Spotify/Views/Home/Index.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Spotify/Views/Shared/_Layout.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Spotify/Views/Shared/_Layout.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spotify/Views/Shared/_LoginPartial.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Spotify/Views/Shared/_LoginPartial.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spotify/app.db" beforeDir="false" afterPath="$PROJECT_DIR$/Spotify/app.db" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +21,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
+  <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo"><![CDATA[{
   "associatedIndex": 4
 }]]></component>
@@ -121,13 +106,14 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1704822183211</updated>
-      <workItem from="1704822185531" duration="655000" />
+      <workItem from="1704822185531" duration="962000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
