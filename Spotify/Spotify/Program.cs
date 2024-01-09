@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Spotify.Data;
+using Spotify.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
