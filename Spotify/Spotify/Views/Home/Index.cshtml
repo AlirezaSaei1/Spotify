@@ -1,4 +1,8 @@
-﻿@{
+﻿@using Microsoft.AspNetCore.Identity
+@inject SignInManager<ApplicationUser> SignInManager
+@inject UserManager<ApplicationUser> UserManager
+
+@{
     ViewData["Title"] = "Home Page";
 }
 
@@ -13,8 +17,8 @@
     <link rel="stylesheet" href="~/Spotify.styles.css" asp-append-version="true"/>
     <style>
         body {
-            background-color: #121212; /* Spotify black */
-            color: #ffffff; /* White text */
+            background-color: #121212;
+            color: #ffffff;
         }
 
         .container {
@@ -26,8 +30,8 @@
 
         .display-4 {
             font-size: 3rem;
-            font-weight: bold; /* Bold text */
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
         }
 
         p {
@@ -36,39 +40,40 @@
         }
 
         a {
-            color: #1DB954; /* Spotify green */
+            color: #1DB954;
             text-decoration: underline;
         }
 
         a:hover {
-            color: #44B867; /* Hover color */
+            color: #44B867;
         }
 
         .btn-primary {
-            background-color: #1DB954; /* Spotify green */
-            color: #121212; /* Black text */
-            font-weight: bold; /* Bold text */
-            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+            background-color: #1DB954;
+            color: #121212;
+            font-weight: bold;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
         }
 
         .btn-primary:hover {
-            background-color: #44B867; /* Hover color */
+            background-color: #44B867;
         }
     </style>
 </head>
 <body>
+    @if (!SignInManager.IsSignedIn(User))
+    {
+        <div class="container mt-5">
+            <div class="text-center">
+                <h1 class="display-4">Discover Your Music Journey</h1>
+                <p>Immerse yourself in a world of music. <br> Log in to unlock a richer experience!</p>
+                <a class="btn btn-primary" href="Identity/Account/Login">Login</a>
+            </div>
+        </div>
+    }
 
-<div class="container mt-5">
-    <div class="text-center">
-        <h1 class="display-4">Discover Your Music Journey</h1>
-        <p>Immerse yourself in a world of music. <br> Log in to unlock a richer experience!</p>
-        <a class="btn btn-primary" href="Identity/Account/Login">Login</a>
-    </div>
-</div>
-
-
-<script src="~/lib/jquery/dist/jquery.min.js"></script>
-<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-<script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
 </body>
 </html>

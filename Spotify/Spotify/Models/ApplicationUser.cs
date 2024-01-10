@@ -4,11 +4,12 @@ namespace Spotify.Models;
 
 public class ApplicationUser : IdentityUser
 {
-    public string Name { set; get; }
+    public string FirstName { set; get; }
+    public string LastName { set; get; }
     public DateTime AccountCreationTime { get; set; }
     
     public ApplicationUser()
     {
-        AccountCreationTime = DateTime.Now;
+        AccountCreationTime = DateTime.UtcNow;
     } 
 }
