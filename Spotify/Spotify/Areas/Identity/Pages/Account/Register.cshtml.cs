@@ -107,6 +107,10 @@ namespace Spotify.Areas.Identity.Pages.Account
             [Display(Name = "Confirm password")]
             [Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
             public string ConfirmPassword { get; set; }
+            
+            [Required]
+            [Display(Name = "Account Type")]
+            public string AccountType { get; set; }
         }
 
 
@@ -169,13 +173,16 @@ namespace Spotify.Areas.Identity.Pages.Account
         {
             try
             {
-                return Activator.CreateInstance<ApplicationUser>();
+                return Input.AccountType switch
+                {
+                    "User" => new User(),
+                    "Artist" => new Artist(),
+                    _ => throw new InvalidOperationException($"Invalid account type: {Input.AccountType}")
+                };
             }
             catch
             {
-                throw new InvalidOperationException($"Can't create an instance of '{nameof(ApplicationUser)}'. " +
-                    $"Ensure that '{nameof(ApplicationUser)}' is not an abstract class and has a parameterless constructor, or alternatively " +
-                    $"override the register page in /Areas/Identity/Pages/Account/Register.cshtml");
+                throw new InvalidOperationException("Error creating user instance.");
             }
         }
 
