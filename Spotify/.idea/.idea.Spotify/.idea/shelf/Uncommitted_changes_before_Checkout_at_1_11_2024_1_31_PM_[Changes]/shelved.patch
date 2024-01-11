@@ -1,0 +1,463 @@
+Index: Spotify/obj/Spotify.csproj.nuget.dgspec.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>{\r\n  \"format\": 1,\r\n  \"restore\": {\r\n    \"d:\\\\UI\\\\term 7\\\\Web\\\\Spotify\\\\Spotify\\\\Spotify\\\\Spotify.csproj\": {}\r\n  },\r\n  \"projects\": {\r\n    \"d:\\\\UI\\\\term 7\\\\Web\\\\Spotify\\\\Spotify\\\\Spotify.Core\\\\Spotify.Core.csproj\": {\r\n      \"version\": \"1.0.0\",\r\n      \"restore\": {\r\n        \"projectUniqueName\": \"d:\\\\UI\\\\term 7\\\\Web\\\\Spotify\\\\Spotify\\\\Spotify.Core\\\\Spotify.Core.csproj\",\r\n        \"projectName\": \"Spotify.Core\",\r\n        \"projectPath\": \"d:\\\\UI\\\\term 7\\\\Web\\\\Spotify\\\\Spotify\\\\Spotify.Core\\\\Spotify.Core.csproj\",\r\n        \"packagesPath\": \"C:\\\\Users\\\\ALFA RAYAN\\\\.nuget\\\\packages\\\\\",\r\n        \"outputPath\": \"d:\\\\UI\\\\term 7\\\\Web\\\\Spotify\\\\Spotify\\\\Spotify.Core\\\\obj\\\\\",\r\n        \"projectStyle\": \"PackageReference\",\r\n        \"configFilePaths\": [\r\n          \"C:\\\\Users\\\\ALFA RAYAN\\\\AppData\\\\Roaming\\\\NuGet\\\\NuGet.Config\"\r\n        ],\r\n        \"originalTargetFrameworks\": [\r\n          \"net7.0\"\r\n        ],\r\n        \"sources\": {\r\n          \"https://api.nuget.org/v3/index.json\": {}\r\n        },\r\n        \"frameworks\": {\r\n          \"net7.0\": {\r\n            \"targetAlias\": \"net7.0\",\r\n            \"projectReferences\": {}\r\n          }\r\n        },\r\n        \"warningProperties\": {\r\n          \"warnAsError\": [\r\n            \"NU1605\"\r\n          ]\r\n        }\r\n      },\r\n      \"frameworks\": {\r\n        \"net7.0\": {\r\n          \"targetAlias\": \"net7.0\",\r\n          \"dependencies\": {\r\n            \"Microsoft.EntityFrameworkCore\": {\r\n              \"target\": \"Package\",\r\n              \"version\": \"[7.0.14, )\"\r\n            }\r\n          },\r\n          \"imports\": [\r\n            \"net461\",\r\n            \"net462\",\r\n            \"net47\",\r\n            \"net471\",\r\n            \"net472\",\r\n            \"net48\",\r\n            \"net481\"\r\n          ],\r\n          \"assetTargetFallback\": true,\r\n          \"warn\": true,\r\n          \"frameworkReferences\": {\r\n            \"Microsoft.NETCore.App\": {\r\n              \"privateAssets\": \"all\"\r\n            }\r\n          },\r\n          \"runtimeIdentifierGraphPath\": \"C:\\\\Program Files\\\\dotnet\\\\sdk\\\\7.0.402\\\\RuntimeIdentifierGraph.json\"\r\n        }\r\n      }\r\n    },\r\n    \"d:\\\\UI\\\\term 7\\\\Web\\\\Spotify\\\\Spotify\\\\Spotify.Data\\\\Spotify.Data.csproj\": {\r\n      \"version\": \"1.0.0\",\r\n      \"restore\": {\r\n        \"projectUniqueName\": \"d:\\\\UI\\\\term 7\\\\Web\\\\Spotify\\\\Spotify\\\\Spotify.Data\\\\Spotify.Data.csproj\",\r\n        \"projectName\": \"Spotify.Data\",\r\n        \"projectPath\": \"d:\\\\UI\\\\term 7\\\\Web\\\\Spotify\\\\Spotify\\\\Spotify.Data\\\\Spotify.Data.csproj\",\r\n        \"packagesPath\": \"C:\\\\Users\\\\ALFA RAYAN\\\\.nuget\\\\packages\\\\\",\r\n        \"outputPath\": \"d:\\\\UI\\\\term 7\\\\Web\\\\Spotify\\\\Spotify\\\\Spotify.Data\\\\obj\\\\\",\r\n        \"projectStyle\": \"PackageReference\",\r\n        \"configFilePaths\": [\r\n          \"C:\\\\Users\\\\ALFA RAYAN\\\\AppData\\\\Roaming\\\\NuGet\\\\NuGet.Config\"\r\n        ],\r\n        \"originalTargetFrameworks\": [\r\n          \"net7.0\"\r\n        ],\r\n        \"sources\": {\r\n          \"https://api.nuget.org/v3/index.json\": {}\r\n        },\r\n        \"frameworks\": {\r\n          \"net7.0\": {\r\n            \"targetAlias\": \"net7.0\",\r\n            \"projectReferences\": {}\r\n          }\r\n        },\r\n        \"warningProperties\": {\r\n          \"warnAsError\": [\r\n            \"NU1605\"\r\n          ]\r\n        }\r\n      },\r\n      \"frameworks\": {\r\n        \"net7.0\": {\r\n          \"targetAlias\": \"net7.0\",\r\n          \"dependencies\": {\r\n            \"Microsoft.EntityFrameworkCore\": {\r\n              \"target\": \"Package\",\r\n              \"version\": \"[7.0.14, )\"\r\n            }\r\n          },\r\n          \"imports\": [\r\n            \"net461\",\r\n            \"net462\",\r\n            \"net47\",\r\n            \"net471\",\r\n            \"net472\",\r\n            \"net48\",\r\n            \"net481\"\r\n          ],\r\n          \"assetTargetFallback\": true,\r\n          \"warn\": true,\r\n          \"frameworkReferences\": {\r\n            \"Microsoft.NETCore.App\": {\r\n              \"privateAssets\": \"all\"\r\n            }\r\n          },\r\n          \"runtimeIdentifierGraphPath\": \"C:\\\\Program Files\\\\dotnet\\\\sdk\\\\7.0.402\\\\RuntimeIdentifierGraph.json\"\r\n        }\r\n      }\r\n    },\r\n    \"d:\\\\UI\\\\term 7\\\\Web\\\\Spotify\\\\Spotify\\\\Spotify.Services\\\\Spotify.Services.csproj\": {\r\n      \"version\": \"1.0.0\",\r\n      \"restore\": {\r\n        \"projectUniqueName\": \"d:\\\\UI\\\\term 7\\\\Web\\\\Spotify\\\\Spotify\\\\Spotify.Services\\\\Spotify.Services.csproj\",\r\n        \"projectName\": \"Spotify.Services\",\r\n        \"projectPath\": \"d:\\\\UI\\\\term 7\\\\Web\\\\Spotify\\\\Spotify\\\\Spotify.Services\\\\Spotify.Services.csproj\",\r\n        \"packagesPath\": \"C:\\\\Users\\\\ALFA RAYAN\\\\.nuget\\\\packages\\\\\",\r\n        \"outputPath\": \"d:\\\\UI\\\\term 7\\\\Web\\\\Spotify\\\\Spotify\\\\Spotify.Services\\\\obj\\\\\",\r\n        \"projectStyle\": \"PackageReference\",\r\n        \"configFilePaths\": [\r\n          \"C:\\\\Users\\\\ALFA RAYAN\\\\AppData\\\\Roaming\\\\NuGet\\\\NuGet.Config\"\r\n        ],\r\n        \"originalTargetFrameworks\": [\r\n          \"net7.0\"\r\n        ],\r\n        \"sources\": {\r\n          \"https://api.nuget.org/v3/index.json\": {}\r\n        },\r\n        \"frameworks\": {\r\n          \"net7.0\": {\r\n            \"targetAlias\": \"net7.0\",\r\n            \"projectReferences\": {}\r\n          }\r\n        },\r\n        \"warningProperties\": {\r\n          \"warnAsError\": [\r\n            \"NU1605\"\r\n          ]\r\n        }\r\n      },\r\n      \"frameworks\": {\r\n        \"net7.0\": {\r\n          \"targetAlias\": \"net7.0\",\r\n          \"dependencies\": {\r\n            \"Microsoft.EntityFrameworkCore\": {\r\n              \"target\": \"Package\",\r\n              \"version\": \"[7.0.14, )\"\r\n            }\r\n          },\r\n          \"imports\": [\r\n            \"net461\",\r\n            \"net462\",\r\n            \"net47\",\r\n            \"net471\",\r\n            \"net472\",\r\n            \"net48\",\r\n            \"net481\"\r\n          ],\r\n          \"assetTargetFallback\": true,\r\n          \"warn\": true,\r\n          \"frameworkReferences\": {\r\n            \"Microsoft.NETCore.App\": {\r\n              \"privateAssets\": \"all\"\r\n            }\r\n          },\r\n          \"runtimeIdentifierGraphPath\": \"C:\\\\Program Files\\\\dotnet\\\\sdk\\\\7.0.402\\\\RuntimeIdentifierGraph.json\"\r\n        }\r\n      }\r\n    },\r\n    \"d:\\\\UI\\\\term 7\\\\Web\\\\Spotify\\\\Spotify\\\\Spotify\\\\Spotify.csproj\": {\r\n      \"version\": \"1.0.0\",\r\n      \"restore\": {\r\n        \"projectUniqueName\": \"d:\\\\UI\\\\term 7\\\\Web\\\\Spotify\\\\Spotify\\\\Spotify\\\\Spotify.csproj\",\r\n        \"projectName\": \"Spotify\",\r\n        \"projectPath\": \"d:\\\\UI\\\\term 7\\\\Web\\\\Spotify\\\\Spotify\\\\Spotify\\\\Spotify.csproj\",\r\n        \"packagesPath\": \"C:\\\\Users\\\\ALFA RAYAN\\\\.nuget\\\\packages\\\\\",\r\n        \"outputPath\": \"d:\\\\UI\\\\term 7\\\\Web\\\\Spotify\\\\Spotify\\\\Spotify\\\\obj\\\\\",\r\n        \"projectStyle\": \"PackageReference\",\r\n        \"configFilePaths\": [\r\n          \"C:\\\\Users\\\\ALFA RAYAN\\\\AppData\\\\Roaming\\\\NuGet\\\\NuGet.Config\"\r\n        ],\r\n        \"originalTargetFrameworks\": [\r\n          \"net7.0\"\r\n        ],\r\n        \"sources\": {\r\n          \"https://api.nuget.org/v3/index.json\": {}\r\n        },\r\n        \"frameworks\": {\r\n          \"net7.0\": {\r\n            \"targetAlias\": \"net7.0\",\r\n            \"projectReferences\": {\r\n              \"d:\\\\UI\\\\term 7\\\\Web\\\\Spotify\\\\Spotify\\\\Spotify.Core\\\\Spotify.Core.csproj\": {\r\n                \"projectPath\": \"d:\\\\UI\\\\term 7\\\\Web\\\\Spotify\\\\Spotify\\\\Spotify.Core\\\\Spotify.Core.csproj\"\r\n              },\r\n              \"d:\\\\UI\\\\term 7\\\\Web\\\\Spotify\\\\Spotify\\\\Spotify.Data\\\\Spotify.Data.csproj\": {\r\n                \"projectPath\": \"d:\\\\UI\\\\term 7\\\\Web\\\\Spotify\\\\Spotify\\\\Spotify.Data\\\\Spotify.Data.csproj\"\r\n              },\r\n              \"d:\\\\UI\\\\term 7\\\\Web\\\\Spotify\\\\Spotify\\\\Spotify.Services\\\\Spotify.Services.csproj\": {\r\n                \"projectPath\": \"d:\\\\UI\\\\term 7\\\\Web\\\\Spotify\\\\Spotify\\\\Spotify.Services\\\\Spotify.Services.csproj\"\r\n              }\r\n            }\r\n          }\r\n        },\r\n        \"warningProperties\": {\r\n          \"warnAsError\": [\r\n            \"NU1605\"\r\n          ]\r\n        }\r\n      },\r\n      \"frameworks\": {\r\n        \"net7.0\": {\r\n          \"targetAlias\": \"net7.0\",\r\n          \"dependencies\": {\r\n            \"Microsoft.EntityFrameworkCore\": {\r\n              \"target\": \"Package\",\r\n              \"version\": \"[7.0.14, )\"\r\n            }\r\n          },\r\n          \"imports\": [\r\n            \"net461\",\r\n            \"net462\",\r\n            \"net47\",\r\n            \"net471\",\r\n            \"net472\",\r\n            \"net48\",\r\n            \"net481\"\r\n          ],\r\n          \"assetTargetFallback\": true,\r\n          \"warn\": true,\r\n          \"frameworkReferences\": {\r\n            \"Microsoft.AspNetCore.App\": {\r\n              \"privateAssets\": \"none\"\r\n            },\r\n            \"Microsoft.NETCore.App\": {\r\n              \"privateAssets\": \"all\"\r\n            }\r\n          },\r\n          \"runtimeIdentifierGraphPath\": \"C:\\\\Program Files\\\\dotnet\\\\sdk\\\\7.0.402\\\\RuntimeIdentifierGraph.json\"\r\n        }\r\n      }\r\n    }\r\n  }\r\n}
+===================================================================
+diff --git a/Spotify/obj/Spotify.csproj.nuget.dgspec.json b/Spotify/obj/Spotify.csproj.nuget.dgspec.json
+--- a/Spotify/obj/Spotify.csproj.nuget.dgspec.json	
++++ b/Spotify/obj/Spotify.csproj.nuget.dgspec.json	
+@@ -1,17 +1,17 @@
+ {
+   "format": 1,
+   "restore": {
+-    "d:\\UI\\term 7\\Web\\Spotify\\Spotify\\Spotify\\Spotify.csproj": {}
++    "D:\\UI\\term 7\\Web\\Spotify\\Spotify\\Spotify\\Spotify.csproj": {}
+   },
+   "projects": {
+-    "d:\\UI\\term 7\\Web\\Spotify\\Spotify\\Spotify.Core\\Spotify.Core.csproj": {
++    "D:\\UI\\term 7\\Web\\Spotify\\Spotify\\Spotify.Core\\Spotify.Core.csproj": {
+       "version": "1.0.0",
+       "restore": {
+-        "projectUniqueName": "d:\\UI\\term 7\\Web\\Spotify\\Spotify\\Spotify.Core\\Spotify.Core.csproj",
++        "projectUniqueName": "D:\\UI\\term 7\\Web\\Spotify\\Spotify\\Spotify.Core\\Spotify.Core.csproj",
+         "projectName": "Spotify.Core",
+-        "projectPath": "d:\\UI\\term 7\\Web\\Spotify\\Spotify\\Spotify.Core\\Spotify.Core.csproj",
++        "projectPath": "D:\\UI\\term 7\\Web\\Spotify\\Spotify\\Spotify.Core\\Spotify.Core.csproj",
+         "packagesPath": "C:\\Users\\ALFA RAYAN\\.nuget\\packages\\",
+-        "outputPath": "d:\\UI\\term 7\\Web\\Spotify\\Spotify\\Spotify.Core\\obj\\",
++        "outputPath": "D:\\UI\\term 7\\Web\\Spotify\\Spotify\\Spotify.Core\\obj\\",
+         "projectStyle": "PackageReference",
+         "configFilePaths": [
+           "C:\\Users\\ALFA RAYAN\\AppData\\Roaming\\NuGet\\NuGet.Config"
+@@ -63,14 +63,14 @@
+         }
+       }
+     },
+-    "d:\\UI\\term 7\\Web\\Spotify\\Spotify\\Spotify.Data\\Spotify.Data.csproj": {
++    "D:\\UI\\term 7\\Web\\Spotify\\Spotify\\Spotify.Data\\Spotify.Data.csproj": {
+       "version": "1.0.0",
+       "restore": {
+-        "projectUniqueName": "d:\\UI\\term 7\\Web\\Spotify\\Spotify\\Spotify.Data\\Spotify.Data.csproj",
++        "projectUniqueName": "D:\\UI\\term 7\\Web\\Spotify\\Spotify\\Spotify.Data\\Spotify.Data.csproj",
+         "projectName": "Spotify.Data",
+-        "projectPath": "d:\\UI\\term 7\\Web\\Spotify\\Spotify\\Spotify.Data\\Spotify.Data.csproj",
++        "projectPath": "D:\\UI\\term 7\\Web\\Spotify\\Spotify\\Spotify.Data\\Spotify.Data.csproj",
+         "packagesPath": "C:\\Users\\ALFA RAYAN\\.nuget\\packages\\",
+-        "outputPath": "d:\\UI\\term 7\\Web\\Spotify\\Spotify\\Spotify.Data\\obj\\",
++        "outputPath": "D:\\UI\\term 7\\Web\\Spotify\\Spotify\\Spotify.Data\\obj\\",
+         "projectStyle": "PackageReference",
+         "configFilePaths": [
+           "C:\\Users\\ALFA RAYAN\\AppData\\Roaming\\NuGet\\NuGet.Config"
+@@ -122,14 +122,14 @@
+         }
+       }
+     },
+-    "d:\\UI\\term 7\\Web\\Spotify\\Spotify\\Spotify.Services\\Spotify.Services.csproj": {
++    "D:\\UI\\term 7\\Web\\Spotify\\Spotify\\Spotify.Services\\Spotify.Services.csproj": {
+       "version": "1.0.0",
+       "restore": {
+-        "projectUniqueName": "d:\\UI\\term 7\\Web\\Spotify\\Spotify\\Spotify.Services\\Spotify.Services.csproj",
++        "projectUniqueName": "D:\\UI\\term 7\\Web\\Spotify\\Spotify\\Spotify.Services\\Spotify.Services.csproj",
+         "projectName": "Spotify.Services",
+-        "projectPath": "d:\\UI\\term 7\\Web\\Spotify\\Spotify\\Spotify.Services\\Spotify.Services.csproj",
++        "projectPath": "D:\\UI\\term 7\\Web\\Spotify\\Spotify\\Spotify.Services\\Spotify.Services.csproj",
+         "packagesPath": "C:\\Users\\ALFA RAYAN\\.nuget\\packages\\",
+-        "outputPath": "d:\\UI\\term 7\\Web\\Spotify\\Spotify\\Spotify.Services\\obj\\",
++        "outputPath": "D:\\UI\\term 7\\Web\\Spotify\\Spotify\\Spotify.Services\\obj\\",
+         "projectStyle": "PackageReference",
+         "configFilePaths": [
+           "C:\\Users\\ALFA RAYAN\\AppData\\Roaming\\NuGet\\NuGet.Config"
+@@ -181,14 +181,14 @@
+         }
+       }
+     },
+-    "d:\\UI\\term 7\\Web\\Spotify\\Spotify\\Spotify\\Spotify.csproj": {
++    "D:\\UI\\term 7\\Web\\Spotify\\Spotify\\Spotify\\Spotify.csproj": {
+       "version": "1.0.0",
+       "restore": {
+-        "projectUniqueName": "d:\\UI\\term 7\\Web\\Spotify\\Spotify\\Spotify\\Spotify.csproj",
++        "projectUniqueName": "D:\\UI\\term 7\\Web\\Spotify\\Spotify\\Spotify\\Spotify.csproj",
+         "projectName": "Spotify",
+-        "projectPath": "d:\\UI\\term 7\\Web\\Spotify\\Spotify\\Spotify\\Spotify.csproj",
++        "projectPath": "D:\\UI\\term 7\\Web\\Spotify\\Spotify\\Spotify\\Spotify.csproj",
+         "packagesPath": "C:\\Users\\ALFA RAYAN\\.nuget\\packages\\",
+-        "outputPath": "d:\\UI\\term 7\\Web\\Spotify\\Spotify\\Spotify\\obj\\",
++        "outputPath": "D:\\UI\\term 7\\Web\\Spotify\\Spotify\\Spotify\\obj\\",
+         "projectStyle": "PackageReference",
+         "configFilePaths": [
+           "C:\\Users\\ALFA RAYAN\\AppData\\Roaming\\NuGet\\NuGet.Config"
+@@ -203,14 +203,14 @@
+           "net7.0": {
+             "targetAlias": "net7.0",
+             "projectReferences": {
+-              "d:\\UI\\term 7\\Web\\Spotify\\Spotify\\Spotify.Core\\Spotify.Core.csproj": {
+-                "projectPath": "d:\\UI\\term 7\\Web\\Spotify\\Spotify\\Spotify.Core\\Spotify.Core.csproj"
++              "D:\\UI\\term 7\\Web\\Spotify\\Spotify\\Spotify.Core\\Spotify.Core.csproj": {
++                "projectPath": "D:\\UI\\term 7\\Web\\Spotify\\Spotify\\Spotify.Core\\Spotify.Core.csproj"
+               },
+-              "d:\\UI\\term 7\\Web\\Spotify\\Spotify\\Spotify.Data\\Spotify.Data.csproj": {
+-                "projectPath": "d:\\UI\\term 7\\Web\\Spotify\\Spotify\\Spotify.Data\\Spotify.Data.csproj"
++              "D:\\UI\\term 7\\Web\\Spotify\\Spotify\\Spotify.Data\\Spotify.Data.csproj": {
++                "projectPath": "D:\\UI\\term 7\\Web\\Spotify\\Spotify\\Spotify.Data\\Spotify.Data.csproj"
+               },
+-              "d:\\UI\\term 7\\Web\\Spotify\\Spotify\\Spotify.Services\\Spotify.Services.csproj": {
+-                "projectPath": "d:\\UI\\term 7\\Web\\Spotify\\Spotify\\Spotify.Services\\Spotify.Services.csproj"
++              "D:\\UI\\term 7\\Web\\Spotify\\Spotify\\Spotify.Services\\Spotify.Services.csproj": {
++                "projectPath": "D:\\UI\\term 7\\Web\\Spotify\\Spotify\\Spotify.Services\\Spotify.Services.csproj"
+               }
+             }
+           }
+Index: Spotify.Core/obj/rider.project.restore.info
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>17047801830431654
+===================================================================
+diff --git a/Spotify.Core/obj/rider.project.restore.info b/Spotify.Core/obj/rider.project.restore.info
+--- a/Spotify.Core/obj/rider.project.restore.info	
++++ b/Spotify.Core/obj/rider.project.restore.info	
+@@ -1,1 +1,1 @@
+-17047801830431654
+\ No newline at end of file
++17049671111996437
+\ No newline at end of file
+Index: Spotify.Services/obj/rider.project.restore.info
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>17047801829372638
+===================================================================
+diff --git a/Spotify.Services/obj/rider.project.restore.info b/Spotify.Services/obj/rider.project.restore.info
+--- a/Spotify.Services/obj/rider.project.restore.info	
++++ b/Spotify.Services/obj/rider.project.restore.info	
+@@ -1,1 +1,1 @@
+-17047801829372638
+\ No newline at end of file
++17049671112036333
+\ No newline at end of file
+Index: Spotify.Services/obj/Debug/net7.0/Spotify.Services.GeneratedMSBuildEditorConfig.editorconfig
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>is_global = true\r\nbuild_property.TargetFramework = net7.0\r\nbuild_property.TargetPlatformMinVersion = \r\nbuild_property.UsingMicrosoftNETSdkWeb = \r\nbuild_property.ProjectTypeGuids = \r\nbuild_property.InvariantGlobalization = \r\nbuild_property.PlatformNeutralAssembly = \r\nbuild_property.EnforceExtendedAnalyzerRules = \r\nbuild_property._SupportedPlatformList = Linux,macOS,Windows\r\nbuild_property.RootNamespace = Spotify.Services\r\nbuild_property.ProjectDir = d:\\UI\\term 7\\Web\\Spotify\\Spotify\\Spotify.Services\\\r\n
+===================================================================
+diff --git a/Spotify.Services/obj/Debug/net7.0/Spotify.Services.GeneratedMSBuildEditorConfig.editorconfig b/Spotify.Services/obj/Debug/net7.0/Spotify.Services.GeneratedMSBuildEditorConfig.editorconfig
+--- a/Spotify.Services/obj/Debug/net7.0/Spotify.Services.GeneratedMSBuildEditorConfig.editorconfig	
++++ b/Spotify.Services/obj/Debug/net7.0/Spotify.Services.GeneratedMSBuildEditorConfig.editorconfig	
+@@ -8,4 +8,4 @@
+ build_property.EnforceExtendedAnalyzerRules = 
+ build_property._SupportedPlatformList = Linux,macOS,Windows
+ build_property.RootNamespace = Spotify.Services
+-build_property.ProjectDir = d:\UI\term 7\Web\Spotify\Spotify\Spotify.Services\
++build_property.ProjectDir = D:\UI\term 7\Web\Spotify\Spotify\Spotify.Services\
+Index: Spotify.Core/obj/Spotify.Core.csproj.nuget.g.props
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"no\"?>\r\n<Project ToolsVersion=\"14.0\" xmlns=\"http://schemas.microsoft.com/developer/msbuild/2003\">\r\n  <PropertyGroup Condition=\" '$(ExcludeRestorePackageImports)' != 'true' \">\r\n    <RestoreSuccess Condition=\" '$(RestoreSuccess)' == '' \">True</RestoreSuccess>\r\n    <RestoreTool Condition=\" '$(RestoreTool)' == '' \">NuGet</RestoreTool>\r\n    <ProjectAssetsFile Condition=\" '$(ProjectAssetsFile)' == '' \">$(MSBuildThisFileDirectory)project.assets.json</ProjectAssetsFile>\r\n    <NuGetPackageRoot Condition=\" '$(NuGetPackageRoot)' == '' \">$(UserProfile)\\.nuget\\packages\\</NuGetPackageRoot>\r\n    <NuGetPackageFolders Condition=\" '$(NuGetPackageFolders)' == '' \">C:\\Users\\ALFA RAYAN\\.nuget\\packages\\</NuGetPackageFolders>\r\n    <NuGetProjectStyle Condition=\" '$(NuGetProjectStyle)' == '' \">PackageReference</NuGetProjectStyle>\r\n    <NuGetToolVersion Condition=\" '$(NuGetToolVersion)' == '' \">6.7.0</NuGetToolVersion>\r\n  </PropertyGroup>\r\n  <ItemGroup Condition=\" '$(ExcludeRestorePackageImports)' != 'true' \">\r\n    <SourceRoot Include=\"C:\\Users\\ALFA RAYAN\\.nuget\\packages\\\" />\r\n  </ItemGroup>\r\n  <ImportGroup Condition=\" '$(ExcludeRestorePackageImports)' != 'true' \">\r\n    <Import Project=\"$(NuGetPackageRoot)microsoft.entityframeworkcore\\7.0.14\\buildTransitive\\net6.0\\Microsoft.EntityFrameworkCore.props\" Condition=\"Exists('$(NuGetPackageRoot)microsoft.entityframeworkcore\\7.0.14\\buildTransitive\\net6.0\\Microsoft.EntityFrameworkCore.props')\" />\r\n  </ImportGroup>\r\n</Project>
+===================================================================
+diff --git a/Spotify.Core/obj/Spotify.Core.csproj.nuget.g.props b/Spotify.Core/obj/Spotify.Core.csproj.nuget.g.props
+--- a/Spotify.Core/obj/Spotify.Core.csproj.nuget.g.props	
++++ b/Spotify.Core/obj/Spotify.Core.csproj.nuget.g.props	
+@@ -7,7 +7,7 @@
+     <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">$(UserProfile)\.nuget\packages\</NuGetPackageRoot>
+     <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">C:\Users\ALFA RAYAN\.nuget\packages\</NuGetPackageFolders>
+     <NuGetProjectStyle Condition=" '$(NuGetProjectStyle)' == '' ">PackageReference</NuGetProjectStyle>
+-    <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">6.7.0</NuGetToolVersion>
++    <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">6.5.0</NuGetToolVersion>
+   </PropertyGroup>
+   <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+     <SourceRoot Include="C:\Users\ALFA RAYAN\.nuget\packages\" />
+Index: Spotify/obj/Spotify.csproj.nuget.g.props
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"no\"?>\r\n<Project ToolsVersion=\"14.0\" xmlns=\"http://schemas.microsoft.com/developer/msbuild/2003\">\r\n  <PropertyGroup Condition=\" '$(ExcludeRestorePackageImports)' != 'true' \">\r\n    <RestoreSuccess Condition=\" '$(RestoreSuccess)' == '' \">True</RestoreSuccess>\r\n    <RestoreTool Condition=\" '$(RestoreTool)' == '' \">NuGet</RestoreTool>\r\n    <ProjectAssetsFile Condition=\" '$(ProjectAssetsFile)' == '' \">$(MSBuildThisFileDirectory)project.assets.json</ProjectAssetsFile>\r\n    <NuGetPackageRoot Condition=\" '$(NuGetPackageRoot)' == '' \">$(UserProfile)\\.nuget\\packages\\</NuGetPackageRoot>\r\n    <NuGetPackageFolders Condition=\" '$(NuGetPackageFolders)' == '' \">C:\\Users\\ALFA RAYAN\\.nuget\\packages\\</NuGetPackageFolders>\r\n    <NuGetProjectStyle Condition=\" '$(NuGetProjectStyle)' == '' \">PackageReference</NuGetProjectStyle>\r\n    <NuGetToolVersion Condition=\" '$(NuGetToolVersion)' == '' \">6.7.0</NuGetToolVersion>\r\n  </PropertyGroup>\r\n  <ItemGroup Condition=\" '$(ExcludeRestorePackageImports)' != 'true' \">\r\n    <SourceRoot Include=\"C:\\Users\\ALFA RAYAN\\.nuget\\packages\\\" />\r\n  </ItemGroup>\r\n  <ImportGroup Condition=\" '$(ExcludeRestorePackageImports)' != 'true' \">\r\n    <Import Project=\"$(NuGetPackageRoot)microsoft.entityframeworkcore\\7.0.14\\buildTransitive\\net6.0\\Microsoft.EntityFrameworkCore.props\" Condition=\"Exists('$(NuGetPackageRoot)microsoft.entityframeworkcore\\7.0.14\\buildTransitive\\net6.0\\Microsoft.EntityFrameworkCore.props')\" />\r\n  </ImportGroup>\r\n</Project>
+===================================================================
+diff --git a/Spotify/obj/Spotify.csproj.nuget.g.props b/Spotify/obj/Spotify.csproj.nuget.g.props
+--- a/Spotify/obj/Spotify.csproj.nuget.g.props	
++++ b/Spotify/obj/Spotify.csproj.nuget.g.props	
+@@ -7,7 +7,7 @@
+     <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">$(UserProfile)\.nuget\packages\</NuGetPackageRoot>
+     <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">C:\Users\ALFA RAYAN\.nuget\packages\</NuGetPackageFolders>
+     <NuGetProjectStyle Condition=" '$(NuGetProjectStyle)' == '' ">PackageReference</NuGetProjectStyle>
+-    <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">6.7.0</NuGetToolVersion>
++    <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">6.5.0</NuGetToolVersion>
+   </PropertyGroup>
+   <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+     <SourceRoot Include="C:\Users\ALFA RAYAN\.nuget\packages\" />
+Index: Spotify/obj/rider.project.restore.info
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>17047801829342721
+===================================================================
+diff --git a/Spotify/obj/rider.project.restore.info b/Spotify/obj/rider.project.restore.info
+--- a/Spotify/obj/rider.project.restore.info	
++++ b/Spotify/obj/rider.project.restore.info	
+@@ -1,1 +1,1 @@
+-17047801829342721
+\ No newline at end of file
++17049671112006410
+\ No newline at end of file
+Index: Spotify.Data/obj/rider.project.restore.info
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>17047801829342721
+===================================================================
+diff --git a/Spotify.Data/obj/rider.project.restore.info b/Spotify.Data/obj/rider.project.restore.info
+--- a/Spotify.Data/obj/rider.project.restore.info	
++++ b/Spotify.Data/obj/rider.project.restore.info	
+@@ -1,1 +1,1 @@
+-17047801829342721
+\ No newline at end of file
++17049671111986465
+\ No newline at end of file
+Index: Spotify.Data/obj/Debug/net7.0/Spotify.Data.GeneratedMSBuildEditorConfig.editorconfig
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>is_global = true\r\nbuild_property.TargetFramework = net7.0\r\nbuild_property.TargetPlatformMinVersion = \r\nbuild_property.UsingMicrosoftNETSdkWeb = \r\nbuild_property.ProjectTypeGuids = \r\nbuild_property.InvariantGlobalization = \r\nbuild_property.PlatformNeutralAssembly = \r\nbuild_property.EnforceExtendedAnalyzerRules = \r\nbuild_property._SupportedPlatformList = Linux,macOS,Windows\r\nbuild_property.RootNamespace = Spotify.Data\r\nbuild_property.ProjectDir = d:\\UI\\term 7\\Web\\Spotify\\Spotify\\Spotify.Data\\\r\n
+===================================================================
+diff --git a/Spotify.Data/obj/Debug/net7.0/Spotify.Data.GeneratedMSBuildEditorConfig.editorconfig b/Spotify.Data/obj/Debug/net7.0/Spotify.Data.GeneratedMSBuildEditorConfig.editorconfig
+--- a/Spotify.Data/obj/Debug/net7.0/Spotify.Data.GeneratedMSBuildEditorConfig.editorconfig	
++++ b/Spotify.Data/obj/Debug/net7.0/Spotify.Data.GeneratedMSBuildEditorConfig.editorconfig	
+@@ -8,4 +8,4 @@
+ build_property.EnforceExtendedAnalyzerRules = 
+ build_property._SupportedPlatformList = Linux,macOS,Windows
+ build_property.RootNamespace = Spotify.Data
+-build_property.ProjectDir = d:\UI\term 7\Web\Spotify\Spotify\Spotify.Data\
++build_property.ProjectDir = D:\UI\term 7\Web\Spotify\Spotify\Spotify.Data\
+Index: Spotify.Core/obj/Debug/net7.0/Spotify.Core.GeneratedMSBuildEditorConfig.editorconfig
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>is_global = true\r\nbuild_property.TargetFramework = net7.0\r\nbuild_property.TargetPlatformMinVersion = \r\nbuild_property.UsingMicrosoftNETSdkWeb = \r\nbuild_property.ProjectTypeGuids = \r\nbuild_property.InvariantGlobalization = \r\nbuild_property.PlatformNeutralAssembly = \r\nbuild_property.EnforceExtendedAnalyzerRules = \r\nbuild_property._SupportedPlatformList = Linux,macOS,Windows\r\nbuild_property.RootNamespace = Spotify.Core\r\nbuild_property.ProjectDir = d:\\UI\\term 7\\Web\\Spotify\\Spotify\\Spotify.Core\\\r\n
+===================================================================
+diff --git a/Spotify.Core/obj/Debug/net7.0/Spotify.Core.GeneratedMSBuildEditorConfig.editorconfig b/Spotify.Core/obj/Debug/net7.0/Spotify.Core.GeneratedMSBuildEditorConfig.editorconfig
+--- a/Spotify.Core/obj/Debug/net7.0/Spotify.Core.GeneratedMSBuildEditorConfig.editorconfig	
++++ b/Spotify.Core/obj/Debug/net7.0/Spotify.Core.GeneratedMSBuildEditorConfig.editorconfig	
+@@ -8,4 +8,4 @@
+ build_property.EnforceExtendedAnalyzerRules = 
+ build_property._SupportedPlatformList = Linux,macOS,Windows
+ build_property.RootNamespace = Spotify.Core
+-build_property.ProjectDir = d:\UI\term 7\Web\Spotify\Spotify\Spotify.Core\
++build_property.ProjectDir = D:\UI\term 7\Web\Spotify\Spotify\Spotify.Core\
+Index: Spotify.Core/obj/Spotify.Core.csproj.nuget.dgspec.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>{\r\n  \"format\": 1,\r\n  \"restore\": {\r\n    \"d:\\\\UI\\\\term 7\\\\Web\\\\Spotify\\\\Spotify\\\\Spotify.Core\\\\Spotify.Core.csproj\": {}\r\n  },\r\n  \"projects\": {\r\n    \"d:\\\\UI\\\\term 7\\\\Web\\\\Spotify\\\\Spotify\\\\Spotify.Core\\\\Spotify.Core.csproj\": {\r\n      \"version\": \"1.0.0\",\r\n      \"restore\": {\r\n        \"projectUniqueName\": \"d:\\\\UI\\\\term 7\\\\Web\\\\Spotify\\\\Spotify\\\\Spotify.Core\\\\Spotify.Core.csproj\",\r\n        \"projectName\": \"Spotify.Core\",\r\n        \"projectPath\": \"d:\\\\UI\\\\term 7\\\\Web\\\\Spotify\\\\Spotify\\\\Spotify.Core\\\\Spotify.Core.csproj\",\r\n        \"packagesPath\": \"C:\\\\Users\\\\ALFA RAYAN\\\\.nuget\\\\packages\\\\\",\r\n        \"outputPath\": \"d:\\\\UI\\\\term 7\\\\Web\\\\Spotify\\\\Spotify\\\\Spotify.Core\\\\obj\\\\\",\r\n        \"projectStyle\": \"PackageReference\",\r\n        \"configFilePaths\": [\r\n          \"C:\\\\Users\\\\ALFA RAYAN\\\\AppData\\\\Roaming\\\\NuGet\\\\NuGet.Config\"\r\n        ],\r\n        \"originalTargetFrameworks\": [\r\n          \"net7.0\"\r\n        ],\r\n        \"sources\": {\r\n          \"https://api.nuget.org/v3/index.json\": {}\r\n        },\r\n        \"frameworks\": {\r\n          \"net7.0\": {\r\n            \"targetAlias\": \"net7.0\",\r\n            \"projectReferences\": {}\r\n          }\r\n        },\r\n        \"warningProperties\": {\r\n          \"warnAsError\": [\r\n            \"NU1605\"\r\n          ]\r\n        }\r\n      },\r\n      \"frameworks\": {\r\n        \"net7.0\": {\r\n          \"targetAlias\": \"net7.0\",\r\n          \"dependencies\": {\r\n            \"Microsoft.EntityFrameworkCore\": {\r\n              \"target\": \"Package\",\r\n              \"version\": \"[7.0.14, )\"\r\n            }\r\n          },\r\n          \"imports\": [\r\n            \"net461\",\r\n            \"net462\",\r\n            \"net47\",\r\n            \"net471\",\r\n            \"net472\",\r\n            \"net48\",\r\n            \"net481\"\r\n          ],\r\n          \"assetTargetFallback\": true,\r\n          \"warn\": true,\r\n          \"frameworkReferences\": {\r\n            \"Microsoft.NETCore.App\": {\r\n              \"privateAssets\": \"all\"\r\n            }\r\n          },\r\n          \"runtimeIdentifierGraphPath\": \"C:\\\\Program Files\\\\dotnet\\\\sdk\\\\7.0.402\\\\RuntimeIdentifierGraph.json\"\r\n        }\r\n      }\r\n    }\r\n  }\r\n}
+===================================================================
+diff --git a/Spotify.Core/obj/Spotify.Core.csproj.nuget.dgspec.json b/Spotify.Core/obj/Spotify.Core.csproj.nuget.dgspec.json
+--- a/Spotify.Core/obj/Spotify.Core.csproj.nuget.dgspec.json	
++++ b/Spotify.Core/obj/Spotify.Core.csproj.nuget.dgspec.json	
+@@ -1,17 +1,17 @@
+ {
+   "format": 1,
+   "restore": {
+-    "d:\\UI\\term 7\\Web\\Spotify\\Spotify\\Spotify.Core\\Spotify.Core.csproj": {}
++    "D:\\UI\\term 7\\Web\\Spotify\\Spotify\\Spotify.Core\\Spotify.Core.csproj": {}
+   },
+   "projects": {
+-    "d:\\UI\\term 7\\Web\\Spotify\\Spotify\\Spotify.Core\\Spotify.Core.csproj": {
++    "D:\\UI\\term 7\\Web\\Spotify\\Spotify\\Spotify.Core\\Spotify.Core.csproj": {
+       "version": "1.0.0",
+       "restore": {
+-        "projectUniqueName": "d:\\UI\\term 7\\Web\\Spotify\\Spotify\\Spotify.Core\\Spotify.Core.csproj",
++        "projectUniqueName": "D:\\UI\\term 7\\Web\\Spotify\\Spotify\\Spotify.Core\\Spotify.Core.csproj",
+         "projectName": "Spotify.Core",
+-        "projectPath": "d:\\UI\\term 7\\Web\\Spotify\\Spotify\\Spotify.Core\\Spotify.Core.csproj",
++        "projectPath": "D:\\UI\\term 7\\Web\\Spotify\\Spotify\\Spotify.Core\\Spotify.Core.csproj",
+         "packagesPath": "C:\\Users\\ALFA RAYAN\\.nuget\\packages\\",
+-        "outputPath": "d:\\UI\\term 7\\Web\\Spotify\\Spotify\\Spotify.Core\\obj\\",
++        "outputPath": "D:\\UI\\term 7\\Web\\Spotify\\Spotify\\Spotify.Core\\obj\\",
+         "projectStyle": "PackageReference",
+         "configFilePaths": [
+           "C:\\Users\\ALFA RAYAN\\AppData\\Roaming\\NuGet\\NuGet.Config"
+Index: Spotify/obj/Debug/net7.0/Spotify.GeneratedMSBuildEditorConfig.editorconfig
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>is_global = true\r\nbuild_property.TargetFramework = net7.0\r\nbuild_property.TargetPlatformMinVersion = \r\nbuild_property.UsingMicrosoftNETSdkWeb = true\r\nbuild_property.ProjectTypeGuids = \r\nbuild_property.InvariantGlobalization = \r\nbuild_property.PlatformNeutralAssembly = \r\nbuild_property.EnforceExtendedAnalyzerRules = \r\nbuild_property._SupportedPlatformList = Linux,macOS,Windows\r\nbuild_property.RootNamespace = Spotify\r\nbuild_property.RootNamespace = Spotify\r\nbuild_property.ProjectDir = d:\\UI\\term 7\\Web\\Spotify\\Spotify\\Spotify\\\r\nbuild_property.RazorLangVersion = 7.0\r\nbuild_property.SupportLocalizedComponentNames = \r\nbuild_property.GenerateRazorMetadataSourceChecksumAttributes = \r\nbuild_property.MSBuildProjectDirectory = d:\\UI\\term 7\\Web\\Spotify\\Spotify\\Spotify\r\nbuild_property._RazorSourceGeneratorDebug = \r\n\r\n[d:/UI/term 7/Web/Spotify/Spotify/Spotify/Views/Home/Index.cshtml]\r\nbuild_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=\r\nbuild_metadata.AdditionalFiles.CssScope = \r\n\r\n[d:/UI/term 7/Web/Spotify/Spotify/Spotify/Views/Home/Privacy.cshtml]\r\nbuild_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==\r\nbuild_metadata.AdditionalFiles.CssScope = \r\n\r\n[d:/UI/term 7/Web/Spotify/Spotify/Spotify/Views/Shared/Error.cshtml]\r\nbuild_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==\r\nbuild_metadata.AdditionalFiles.CssScope = \r\n\r\n[d:/UI/term 7/Web/Spotify/Spotify/Spotify/Views/Shared/_ValidationScriptsPartial.cshtml]\r\nbuild_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s\r\nbuild_metadata.AdditionalFiles.CssScope = \r\n\r\n[d:/UI/term 7/Web/Spotify/Spotify/Spotify/Views/_ViewImports.cshtml]\r\nbuild_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==\r\nbuild_metadata.AdditionalFiles.CssScope = \r\n\r\n[d:/UI/term 7/Web/Spotify/Spotify/Spotify/Views/_ViewStart.cshtml]\r\nbuild_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=\r\nbuild_metadata.AdditionalFiles.CssScope = \r\n\r\n[d:/UI/term 7/Web/Spotify/Spotify/Spotify/Views/Shared/_Layout.cshtml]\r\nbuild_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s\r\nbuild_metadata.AdditionalFiles.CssScope = b-ciwr53d3e7\r\n
+===================================================================
+diff --git a/Spotify/obj/Debug/net7.0/Spotify.GeneratedMSBuildEditorConfig.editorconfig b/Spotify/obj/Debug/net7.0/Spotify.GeneratedMSBuildEditorConfig.editorconfig
+--- a/Spotify/obj/Debug/net7.0/Spotify.GeneratedMSBuildEditorConfig.editorconfig	
++++ b/Spotify/obj/Debug/net7.0/Spotify.GeneratedMSBuildEditorConfig.editorconfig	
+@@ -9,37 +9,37 @@
+ build_property._SupportedPlatformList = Linux,macOS,Windows
+ build_property.RootNamespace = Spotify
+ build_property.RootNamespace = Spotify
+-build_property.ProjectDir = d:\UI\term 7\Web\Spotify\Spotify\Spotify\
++build_property.ProjectDir = D:\UI\term 7\Web\Spotify\Spotify\Spotify\
+ build_property.RazorLangVersion = 7.0
+ build_property.SupportLocalizedComponentNames = 
+ build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+-build_property.MSBuildProjectDirectory = d:\UI\term 7\Web\Spotify\Spotify\Spotify
++build_property.MSBuildProjectDirectory = D:\UI\term 7\Web\Spotify\Spotify\Spotify
+ build_property._RazorSourceGeneratorDebug = 
+ 
+-[d:/UI/term 7/Web/Spotify/Spotify/Spotify/Views/Home/Index.cshtml]
++[D:/UI/term 7/Web/Spotify/Spotify/Spotify/Views/Home/Index.cshtml]
+ build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+ build_metadata.AdditionalFiles.CssScope = 
+ 
+-[d:/UI/term 7/Web/Spotify/Spotify/Spotify/Views/Home/Privacy.cshtml]
++[D:/UI/term 7/Web/Spotify/Spotify/Spotify/Views/Home/Privacy.cshtml]
+ build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+ build_metadata.AdditionalFiles.CssScope = 
+ 
+-[d:/UI/term 7/Web/Spotify/Spotify/Spotify/Views/Shared/Error.cshtml]
++[D:/UI/term 7/Web/Spotify/Spotify/Spotify/Views/Shared/Error.cshtml]
+ build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+ build_metadata.AdditionalFiles.CssScope = 
+ 
+-[d:/UI/term 7/Web/Spotify/Spotify/Spotify/Views/Shared/_ValidationScriptsPartial.cshtml]
++[D:/UI/term 7/Web/Spotify/Spotify/Spotify/Views/Shared/_ValidationScriptsPartial.cshtml]
+ build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+ build_metadata.AdditionalFiles.CssScope = 
+ 
+-[d:/UI/term 7/Web/Spotify/Spotify/Spotify/Views/_ViewImports.cshtml]
++[D:/UI/term 7/Web/Spotify/Spotify/Spotify/Views/_ViewImports.cshtml]
+ build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+ build_metadata.AdditionalFiles.CssScope = 
+ 
+-[d:/UI/term 7/Web/Spotify/Spotify/Spotify/Views/_ViewStart.cshtml]
++[D:/UI/term 7/Web/Spotify/Spotify/Spotify/Views/_ViewStart.cshtml]
+ build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+ build_metadata.AdditionalFiles.CssScope = 
+ 
+-[d:/UI/term 7/Web/Spotify/Spotify/Spotify/Views/Shared/_Layout.cshtml]
++[D:/UI/term 7/Web/Spotify/Spotify/Spotify/Views/Shared/_Layout.cshtml]
+ build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+ build_metadata.AdditionalFiles.CssScope = b-ciwr53d3e7
+Index: Spotify.Data/obj/Spotify.Data.csproj.nuget.dgspec.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>{\r\n  \"format\": 1,\r\n  \"restore\": {\r\n    \"d:\\\\UI\\\\term 7\\\\Web\\\\Spotify\\\\Spotify\\\\Spotify.Data\\\\Spotify.Data.csproj\": {}\r\n  },\r\n  \"projects\": {\r\n    \"d:\\\\UI\\\\term 7\\\\Web\\\\Spotify\\\\Spotify\\\\Spotify.Data\\\\Spotify.Data.csproj\": {\r\n      \"version\": \"1.0.0\",\r\n      \"restore\": {\r\n        \"projectUniqueName\": \"d:\\\\UI\\\\term 7\\\\Web\\\\Spotify\\\\Spotify\\\\Spotify.Data\\\\Spotify.Data.csproj\",\r\n        \"projectName\": \"Spotify.Data\",\r\n        \"projectPath\": \"d:\\\\UI\\\\term 7\\\\Web\\\\Spotify\\\\Spotify\\\\Spotify.Data\\\\Spotify.Data.csproj\",\r\n        \"packagesPath\": \"C:\\\\Users\\\\ALFA RAYAN\\\\.nuget\\\\packages\\\\\",\r\n        \"outputPath\": \"d:\\\\UI\\\\term 7\\\\Web\\\\Spotify\\\\Spotify\\\\Spotify.Data\\\\obj\\\\\",\r\n        \"projectStyle\": \"PackageReference\",\r\n        \"configFilePaths\": [\r\n          \"C:\\\\Users\\\\ALFA RAYAN\\\\AppData\\\\Roaming\\\\NuGet\\\\NuGet.Config\"\r\n        ],\r\n        \"originalTargetFrameworks\": [\r\n          \"net7.0\"\r\n        ],\r\n        \"sources\": {\r\n          \"https://api.nuget.org/v3/index.json\": {}\r\n        },\r\n        \"frameworks\": {\r\n          \"net7.0\": {\r\n            \"targetAlias\": \"net7.0\",\r\n            \"projectReferences\": {}\r\n          }\r\n        },\r\n        \"warningProperties\": {\r\n          \"warnAsError\": [\r\n            \"NU1605\"\r\n          ]\r\n        }\r\n      },\r\n      \"frameworks\": {\r\n        \"net7.0\": {\r\n          \"targetAlias\": \"net7.0\",\r\n          \"dependencies\": {\r\n            \"Microsoft.EntityFrameworkCore\": {\r\n              \"target\": \"Package\",\r\n              \"version\": \"[7.0.14, )\"\r\n            }\r\n          },\r\n          \"imports\": [\r\n            \"net461\",\r\n            \"net462\",\r\n            \"net47\",\r\n            \"net471\",\r\n            \"net472\",\r\n            \"net48\",\r\n            \"net481\"\r\n          ],\r\n          \"assetTargetFallback\": true,\r\n          \"warn\": true,\r\n          \"frameworkReferences\": {\r\n            \"Microsoft.NETCore.App\": {\r\n              \"privateAssets\": \"all\"\r\n            }\r\n          },\r\n          \"runtimeIdentifierGraphPath\": \"C:\\\\Program Files\\\\dotnet\\\\sdk\\\\7.0.402\\\\RuntimeIdentifierGraph.json\"\r\n        }\r\n      }\r\n    }\r\n  }\r\n}
+===================================================================
+diff --git a/Spotify.Data/obj/Spotify.Data.csproj.nuget.dgspec.json b/Spotify.Data/obj/Spotify.Data.csproj.nuget.dgspec.json
+--- a/Spotify.Data/obj/Spotify.Data.csproj.nuget.dgspec.json	
++++ b/Spotify.Data/obj/Spotify.Data.csproj.nuget.dgspec.json	
+@@ -1,17 +1,17 @@
+ {
+   "format": 1,
+   "restore": {
+-    "d:\\UI\\term 7\\Web\\Spotify\\Spotify\\Spotify.Data\\Spotify.Data.csproj": {}
++    "D:\\UI\\term 7\\Web\\Spotify\\Spotify\\Spotify.Data\\Spotify.Data.csproj": {}
+   },
+   "projects": {
+-    "d:\\UI\\term 7\\Web\\Spotify\\Spotify\\Spotify.Data\\Spotify.Data.csproj": {
++    "D:\\UI\\term 7\\Web\\Spotify\\Spotify\\Spotify.Data\\Spotify.Data.csproj": {
+       "version": "1.0.0",
+       "restore": {
+-        "projectUniqueName": "d:\\UI\\term 7\\Web\\Spotify\\Spotify\\Spotify.Data\\Spotify.Data.csproj",
++        "projectUniqueName": "D:\\UI\\term 7\\Web\\Spotify\\Spotify\\Spotify.Data\\Spotify.Data.csproj",
+         "projectName": "Spotify.Data",
+-        "projectPath": "d:\\UI\\term 7\\Web\\Spotify\\Spotify\\Spotify.Data\\Spotify.Data.csproj",
++        "projectPath": "D:\\UI\\term 7\\Web\\Spotify\\Spotify\\Spotify.Data\\Spotify.Data.csproj",
+         "packagesPath": "C:\\Users\\ALFA RAYAN\\.nuget\\packages\\",
+-        "outputPath": "d:\\UI\\term 7\\Web\\Spotify\\Spotify\\Spotify.Data\\obj\\",
++        "outputPath": "D:\\UI\\term 7\\Web\\Spotify\\Spotify\\Spotify.Data\\obj\\",
+         "projectStyle": "PackageReference",
+         "configFilePaths": [
+           "C:\\Users\\ALFA RAYAN\\AppData\\Roaming\\NuGet\\NuGet.Config"
+Index: Spotify/obj/project.assets.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>{\r\n  \"version\": 3,\r\n  \"targets\": {\r\n    \"net7.0\": {\r\n      \"Microsoft.EntityFrameworkCore/7.0.14\": {\r\n        \"type\": \"package\",\r\n        \"dependencies\": {\r\n          \"Microsoft.EntityFrameworkCore.Abstractions\": \"7.0.14\",\r\n          \"Microsoft.EntityFrameworkCore.Analyzers\": \"7.0.14\",\r\n          \"Microsoft.Extensions.Caching.Memory\": \"7.0.0\",\r\n          \"Microsoft.Extensions.DependencyInjection\": \"7.0.0\",\r\n          \"Microsoft.Extensions.Logging\": \"7.0.0\"\r\n        },\r\n        \"compile\": {\r\n          \"lib/net6.0/Microsoft.EntityFrameworkCore.dll\": {\r\n            \"related\": \".xml\"\r\n          }\r\n        },\r\n        \"runtime\": {\r\n          \"lib/net6.0/Microsoft.EntityFrameworkCore.dll\": {\r\n            \"related\": \".xml\"\r\n          }\r\n        },\r\n        \"build\": {\r\n          \"buildTransitive/net6.0/Microsoft.EntityFrameworkCore.props\": {}\r\n        }\r\n      },\r\n      \"Microsoft.EntityFrameworkCore.Abstractions/7.0.14\": {\r\n        \"type\": \"package\",\r\n        \"compile\": {\r\n          \"lib/net6.0/Microsoft.EntityFrameworkCore.Abstractions.dll\": {\r\n            \"related\": \".xml\"\r\n          }\r\n        },\r\n        \"runtime\": {\r\n          \"lib/net6.0/Microsoft.EntityFrameworkCore.Abstractions.dll\": {\r\n            \"related\": \".xml\"\r\n          }\r\n        }\r\n      },\r\n      \"Microsoft.EntityFrameworkCore.Analyzers/7.0.14\": {\r\n        \"type\": \"package\",\r\n        \"compile\": {\r\n          \"lib/netstandard2.0/_._\": {}\r\n        },\r\n        \"runtime\": {\r\n          \"lib/netstandard2.0/_._\": {}\r\n        }\r\n      },\r\n      \"Microsoft.Extensions.Caching.Abstractions/7.0.0\": {\r\n        \"type\": \"package\",\r\n        \"dependencies\": {\r\n          \"Microsoft.Extensions.Primitives\": \"7.0.0\"\r\n        },\r\n        \"compile\": {\r\n          \"lib/net7.0/Microsoft.Extensions.Caching.Abstractions.dll\": {\r\n            \"related\": \".xml\"\r\n          }\r\n        },\r\n        \"runtime\": {\r\n          \"lib/net7.0/Microsoft.Extensions.Caching.Abstractions.dll\": {\r\n            \"related\": \".xml\"\r\n          }\r\n        },\r\n        \"build\": {\r\n          \"buildTransitive/net6.0/_._\": {}\r\n        }\r\n      },\r\n      \"Microsoft.Extensions.Caching.Memory/7.0.0\": {\r\n        \"type\": \"package\",\r\n        \"dependencies\": {\r\n          \"Microsoft.Extensions.Caching.Abstractions\": \"7.0.0\",\r\n          \"Microsoft.Extensions.DependencyInjection.Abstractions\": \"7.0.0\",\r\n          \"Microsoft.Extensions.Logging.Abstractions\": \"7.0.0\",\r\n          \"Microsoft.Extensions.Options\": \"7.0.0\",\r\n          \"Microsoft.Extensions.Primitives\": \"7.0.0\"\r\n        },\r\n        \"compile\": {\r\n          \"lib/net7.0/Microsoft.Extensions.Caching.Memory.dll\": {\r\n            \"related\": \".xml\"\r\n          }\r\n        },\r\n        \"runtime\": {\r\n          \"lib/net7.0/Microsoft.Extensions.Caching.Memory.dll\": {\r\n            \"related\": \".xml\"\r\n          }\r\n        },\r\n        \"build\": {\r\n          \"buildTransitive/net6.0/_._\": {}\r\n        }\r\n      },\r\n      \"Microsoft.Extensions.DependencyInjection/7.0.0\": {\r\n        \"type\": \"package\",\r\n        \"dependencies\": {\r\n          \"Microsoft.Extensions.DependencyInjection.Abstractions\": \"7.0.0\"\r\n        },\r\n        \"compile\": {\r\n          \"lib/net7.0/Microsoft.Extensions.DependencyInjection.dll\": {\r\n            \"related\": \".xml\"\r\n          }\r\n        },\r\n        \"runtime\": {\r\n          \"lib/net7.0/Microsoft.Extensions.DependencyInjection.dll\": {\r\n            \"related\": \".xml\"\r\n          }\r\n        },\r\n        \"build\": {\r\n          \"buildTransitive/net6.0/_._\": {}\r\n        }\r\n      },\r\n      \"Microsoft.Extensions.DependencyInjection.Abstractions/7.0.0\": {\r\n        \"type\": \"package\",\r\n        \"compile\": {\r\n          \"lib/net7.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll\": {\r\n            \"related\": \".xml\"\r\n          }\r\n        },\r\n        \"runtime\": {\r\n          \"lib/net7.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll\": {\r\n            \"related\": \".xml\"\r\n          }\r\n        },\r\n        \"build\": {\r\n          \"buildTransitive/net6.0/_._\": {}\r\n        }\r\n      },\r\n      \"Microsoft.Extensions.Logging/7.0.0\": {\r\n        \"type\": \"package\",\r\n        \"dependencies\": {\r\n          \"Microsoft.Extensions.DependencyInjection\": \"7.0.0\",\r\n          \"Microsoft.Extensions.DependencyInjection.Abstractions\": \"7.0.0\",\r\n          \"Microsoft.Extensions.Logging.Abstractions\": \"7.0.0\",\r\n          \"Microsoft.Extensions.Options\": \"7.0.0\"\r\n        },\r\n        \"compile\": {\r\n          \"lib/net7.0/Microsoft.Extensions.Logging.dll\": {\r\n            \"related\": \".xml\"\r\n          }\r\n        },\r\n        \"runtime\": {\r\n          \"lib/net7.0/Microsoft.Extensions.Logging.dll\": {\r\n            \"related\": \".xml\"\r\n          }\r\n        },\r\n        \"build\": {\r\n          \"buildTransitive/net6.0/_._\": {}\r\n        }\r\n      },\r\n      \"Microsoft.Extensions.Logging.Abstractions/7.0.0\": {\r\n        \"type\": \"package\",\r\n        \"compile\": {\r\n          \"lib/net7.0/Microsoft.Extensions.Logging.Abstractions.dll\": {\r\n            \"related\": \".xml\"\r\n          }\r\n        },\r\n        \"runtime\": {\r\n          \"lib/net7.0/Microsoft.Extensions.Logging.Abstractions.dll\": {\r\n            \"related\": \".xml\"\r\n          }\r\n        },\r\n        \"build\": {\r\n          \"buildTransitive/net6.0/Microsoft.Extensions.Logging.Abstractions.targets\": {}\r\n        }\r\n      },\r\n      \"Microsoft.Extensions.Options/7.0.0\": {\r\n        \"type\": \"package\",\r\n        \"dependencies\": {\r\n          \"Microsoft.Extensions.DependencyInjection.Abstractions\": \"7.0.0\",\r\n          \"Microsoft.Extensions.Primitives\": \"7.0.0\"\r\n        },\r\n        \"compile\": {\r\n          \"lib/net7.0/Microsoft.Extensions.Options.dll\": {\r\n            \"related\": \".xml\"\r\n          }\r\n        },\r\n        \"runtime\": {\r\n          \"lib/net7.0/Microsoft.Extensions.Options.dll\": {\r\n            \"related\": \".xml\"\r\n          }\r\n        },\r\n        \"build\": {\r\n          \"buildTransitive/net6.0/_._\": {}\r\n        }\r\n      },\r\n      \"Microsoft.Extensions.Primitives/7.0.0\": {\r\n        \"type\": \"package\",\r\n        \"compile\": {\r\n          \"lib/net7.0/Microsoft.Extensions.Primitives.dll\": {\r\n            \"related\": \".xml\"\r\n          }\r\n        },\r\n        \"runtime\": {\r\n          \"lib/net7.0/Microsoft.Extensions.Primitives.dll\": {\r\n            \"related\": \".xml\"\r\n          }\r\n        },\r\n        \"build\": {\r\n          \"buildTransitive/net6.0/_._\": {}\r\n        }\r\n      },\r\n      \"Spotify.Core/1.0.0\": {\r\n        \"type\": \"project\",\r\n        \"framework\": \".NETCoreApp,Version=v7.0\",\r\n        \"dependencies\": {\r\n          \"Microsoft.EntityFrameworkCore\": \"7.0.14\"\r\n        },\r\n        \"compile\": {\r\n          \"bin/placeholder/Spotify.Core.dll\": {}\r\n        },\r\n        \"runtime\": {\r\n          \"bin/placeholder/Spotify.Core.dll\": {}\r\n        }\r\n      },\r\n      \"Spotify.Data/1.0.0\": {\r\n        \"type\": \"project\",\r\n        \"framework\": \".NETCoreApp,Version=v7.0\",\r\n        \"dependencies\": {\r\n          \"Microsoft.EntityFrameworkCore\": \"7.0.14\"\r\n        },\r\n        \"compile\": {\r\n          \"bin/placeholder/Spotify.Data.dll\": {}\r\n        },\r\n        \"runtime\": {\r\n          \"bin/placeholder/Spotify.Data.dll\": {}\r\n        }\r\n      },\r\n      \"Spotify.Services/1.0.0\": {\r\n        \"type\": \"project\",\r\n        \"framework\": \".NETCoreApp,Version=v7.0\",\r\n        \"dependencies\": {\r\n          \"Microsoft.EntityFrameworkCore\": \"7.0.14\"\r\n        },\r\n        \"compile\": {\r\n          \"bin/placeholder/Spotify.Services.dll\": {}\r\n        },\r\n        \"runtime\": {\r\n          \"bin/placeholder/Spotify.Services.dll\": {}\r\n        }\r\n      }\r\n    }\r\n  },\r\n  \"libraries\": {\r\n    \"Microsoft.EntityFrameworkCore/7.0.14\": {\r\n      \"sha512\": \"0KYkAemPygW6yzifciFlmMzkO4sI4Dw69xLgwg3ui5rXJS5XvzuAWVvfdrKJciqeCbCnVS/ZbOWpcwWgqce5bQ==\",\r\n      \"type\": \"package\",\r\n      \"path\": \"microsoft.entityframeworkcore/7.0.14\",\r\n      \"files\": [\r\n        \".nupkg.metadata\",\r\n        \".signature.p7s\",\r\n        \"Icon.png\",\r\n        \"buildTransitive/net6.0/Microsoft.EntityFrameworkCore.props\",\r\n        \"lib/net6.0/Microsoft.EntityFrameworkCore.dll\",\r\n        \"lib/net6.0/Microsoft.EntityFrameworkCore.xml\",\r\n        \"microsoft.entityframeworkcore.7.0.14.nupkg.sha512\",\r\n        \"microsoft.entityframeworkcore.nuspec\"\r\n      ]\r\n    },\r\n    \"Microsoft.EntityFrameworkCore.Abstractions/7.0.14\": {\r\n      \"sha512\": \"aEcXDSYpDdD5wdIRKTqcS44f3W4capqQ1BWVRPJgacATfHkO62RX9Nnh0hUFg+rei9OLuJp0Y4zsy1fNeOXv5g==\",\r\n      \"type\": \"package\",\r\n      \"path\": \"microsoft.entityframeworkcore.abstractions/7.0.14\",\r\n      \"files\": [\r\n        \".nupkg.metadata\",\r\n        \".signature.p7s\",\r\n        \"Icon.png\",\r\n        \"lib/net6.0/Microsoft.EntityFrameworkCore.Abstractions.dll\",\r\n        \"lib/net6.0/Microsoft.EntityFrameworkCore.Abstractions.xml\",\r\n        \"microsoft.entityframeworkcore.abstractions.7.0.14.nupkg.sha512\",\r\n        \"microsoft.entityframeworkcore.abstractions.nuspec\"\r\n      ]\r\n    },\r\n    \"Microsoft.EntityFrameworkCore.Analyzers/7.0.14\": {\r\n      \"sha512\": \"esI4RF6mix4DDFBhWB9k1vJxAL8GouSf5ZV8oFJoVsIQ9d2J3MPgC1VL2qM9Vw5cH7Vg7TzRyKNpCRXFVkWs9w==\",\r\n      \"type\": \"package\",\r\n      \"path\": \"microsoft.entityframeworkcore.analyzers/7.0.14\",\r\n      \"files\": [\r\n        \".nupkg.metadata\",\r\n        \".signature.p7s\",\r\n        \"Icon.png\",\r\n        \"analyzers/dotnet/cs/Microsoft.EntityFrameworkCore.Analyzers.dll\",\r\n        \"lib/netstandard2.0/_._\",\r\n        \"microsoft.entityframeworkcore.analyzers.7.0.14.nupkg.sha512\",\r\n        \"microsoft.entityframeworkcore.analyzers.nuspec\"\r\n      ]\r\n    },\r\n    \"Microsoft.Extensions.Caching.Abstractions/7.0.0\": {\r\n      \"sha512\": \"IeimUd0TNbhB4ded3AbgBLQv2SnsiVugDyGV1MvspQFVlA07nDC7Zul7kcwH5jWN3JiTcp/ySE83AIJo8yfKjg==\",\r\n      \"type\": \"package\",\r\n      \"path\": \"microsoft.extensions.caching.abstractions/7.0.0\",\r\n      \"files\": [\r\n        \".nupkg.metadata\",\r\n        \".signature.p7s\",\r\n        \"Icon.png\",\r\n        \"LICENSE.TXT\",\r\n        \"THIRD-PARTY-NOTICES.TXT\",\r\n        \"buildTransitive/net461/Microsoft.Extensions.Caching.Abstractions.targets\",\r\n        \"buildTransitive/net462/_._\",\r\n        \"buildTransitive/net6.0/_._\",\r\n        \"buildTransitive/netcoreapp2.0/Microsoft.Extensions.Caching.Abstractions.targets\",\r\n        \"lib/net462/Microsoft.Extensions.Caching.Abstractions.dll\",\r\n        \"lib/net462/Microsoft.Extensions.Caching.Abstractions.xml\",\r\n        \"lib/net6.0/Microsoft.Extensions.Caching.Abstractions.dll\",\r\n        \"lib/net6.0/Microsoft.Extensions.Caching.Abstractions.xml\",\r\n        \"lib/net7.0/Microsoft.Extensions.Caching.Abstractions.dll\",\r\n        \"lib/net7.0/Microsoft.Extensions.Caching.Abstractions.xml\",\r\n        \"lib/netstandard2.0/Microsoft.Extensions.Caching.Abstractions.dll\",\r\n        \"lib/netstandard2.0/Microsoft.Extensions.Caching.Abstractions.xml\",\r\n        \"microsoft.extensions.caching.abstractions.7.0.0.nupkg.sha512\",\r\n        \"microsoft.extensions.caching.abstractions.nuspec\",\r\n        \"useSharedDesignerContext.txt\"\r\n      ]\r\n    },\r\n    \"Microsoft.Extensions.Caching.Memory/7.0.0\": {\r\n      \"sha512\": \"xpidBs2KCE2gw1JrD0quHE72kvCaI3xFql5/Peb2GRtUuZX+dYPoK/NTdVMiM67Svym0M0Df9A3xyU0FbMQhHw==\",\r\n      \"type\": \"package\",\r\n      \"path\": \"microsoft.extensions.caching.memory/7.0.0\",\r\n      \"files\": [\r\n        \".nupkg.metadata\",\r\n        \".signature.p7s\",\r\n        \"Icon.png\",\r\n        \"LICENSE.TXT\",\r\n        \"THIRD-PARTY-NOTICES.TXT\",\r\n        \"buildTransitive/net461/Microsoft.Extensions.Caching.Memory.targets\",\r\n        \"buildTransitive/net462/_._\",\r\n        \"buildTransitive/net6.0/_._\",\r\n        \"buildTransitive/netcoreapp2.0/Microsoft.Extensions.Caching.Memory.targets\",\r\n        \"lib/net462/Microsoft.Extensions.Caching.Memory.dll\",\r\n        \"lib/net462/Microsoft.Extensions.Caching.Memory.xml\",\r\n        \"lib/net6.0/Microsoft.Extensions.Caching.Memory.dll\",\r\n        \"lib/net6.0/Microsoft.Extensions.Caching.Memory.xml\",\r\n        \"lib/net7.0/Microsoft.Extensions.Caching.Memory.dll\",\r\n        \"lib/net7.0/Microsoft.Extensions.Caching.Memory.xml\",\r\n        \"lib/netstandard2.0/Microsoft.Extensions.Caching.Memory.dll\",\r\n        \"lib/netstandard2.0/Microsoft.Extensions.Caching.Memory.xml\",\r\n        \"microsoft.extensions.caching.memory.7.0.0.nupkg.sha512\",\r\n        \"microsoft.extensions.caching.memory.nuspec\",\r\n        \"useSharedDesignerContext.txt\"\r\n      ]\r\n    },\r\n    \"Microsoft.Extensions.DependencyInjection/7.0.0\": {\r\n      \"sha512\": \"elNeOmkeX3eDVG6pYVeV82p29hr+UKDaBhrZyWvWLw/EVZSYEkZlQdkp0V39k/Xehs2Qa0mvoCvkVj3eQxNQ1Q==\",\r\n      \"type\": \"package\",\r\n      \"path\": \"microsoft.extensions.dependencyinjection/7.0.0\",\r\n      \"files\": [\r\n        \".nupkg.metadata\",\r\n        \".signature.p7s\",\r\n        \"Icon.png\",\r\n        \"LICENSE.TXT\",\r\n        \"THIRD-PARTY-NOTICES.TXT\",\r\n        \"buildTransitive/net461/Microsoft.Extensions.DependencyInjection.targets\",\r\n        \"buildTransitive/net462/_._\",\r\n        \"buildTransitive/net6.0/_._\",\r\n        \"buildTransitive/netcoreapp2.0/Microsoft.Extensions.DependencyInjection.targets\",\r\n        \"lib/net462/Microsoft.Extensions.DependencyInjection.dll\",\r\n        \"lib/net462/Microsoft.Extensions.DependencyInjection.xml\",\r\n        \"lib/net6.0/Microsoft.Extensions.DependencyInjection.dll\",\r\n        \"lib/net6.0/Microsoft.Extensions.DependencyInjection.xml\",\r\n        \"lib/net7.0/Microsoft.Extensions.DependencyInjection.dll\",\r\n        \"lib/net7.0/Microsoft.Extensions.DependencyInjection.xml\",\r\n        \"lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.dll\",\r\n        \"lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.xml\",\r\n        \"lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.dll\",\r\n        \"lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.xml\",\r\n        \"microsoft.extensions.dependencyinjection.7.0.0.nupkg.sha512\",\r\n        \"microsoft.extensions.dependencyinjection.nuspec\",\r\n        \"useSharedDesignerContext.txt\"\r\n      ]\r\n    },\r\n    \"Microsoft.Extensions.DependencyInjection.Abstractions/7.0.0\": {\r\n      \"sha512\": \"h3j/QfmFN4S0w4C2A6X7arXij/M/OVw3uQHSOFxnND4DyAzO1F9eMX7Eti7lU/OkSthEE0WzRsfT/Dmx86jzCw==\",\r\n      \"type\": \"package\",\r\n      \"path\": \"microsoft.extensions.dependencyinjection.abstractions/7.0.0\",\r\n      \"files\": [\r\n        \".nupkg.metadata\",\r\n        \".signature.p7s\",\r\n        \"Icon.png\",\r\n        \"LICENSE.TXT\",\r\n        \"THIRD-PARTY-NOTICES.TXT\",\r\n        \"buildTransitive/net461/Microsoft.Extensions.DependencyInjection.Abstractions.targets\",\r\n        \"buildTransitive/net462/_._\",\r\n        \"buildTransitive/net6.0/_._\",\r\n        \"buildTransitive/netcoreapp2.0/Microsoft.Extensions.DependencyInjection.Abstractions.targets\",\r\n        \"lib/net462/Microsoft.Extensions.DependencyInjection.Abstractions.dll\",\r\n        \"lib/net462/Microsoft.Extensions.DependencyInjection.Abstractions.xml\",\r\n        \"lib/net6.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll\",\r\n        \"lib/net6.0/Microsoft.Extensions.DependencyInjection.Abstractions.xml\",\r\n        \"lib/net7.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll\",\r\n        \"lib/net7.0/Microsoft.Extensions.DependencyInjection.Abstractions.xml\",\r\n        \"lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll\",\r\n        \"lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.xml\",\r\n        \"lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.Abstractions.dll\",\r\n        \"lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.Abstractions.xml\",\r\n        \"microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512\",\r\n        \"microsoft.extensions.dependencyinjection.abstractions.nuspec\",\r\n        \"useSharedDesignerContext.txt\"\r\n      ]\r\n    },\r\n    \"Microsoft.Extensions.Logging/7.0.0\": {\r\n      \"sha512\": \"Nw2muoNrOG5U5qa2ZekXwudUn2BJcD41e65zwmDHb1fQegTX66UokLWZkJRpqSSHXDOWZ5V0iqhbxOEky91atA==\",\r\n      \"type\": \"package\",\r\n      \"path\": \"microsoft.extensions.logging/7.0.0\",\r\n      \"files\": [\r\n        \".nupkg.metadata\",\r\n        \".signature.p7s\",\r\n        \"Icon.png\",\r\n        \"LICENSE.TXT\",\r\n        \"THIRD-PARTY-NOTICES.TXT\",\r\n        \"buildTransitive/net461/Microsoft.Extensions.Logging.targets\",\r\n        \"buildTransitive/net462/_._\",\r\n        \"buildTransitive/net6.0/_._\",\r\n        \"buildTransitive/netcoreapp2.0/Microsoft.Extensions.Logging.targets\",\r\n        \"lib/net462/Microsoft.Extensions.Logging.dll\",\r\n        \"lib/net462/Microsoft.Extensions.Logging.xml\",\r\n        \"lib/net6.0/Microsoft.Extensions.Logging.dll\",\r\n        \"lib/net6.0/Microsoft.Extensions.Logging.xml\",\r\n        \"lib/net7.0/Microsoft.Extensions.Logging.dll\",\r\n        \"lib/net7.0/Microsoft.Extensions.Logging.xml\",\r\n        \"lib/netstandard2.0/Microsoft.Extensions.Logging.dll\",\r\n        \"lib/netstandard2.0/Microsoft.Extensions.Logging.xml\",\r\n        \"lib/netstandard2.1/Microsoft.Extensions.Logging.dll\",\r\n        \"lib/netstandard2.1/Microsoft.Extensions.Logging.xml\",\r\n        \"microsoft.extensions.logging.7.0.0.nupkg.sha512\",\r\n        \"microsoft.extensions.logging.nuspec\",\r\n        \"useSharedDesignerContext.txt\"\r\n      ]\r\n    },\r\n    \"Microsoft.Extensions.Logging.Abstractions/7.0.0\": {\r\n      \"sha512\": \"kmn78+LPVMOWeITUjIlfxUPDsI0R6G0RkeAMBmQxAJ7vBJn4q2dTva7pWi65ceN5vPGjJ9q/Uae2WKgvfktJAw==\",\r\n      \"type\": \"package\",\r\n      \"path\": \"microsoft.extensions.logging.abstractions/7.0.0\",\r\n      \"files\": [\r\n        \".nupkg.metadata\",\r\n        \".signature.p7s\",\r\n        \"Icon.png\",\r\n        \"LICENSE.TXT\",\r\n        \"THIRD-PARTY-NOTICES.TXT\",\r\n        \"analyzers/dotnet/roslyn3.11/cs/Microsoft.Extensions.Logging.Generators.dll\",\r\n        \"analyzers/dotnet/roslyn3.11/cs/cs/Microsoft.Extensions.Logging.Generators.resources.dll\",\r\n        \"analyzers/dotnet/roslyn3.11/cs/de/Microsoft.Extensions.Logging.Generators.resources.dll\",\r\n        \"analyzers/dotnet/roslyn3.11/cs/es/Microsoft.Extensions.Logging.Generators.resources.dll\",\r\n        \"analyzers/dotnet/roslyn3.11/cs/fr/Microsoft.Extensions.Logging.Generators.resources.dll\",\r\n        \"analyzers/dotnet/roslyn3.11/cs/it/Microsoft.Extensions.Logging.Generators.resources.dll\",\r\n        \"analyzers/dotnet/roslyn3.11/cs/ja/Microsoft.Extensions.Logging.Generators.resources.dll\",\r\n        \"analyzers/dotnet/roslyn3.11/cs/ko/Microsoft.Extensions.Logging.Generators.resources.dll\",\r\n        \"analyzers/dotnet/roslyn3.11/cs/pl/Microsoft.Extensions.Logging.Generators.resources.dll\",\r\n        \"analyzers/dotnet/roslyn3.11/cs/pt-BR/Microsoft.Extensions.Logging.Generators.resources.dll\",\r\n        \"analyzers/dotnet/roslyn3.11/cs/ru/Microsoft.Extensions.Logging.Generators.resources.dll\",\r\n        \"analyzers/dotnet/roslyn3.11/cs/tr/Microsoft.Extensions.Logging.Generators.resources.dll\",\r\n        \"analyzers/dotnet/roslyn3.11/cs/zh-Hans/Microsoft.Extensions.Logging.Generators.resources.dll\",\r\n        \"analyzers/dotnet/roslyn3.11/cs/zh-Hant/Microsoft.Extensions.Logging.Generators.resources.dll\",\r\n        \"analyzers/dotnet/roslyn4.0/cs/Microsoft.Extensions.Logging.Generators.dll\",\r\n        \"analyzers/dotnet/roslyn4.0/cs/cs/Microsoft.Extensions.Logging.Generators.resources.dll\",\r\n        \"analyzers/dotnet/roslyn4.0/cs/de/Microsoft.Extensions.Logging.Generators.resources.dll\",\r\n        \"analyzers/dotnet/roslyn4.0/cs/es/Microsoft.Extensions.Logging.Generators.resources.dll\",\r\n        \"analyzers/dotnet/roslyn4.0/cs/fr/Microsoft.Extensions.Logging.Generators.resources.dll\",\r\n        \"analyzers/dotnet/roslyn4.0/cs/it/Microsoft.Extensions.Logging.Generators.resources.dll\",\r\n        \"analyzers/dotnet/roslyn4.0/cs/ja/Microsoft.Extensions.Logging.Generators.resources.dll\",\r\n        \"analyzers/dotnet/roslyn4.0/cs/ko/Microsoft.Extensions.Logging.Generators.resources.dll\",\r\n        \"analyzers/dotnet/roslyn4.0/cs/pl/Microsoft.Extensions.Logging.Generators.resources.dll\",\r\n        \"analyzers/dotnet/roslyn4.0/cs/pt-BR/Microsoft.Extensions.Logging.Generators.resources.dll\",\r\n        \"analyzers/dotnet/roslyn4.0/cs/ru/Microsoft.Extensions.Logging.Generators.resources.dll\",\r\n        \"analyzers/dotnet/roslyn4.0/cs/tr/Microsoft.Extensions.Logging.Generators.resources.dll\",\r\n        \"analyzers/dotnet/roslyn4.0/cs/zh-Hans/Microsoft.Extensions.Logging.Generators.resources.dll\",\r\n        \"analyzers/dotnet/roslyn4.0/cs/zh-Hant/Microsoft.Extensions.Logging.Generators.resources.dll\",\r\n        \"analyzers/dotnet/roslyn4.4/cs/Microsoft.Extensions.Logging.Generators.dll\",\r\n        \"analyzers/dotnet/roslyn4.4/cs/cs/Microsoft.Extensions.Logging.Generators.resources.dll\",\r\n        \"analyzers/dotnet/roslyn4.4/cs/de/Microsoft.Extensions.Logging.Generators.resources.dll\",\r\n        \"analyzers/dotnet/roslyn4.4/cs/es/Microsoft.Extensions.Logging.Generators.resources.dll\",\r\n        \"analyzers/dotnet/roslyn4.4/cs/fr/Microsoft.Extensions.Logging.Generators.resources.dll\",\r\n        \"analyzers/dotnet/roslyn4.4/cs/it/Microsoft.Extensions.Logging.Generators.resources.dll\",\r\n        \"analyzers/dotnet/roslyn4.4/cs/ja/Microsoft.Extensions.Logging.Generators.resources.dll\",\r\n        \"analyzers/dotnet/roslyn4.4/cs/ko/Microsoft.Extensions.Logging.Generators.resources.dll\",\r\n        \"analyzers/dotnet/roslyn4.4/cs/pl/Microsoft.Extensions.Logging.Generators.resources.dll\",\r\n        \"analyzers/dotnet/roslyn4.4/cs/pt-BR/Microsoft.Extensions.Logging.Generators.resources.dll\",\r\n        \"analyzers/dotnet/roslyn4.4/cs/ru/Microsoft.Extensions.Logging.Generators.resources.dll\",\r\n        \"analyzers/dotnet/roslyn4.4/cs/tr/Microsoft.Extensions.Logging.Generators.resources.dll\",\r\n        \"analyzers/dotnet/roslyn4.4/cs/zh-Hans/Microsoft.Extensions.Logging.Generators.resources.dll\",\r\n        \"analyzers/dotnet/roslyn4.4/cs/zh-Hant/Microsoft.Extensions.Logging.Generators.resources.dll\",\r\n        \"buildTransitive/net461/Microsoft.Extensions.Logging.Abstractions.targets\",\r\n        \"buildTransitive/net462/Microsoft.Extensions.Logging.Abstractions.targets\",\r\n        \"buildTransitive/net6.0/Microsoft.Extensions.Logging.Abstractions.targets\",\r\n        \"buildTransitive/netcoreapp2.0/Microsoft.Extensions.Logging.Abstractions.targets\",\r\n        \"buildTransitive/netstandard2.0/Microsoft.Extensions.Logging.Abstractions.targets\",\r\n        \"lib/net462/Microsoft.Extensions.Logging.Abstractions.dll\",\r\n        \"lib/net462/Microsoft.Extensions.Logging.Abstractions.xml\",\r\n        \"lib/net6.0/Microsoft.Extensions.Logging.Abstractions.dll\",\r\n        \"lib/net6.0/Microsoft.Extensions.Logging.Abstractions.xml\",\r\n        \"lib/net7.0/Microsoft.Extensions.Logging.Abstractions.dll\",\r\n        \"lib/net7.0/Microsoft.Extensions.Logging.Abstractions.xml\",\r\n        \"lib/netstandard2.0/Microsoft.Extensions.Logging.Abstractions.dll\",\r\n        \"lib/netstandard2.0/Microsoft.Extensions.Logging.Abstractions.xml\",\r\n        \"microsoft.extensions.logging.abstractions.7.0.0.nupkg.sha512\",\r\n        \"microsoft.extensions.logging.abstractions.nuspec\",\r\n        \"useSharedDesignerContext.txt\"\r\n      ]\r\n    },\r\n    \"Microsoft.Extensions.Options/7.0.0\": {\r\n      \"sha512\": \"lP1yBnTTU42cKpMozuafbvNtQ7QcBjr/CcK3bYOGEMH55Fjt+iecXjT6chR7vbgCMqy3PG3aNQSZgo/EuY/9qQ==\",\r\n      \"type\": \"package\",\r\n      \"path\": \"microsoft.extensions.options/7.0.0\",\r\n      \"files\": [\r\n        \".nupkg.metadata\",\r\n        \".signature.p7s\",\r\n        \"Icon.png\",\r\n        \"LICENSE.TXT\",\r\n        \"THIRD-PARTY-NOTICES.TXT\",\r\n        \"buildTransitive/net461/Microsoft.Extensions.Options.targets\",\r\n        \"buildTransitive/net462/_._\",\r\n        \"buildTransitive/net6.0/_._\",\r\n        \"buildTransitive/netcoreapp2.0/Microsoft.Extensions.Options.targets\",\r\n        \"lib/net462/Microsoft.Extensions.Options.dll\",\r\n        \"lib/net462/Microsoft.Extensions.Options.xml\",\r\n        \"lib/net6.0/Microsoft.Extensions.Options.dll\",\r\n        \"lib/net6.0/Microsoft.Extensions.Options.xml\",\r\n        \"lib/net7.0/Microsoft.Extensions.Options.dll\",\r\n        \"lib/net7.0/Microsoft.Extensions.Options.xml\",\r\n        \"lib/netstandard2.0/Microsoft.Extensions.Options.dll\",\r\n        \"lib/netstandard2.0/Microsoft.Extensions.Options.xml\",\r\n        \"lib/netstandard2.1/Microsoft.Extensions.Options.dll\",\r\n        \"lib/netstandard2.1/Microsoft.Extensions.Options.xml\",\r\n        \"microsoft.extensions.options.7.0.0.nupkg.sha512\",\r\n        \"microsoft.extensions.options.nuspec\",\r\n        \"useSharedDesignerContext.txt\"\r\n      ]\r\n    },\r\n    \"Microsoft.Extensions.Primitives/7.0.0\": {\r\n      \"sha512\": \"um1KU5kxcRp3CNuI8o/GrZtD4AIOXDk+RLsytjZ9QPok3ttLUelLKpilVPuaFT3TFjOhSibUAso0odbOaCDj3Q==\",\r\n      \"type\": \"package\",\r\n      \"path\": \"microsoft.extensions.primitives/7.0.0\",\r\n      \"files\": [\r\n        \".nupkg.metadata\",\r\n        \".signature.p7s\",\r\n        \"Icon.png\",\r\n        \"LICENSE.TXT\",\r\n        \"THIRD-PARTY-NOTICES.TXT\",\r\n        \"buildTransitive/net461/Microsoft.Extensions.Primitives.targets\",\r\n        \"buildTransitive/net462/_._\",\r\n        \"buildTransitive/net6.0/_._\",\r\n        \"buildTransitive/netcoreapp2.0/Microsoft.Extensions.Primitives.targets\",\r\n        \"lib/net462/Microsoft.Extensions.Primitives.dll\",\r\n        \"lib/net462/Microsoft.Extensions.Primitives.xml\",\r\n        \"lib/net6.0/Microsoft.Extensions.Primitives.dll\",\r\n        \"lib/net6.0/Microsoft.Extensions.Primitives.xml\",\r\n        \"lib/net7.0/Microsoft.Extensions.Primitives.dll\",\r\n        \"lib/net7.0/Microsoft.Extensions.Primitives.xml\",\r\n        \"lib/netstandard2.0/Microsoft.Extensions.Primitives.dll\",\r\n        \"lib/netstandard2.0/Microsoft.Extensions.Primitives.xml\",\r\n        \"microsoft.extensions.primitives.7.0.0.nupkg.sha512\",\r\n        \"microsoft.extensions.primitives.nuspec\",\r\n        \"useSharedDesignerContext.txt\"\r\n      ]\r\n    },\r\n    \"Spotify.Core/1.0.0\": {\r\n      \"type\": \"project\",\r\n      \"path\": \"../Spotify.Core/Spotify.Core.csproj\",\r\n      \"msbuildProject\": \"../Spotify.Core/Spotify.Core.csproj\"\r\n    },\r\n    \"Spotify.Data/1.0.0\": {\r\n      \"type\": \"project\",\r\n      \"path\": \"../Spotify.Data/Spotify.Data.csproj\",\r\n      \"msbuildProject\": \"../Spotify.Data/Spotify.Data.csproj\"\r\n    },\r\n    \"Spotify.Services/1.0.0\": {\r\n      \"type\": \"project\",\r\n      \"path\": \"../Spotify.Services/Spotify.Services.csproj\",\r\n      \"msbuildProject\": \"../Spotify.Services/Spotify.Services.csproj\"\r\n    }\r\n  },\r\n  \"projectFileDependencyGroups\": {\r\n    \"net7.0\": [\r\n      \"Microsoft.EntityFrameworkCore >= 7.0.14\",\r\n      \"Spotify.Core >= 1.0.0\",\r\n      \"Spotify.Data >= 1.0.0\",\r\n      \"Spotify.Services >= 1.0.0\"\r\n    ]\r\n  },\r\n  \"packageFolders\": {\r\n    \"C:\\\\Users\\\\ALFA RAYAN\\\\.nuget\\\\packages\\\\\": {}\r\n  },\r\n  \"project\": {\r\n    \"version\": \"1.0.0\",\r\n    \"restore\": {\r\n      \"projectUniqueName\": \"d:\\\\UI\\\\term 7\\\\Web\\\\Spotify\\\\Spotify\\\\Spotify\\\\Spotify.csproj\",\r\n      \"projectName\": \"Spotify\",\r\n      \"projectPath\": \"d:\\\\UI\\\\term 7\\\\Web\\\\Spotify\\\\Spotify\\\\Spotify\\\\Spotify.csproj\",\r\n      \"packagesPath\": \"C:\\\\Users\\\\ALFA RAYAN\\\\.nuget\\\\packages\\\\\",\r\n      \"outputPath\": \"d:\\\\UI\\\\term 7\\\\Web\\\\Spotify\\\\Spotify\\\\Spotify\\\\obj\\\\\",\r\n      \"projectStyle\": \"PackageReference\",\r\n      \"configFilePaths\": [\r\n        \"C:\\\\Users\\\\ALFA RAYAN\\\\AppData\\\\Roaming\\\\NuGet\\\\NuGet.Config\"\r\n      ],\r\n      \"originalTargetFrameworks\": [\r\n        \"net7.0\"\r\n      ],\r\n      \"sources\": {\r\n        \"https://api.nuget.org/v3/index.json\": {}\r\n      },\r\n      \"frameworks\": {\r\n        \"net7.0\": {\r\n          \"targetAlias\": \"net7.0\",\r\n          \"projectReferences\": {\r\n            \"d:\\\\UI\\\\term 7\\\\Web\\\\Spotify\\\\Spotify\\\\Spotify.Core\\\\Spotify.Core.csproj\": {\r\n              \"projectPath\": \"d:\\\\UI\\\\term 7\\\\Web\\\\Spotify\\\\Spotify\\\\Spotify.Core\\\\Spotify.Core.csproj\"\r\n            },\r\n            \"d:\\\\UI\\\\term 7\\\\Web\\\\Spotify\\\\Spotify\\\\Spotify.Data\\\\Spotify.Data.csproj\": {\r\n              \"projectPath\": \"d:\\\\UI\\\\term 7\\\\Web\\\\Spotify\\\\Spotify\\\\Spotify.Data\\\\Spotify.Data.csproj\"\r\n            },\r\n            \"d:\\\\UI\\\\term 7\\\\Web\\\\Spotify\\\\Spotify\\\\Spotify.Services\\\\Spotify.Services.csproj\": {\r\n              \"projectPath\": \"d:\\\\UI\\\\term 7\\\\Web\\\\Spotify\\\\Spotify\\\\Spotify.Services\\\\Spotify.Services.csproj\"\r\n            }\r\n          }\r\n        }\r\n      },\r\n      \"warningProperties\": {\r\n        \"warnAsError\": [\r\n          \"NU1605\"\r\n        ]\r\n      }\r\n    },\r\n    \"frameworks\": {\r\n      \"net7.0\": {\r\n        \"targetAlias\": \"net7.0\",\r\n        \"dependencies\": {\r\n          \"Microsoft.EntityFrameworkCore\": {\r\n            \"target\": \"Package\",\r\n            \"version\": \"[7.0.14, )\"\r\n          }\r\n        },\r\n        \"imports\": [\r\n          \"net461\",\r\n          \"net462\",\r\n          \"net47\",\r\n          \"net471\",\r\n          \"net472\",\r\n          \"net48\",\r\n          \"net481\"\r\n        ],\r\n        \"assetTargetFallback\": true,\r\n        \"warn\": true,\r\n        \"frameworkReferences\": {\r\n          \"Microsoft.AspNetCore.App\": {\r\n            \"privateAssets\": \"none\"\r\n          },\r\n          \"Microsoft.NETCore.App\": {\r\n            \"privateAssets\": \"all\"\r\n          }\r\n        },\r\n        \"runtimeIdentifierGraphPath\": \"C:\\\\Program Files\\\\dotnet\\\\sdk\\\\7.0.402\\\\RuntimeIdentifierGraph.json\"\r\n      }\r\n    }\r\n  }\r\n}
+===================================================================
+diff --git a/Spotify/obj/project.assets.json b/Spotify/obj/project.assets.json
+--- a/Spotify/obj/project.assets.json	
++++ b/Spotify/obj/project.assets.json	
+@@ -580,11 +580,11 @@
+   "project": {
+     "version": "1.0.0",
+     "restore": {
+-      "projectUniqueName": "d:\\UI\\term 7\\Web\\Spotify\\Spotify\\Spotify\\Spotify.csproj",
++      "projectUniqueName": "D:\\UI\\term 7\\Web\\Spotify\\Spotify\\Spotify\\Spotify.csproj",
+       "projectName": "Spotify",
+-      "projectPath": "d:\\UI\\term 7\\Web\\Spotify\\Spotify\\Spotify\\Spotify.csproj",
++      "projectPath": "D:\\UI\\term 7\\Web\\Spotify\\Spotify\\Spotify\\Spotify.csproj",
+       "packagesPath": "C:\\Users\\ALFA RAYAN\\.nuget\\packages\\",
+-      "outputPath": "d:\\UI\\term 7\\Web\\Spotify\\Spotify\\Spotify\\obj\\",
++      "outputPath": "D:\\UI\\term 7\\Web\\Spotify\\Spotify\\Spotify\\obj\\",
+       "projectStyle": "PackageReference",
+       "configFilePaths": [
+         "C:\\Users\\ALFA RAYAN\\AppData\\Roaming\\NuGet\\NuGet.Config"
+@@ -599,14 +599,14 @@
+         "net7.0": {
+           "targetAlias": "net7.0",
+           "projectReferences": {
+-            "d:\\UI\\term 7\\Web\\Spotify\\Spotify\\Spotify.Core\\Spotify.Core.csproj": {
+-              "projectPath": "d:\\UI\\term 7\\Web\\Spotify\\Spotify\\Spotify.Core\\Spotify.Core.csproj"
++            "D:\\UI\\term 7\\Web\\Spotify\\Spotify\\Spotify.Core\\Spotify.Core.csproj": {
++              "projectPath": "D:\\UI\\term 7\\Web\\Spotify\\Spotify\\Spotify.Core\\Spotify.Core.csproj"
+             },
+-            "d:\\UI\\term 7\\Web\\Spotify\\Spotify\\Spotify.Data\\Spotify.Data.csproj": {
+-              "projectPath": "d:\\UI\\term 7\\Web\\Spotify\\Spotify\\Spotify.Data\\Spotify.Data.csproj"
++            "D:\\UI\\term 7\\Web\\Spotify\\Spotify\\Spotify.Data\\Spotify.Data.csproj": {
++              "projectPath": "D:\\UI\\term 7\\Web\\Spotify\\Spotify\\Spotify.Data\\Spotify.Data.csproj"
+             },
+-            "d:\\UI\\term 7\\Web\\Spotify\\Spotify\\Spotify.Services\\Spotify.Services.csproj": {
+-              "projectPath": "d:\\UI\\term 7\\Web\\Spotify\\Spotify\\Spotify.Services\\Spotify.Services.csproj"
++            "D:\\UI\\term 7\\Web\\Spotify\\Spotify\\Spotify.Services\\Spotify.Services.csproj": {
++              "projectPath": "D:\\UI\\term 7\\Web\\Spotify\\Spotify\\Spotify.Services\\Spotify.Services.csproj"
+             }
+           }
+         }
+Index: Spotify.Services/obj/Spotify.Services.csproj.nuget.g.props
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"no\"?>\r\n<Project ToolsVersion=\"14.0\" xmlns=\"http://schemas.microsoft.com/developer/msbuild/2003\">\r\n  <PropertyGroup Condition=\" '$(ExcludeRestorePackageImports)' != 'true' \">\r\n    <RestoreSuccess Condition=\" '$(RestoreSuccess)' == '' \">True</RestoreSuccess>\r\n    <RestoreTool Condition=\" '$(RestoreTool)' == '' \">NuGet</RestoreTool>\r\n    <ProjectAssetsFile Condition=\" '$(ProjectAssetsFile)' == '' \">$(MSBuildThisFileDirectory)project.assets.json</ProjectAssetsFile>\r\n    <NuGetPackageRoot Condition=\" '$(NuGetPackageRoot)' == '' \">$(UserProfile)\\.nuget\\packages\\</NuGetPackageRoot>\r\n    <NuGetPackageFolders Condition=\" '$(NuGetPackageFolders)' == '' \">C:\\Users\\ALFA RAYAN\\.nuget\\packages\\</NuGetPackageFolders>\r\n    <NuGetProjectStyle Condition=\" '$(NuGetProjectStyle)' == '' \">PackageReference</NuGetProjectStyle>\r\n    <NuGetToolVersion Condition=\" '$(NuGetToolVersion)' == '' \">6.7.0</NuGetToolVersion>\r\n  </PropertyGroup>\r\n  <ItemGroup Condition=\" '$(ExcludeRestorePackageImports)' != 'true' \">\r\n    <SourceRoot Include=\"C:\\Users\\ALFA RAYAN\\.nuget\\packages\\\" />\r\n  </ItemGroup>\r\n  <ImportGroup Condition=\" '$(ExcludeRestorePackageImports)' != 'true' \">\r\n    <Import Project=\"$(NuGetPackageRoot)microsoft.entityframeworkcore\\7.0.14\\buildTransitive\\net6.0\\Microsoft.EntityFrameworkCore.props\" Condition=\"Exists('$(NuGetPackageRoot)microsoft.entityframeworkcore\\7.0.14\\buildTransitive\\net6.0\\Microsoft.EntityFrameworkCore.props')\" />\r\n  </ImportGroup>\r\n</Project>
+===================================================================
+diff --git a/Spotify.Services/obj/Spotify.Services.csproj.nuget.g.props b/Spotify.Services/obj/Spotify.Services.csproj.nuget.g.props
+--- a/Spotify.Services/obj/Spotify.Services.csproj.nuget.g.props	
++++ b/Spotify.Services/obj/Spotify.Services.csproj.nuget.g.props	
+@@ -7,7 +7,7 @@
+     <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">$(UserProfile)\.nuget\packages\</NuGetPackageRoot>
+     <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">C:\Users\ALFA RAYAN\.nuget\packages\</NuGetPackageFolders>
+     <NuGetProjectStyle Condition=" '$(NuGetProjectStyle)' == '' ">PackageReference</NuGetProjectStyle>
+-    <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">6.7.0</NuGetToolVersion>
++    <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">6.5.0</NuGetToolVersion>
+   </PropertyGroup>
+   <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+     <SourceRoot Include="C:\Users\ALFA RAYAN\.nuget\packages\" />
+Index: Spotify.Services/obj/Spotify.Services.csproj.nuget.dgspec.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>{\r\n  \"format\": 1,\r\n  \"restore\": {\r\n    \"d:\\\\UI\\\\term 7\\\\Web\\\\Spotify\\\\Spotify\\\\Spotify.Services\\\\Spotify.Services.csproj\": {}\r\n  },\r\n  \"projects\": {\r\n    \"d:\\\\UI\\\\term 7\\\\Web\\\\Spotify\\\\Spotify\\\\Spotify.Services\\\\Spotify.Services.csproj\": {\r\n      \"version\": \"1.0.0\",\r\n      \"restore\": {\r\n        \"projectUniqueName\": \"d:\\\\UI\\\\term 7\\\\Web\\\\Spotify\\\\Spotify\\\\Spotify.Services\\\\Spotify.Services.csproj\",\r\n        \"projectName\": \"Spotify.Services\",\r\n        \"projectPath\": \"d:\\\\UI\\\\term 7\\\\Web\\\\Spotify\\\\Spotify\\\\Spotify.Services\\\\Spotify.Services.csproj\",\r\n        \"packagesPath\": \"C:\\\\Users\\\\ALFA RAYAN\\\\.nuget\\\\packages\\\\\",\r\n        \"outputPath\": \"d:\\\\UI\\\\term 7\\\\Web\\\\Spotify\\\\Spotify\\\\Spotify.Services\\\\obj\\\\\",\r\n        \"projectStyle\": \"PackageReference\",\r\n        \"configFilePaths\": [\r\n          \"C:\\\\Users\\\\ALFA RAYAN\\\\AppData\\\\Roaming\\\\NuGet\\\\NuGet.Config\"\r\n        ],\r\n        \"originalTargetFrameworks\": [\r\n          \"net7.0\"\r\n        ],\r\n        \"sources\": {\r\n          \"https://api.nuget.org/v3/index.json\": {}\r\n        },\r\n        \"frameworks\": {\r\n          \"net7.0\": {\r\n            \"targetAlias\": \"net7.0\",\r\n            \"projectReferences\": {}\r\n          }\r\n        },\r\n        \"warningProperties\": {\r\n          \"warnAsError\": [\r\n            \"NU1605\"\r\n          ]\r\n        }\r\n      },\r\n      \"frameworks\": {\r\n        \"net7.0\": {\r\n          \"targetAlias\": \"net7.0\",\r\n          \"dependencies\": {\r\n            \"Microsoft.EntityFrameworkCore\": {\r\n              \"target\": \"Package\",\r\n              \"version\": \"[7.0.14, )\"\r\n            }\r\n          },\r\n          \"imports\": [\r\n            \"net461\",\r\n            \"net462\",\r\n            \"net47\",\r\n            \"net471\",\r\n            \"net472\",\r\n            \"net48\",\r\n            \"net481\"\r\n          ],\r\n          \"assetTargetFallback\": true,\r\n          \"warn\": true,\r\n          \"frameworkReferences\": {\r\n            \"Microsoft.NETCore.App\": {\r\n              \"privateAssets\": \"all\"\r\n            }\r\n          },\r\n          \"runtimeIdentifierGraphPath\": \"C:\\\\Program Files\\\\dotnet\\\\sdk\\\\7.0.402\\\\RuntimeIdentifierGraph.json\"\r\n        }\r\n      }\r\n    }\r\n  }\r\n}
+===================================================================
+diff --git a/Spotify.Services/obj/Spotify.Services.csproj.nuget.dgspec.json b/Spotify.Services/obj/Spotify.Services.csproj.nuget.dgspec.json
+--- a/Spotify.Services/obj/Spotify.Services.csproj.nuget.dgspec.json	
++++ b/Spotify.Services/obj/Spotify.Services.csproj.nuget.dgspec.json	
+@@ -1,17 +1,17 @@
+ {
+   "format": 1,
+   "restore": {
+-    "d:\\UI\\term 7\\Web\\Spotify\\Spotify\\Spotify.Services\\Spotify.Services.csproj": {}
++    "D:\\UI\\term 7\\Web\\Spotify\\Spotify\\Spotify.Services\\Spotify.Services.csproj": {}
+   },
+   "projects": {
+-    "d:\\UI\\term 7\\Web\\Spotify\\Spotify\\Spotify.Services\\Spotify.Services.csproj": {
++    "D:\\UI\\term 7\\Web\\Spotify\\Spotify\\Spotify.Services\\Spotify.Services.csproj": {
+       "version": "1.0.0",
+       "restore": {
+-        "projectUniqueName": "d:\\UI\\term 7\\Web\\Spotify\\Spotify\\Spotify.Services\\Spotify.Services.csproj",
++        "projectUniqueName": "D:\\UI\\term 7\\Web\\Spotify\\Spotify\\Spotify.Services\\Spotify.Services.csproj",
+         "projectName": "Spotify.Services",
+-        "projectPath": "d:\\UI\\term 7\\Web\\Spotify\\Spotify\\Spotify.Services\\Spotify.Services.csproj",
++        "projectPath": "D:\\UI\\term 7\\Web\\Spotify\\Spotify\\Spotify.Services\\Spotify.Services.csproj",
+         "packagesPath": "C:\\Users\\ALFA RAYAN\\.nuget\\packages\\",
+-        "outputPath": "d:\\UI\\term 7\\Web\\Spotify\\Spotify\\Spotify.Services\\obj\\",
++        "outputPath": "D:\\UI\\term 7\\Web\\Spotify\\Spotify\\Spotify.Services\\obj\\",
+         "projectStyle": "PackageReference",
+         "configFilePaths": [
+           "C:\\Users\\ALFA RAYAN\\AppData\\Roaming\\NuGet\\NuGet.Config"
+Index: Spotify.Data/obj/Spotify.Data.csproj.nuget.g.props
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"no\"?>\r\n<Project ToolsVersion=\"14.0\" xmlns=\"http://schemas.microsoft.com/developer/msbuild/2003\">\r\n  <PropertyGroup Condition=\" '$(ExcludeRestorePackageImports)' != 'true' \">\r\n    <RestoreSuccess Condition=\" '$(RestoreSuccess)' == '' \">True</RestoreSuccess>\r\n    <RestoreTool Condition=\" '$(RestoreTool)' == '' \">NuGet</RestoreTool>\r\n    <ProjectAssetsFile Condition=\" '$(ProjectAssetsFile)' == '' \">$(MSBuildThisFileDirectory)project.assets.json</ProjectAssetsFile>\r\n    <NuGetPackageRoot Condition=\" '$(NuGetPackageRoot)' == '' \">$(UserProfile)\\.nuget\\packages\\</NuGetPackageRoot>\r\n    <NuGetPackageFolders Condition=\" '$(NuGetPackageFolders)' == '' \">C:\\Users\\ALFA RAYAN\\.nuget\\packages\\</NuGetPackageFolders>\r\n    <NuGetProjectStyle Condition=\" '$(NuGetProjectStyle)' == '' \">PackageReference</NuGetProjectStyle>\r\n    <NuGetToolVersion Condition=\" '$(NuGetToolVersion)' == '' \">6.7.0</NuGetToolVersion>\r\n  </PropertyGroup>\r\n  <ItemGroup Condition=\" '$(ExcludeRestorePackageImports)' != 'true' \">\r\n    <SourceRoot Include=\"C:\\Users\\ALFA RAYAN\\.nuget\\packages\\\" />\r\n  </ItemGroup>\r\n  <ImportGroup Condition=\" '$(ExcludeRestorePackageImports)' != 'true' \">\r\n    <Import Project=\"$(NuGetPackageRoot)microsoft.entityframeworkcore\\7.0.14\\buildTransitive\\net6.0\\Microsoft.EntityFrameworkCore.props\" Condition=\"Exists('$(NuGetPackageRoot)microsoft.entityframeworkcore\\7.0.14\\buildTransitive\\net6.0\\Microsoft.EntityFrameworkCore.props')\" />\r\n  </ImportGroup>\r\n</Project>
+===================================================================
+diff --git a/Spotify.Data/obj/Spotify.Data.csproj.nuget.g.props b/Spotify.Data/obj/Spotify.Data.csproj.nuget.g.props
+--- a/Spotify.Data/obj/Spotify.Data.csproj.nuget.g.props	
++++ b/Spotify.Data/obj/Spotify.Data.csproj.nuget.g.props	
+@@ -7,7 +7,7 @@
+     <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">$(UserProfile)\.nuget\packages\</NuGetPackageRoot>
+     <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">C:\Users\ALFA RAYAN\.nuget\packages\</NuGetPackageFolders>
+     <NuGetProjectStyle Condition=" '$(NuGetProjectStyle)' == '' ">PackageReference</NuGetProjectStyle>
+-    <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">6.7.0</NuGetToolVersion>
++    <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">6.5.0</NuGetToolVersion>
+   </PropertyGroup>
+   <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+     <SourceRoot Include="C:\Users\ALFA RAYAN\.nuget\packages\" />
