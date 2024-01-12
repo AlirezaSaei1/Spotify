@@ -29,7 +29,6 @@ public class UserHomeController : Controller
     
     public async Task<IActionResult> FollowedArtists()
     {
-        
         var user = await _userManager.GetUserAsync(User);
         
         var followedArtists = (user as User)?.FollowedArtists;

@@ -1,5 +1,5 @@
 ﻿@{
-    ViewData["Title"] = "Artist HomePage";
+    ViewData["Title"] = "Artist Followers";
 }
 
 <!DOCTYPE html>
@@ -15,13 +15,28 @@
 <body>
     <div class="container">
         <div class="sidebar">
-            <a asp-controller="ArtistHome" asp-action="Index" class="active">Home</a>
+            <a asp-controller="ArtistHome" asp-action="Index">Home</a>
             <a asp-controller="ArtistHome" asp-action="Musics">My Musics</a>
             <a asp-controller="ArtistHome" asp-action="NewMusic">Publish New Music</a>
-            <a asp-controller="ArtistHome" asp-action="Followers">My Followers</a>
+            <a asp-controller="ArtistHome" asp-action="Followers" class="active">My Followers</a>
         </div>
         <div class="content">
-            <p class="display-4">Artist Dashboard</p>
+            <h1 class="display-4">Your Followers</h1>
+            @if (ViewBag.Message != null)
+            {
+                <p>@ViewBag.Message</p>
+            }
+            else
+            {
+                <div class="followers-container">
+                    @foreach (var follower in Model)
+                    {
+                        <div class="follower-item">
+                            <p>@follower.FirstName @follower.LastName</p>
+                        </div>
+                    }
+                </div>
+            }
         </div>
     </div>
 

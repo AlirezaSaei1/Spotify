@@ -10,10 +10,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6845310d-c7e7-459a-b8cf-35421b5f6c02" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Spotify/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Spotify/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spotify/Controllers/ArtistHomeController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Spotify/Controllers/ArtistHomeController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Spotify/Controllers/UserHomeController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Spotify/Controllers/UserHomeController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spotify/Views/Shared/_Layout.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Spotify/Views/Shared/_Layout.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spotify/Views/UserHome/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Spotify/Views/UserHome/Index.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spotify/Views/ArtistHome/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Spotify/Views/ArtistHome/Index.cshtml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,7 +118,7 @@
       <workItem from="1704822185531" duration="1572000" />
       <workItem from="1704956532952" duration="1396000" />
       <workItem from="1704957965301" duration="1244000" />
-      <workItem from="1705046176877" duration="3230000" />
+      <workItem from="1705046176877" duration="3906000" />
     </task>
     <servers />
   </component>
