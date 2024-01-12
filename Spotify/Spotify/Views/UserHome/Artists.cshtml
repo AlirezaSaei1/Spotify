@@ -1,5 +1,5 @@
 ﻿@{
-    ViewData["Title"] = "User HomePage";
+    ViewData["Title"] = "Artists";
 }
 
 <!DOCTYPE html>
@@ -15,14 +15,14 @@
 <body>
     <div class="container">
         <div class="sidebar">
-            <a asp-controller="UserHome" asp-action="Index" class="active">Home</a>
+            <a asp-controller="UserHome" asp-action="Index">Home</a>
             <a asp-controller="UserHome" asp-action="Musics">Musics</a>
-            <a asp-controller="UserHome" asp-action="Artists">Artists</a>
+            <a asp-controller="UserHome" asp-action="Artists" class="active">Artists</a>
             <a asp-controller="UserHome" asp-action="FollowedArtists">Followed Artists</a>
             <a asp-controller="UserHome" asp-action="SavedMusics">Saved Musics</a>
         </div>
         <div class="content">
-            <p class="display-4">User Dashboard</p>
+            <h1 class="display-4"> Artists</h1>
         </div>
     </div>
 
