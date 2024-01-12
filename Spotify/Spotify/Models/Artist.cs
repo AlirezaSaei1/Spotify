@@ -1,24 +1,8 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿namespace Spotify.Models;
 
-namespace Spotify.Models;
-
-public class Artist
+// alirezaartist@gmail.com - Alireza.1234
+public class Artist : ApplicationUser
 {
-    public Artist(int artistId, string name, string? bio, List<Music> musics, List<ArtistUser> followers)
-    {
-        ArtistId = artistId;
-        Name = name;
-        Bio = bio;
-        Musics = musics;
-        Followers = followers;
-    }
-    
-    [Key]
-    public int ArtistId { get; set; }
-    public string Name { get; set; }
-    public string? Bio { get; set; }
-    
-    // Relationships
-    public List<Music> Musics { get; set; }
-    public List<ArtistUser>? Followers { get; set; }
+    public List<Music> PublishedMusics { get; init; }
+    public List<User> Followers { get; init; }
 }

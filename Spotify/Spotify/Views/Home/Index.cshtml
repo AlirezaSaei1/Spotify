@@ -1,8 +1,81 @@
-﻿@{
+﻿@using Microsoft.AspNetCore.Identity
+@inject SignInManager<ApplicationUser> SignInManager
+@inject UserManager<ApplicationUser> UserManager
+
+@{
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>@ViewData["Title"] - Spotify</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true"/>
+    <link rel="stylesheet" href="~/Spotify.styles.css" asp-append-version="true"/>
+    <style>
+        body {
+            background-color: #121212;
+            color: #ffffff;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .display-4 {
+            font-size: 3rem;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        p {
+            font-size: 1.2rem;
+            margin-top: 20px;
+        }
+
+        a {
+            color: #1DB954;
+            text-decoration: underline;
+        }
+
+        a:hover {
+            color: #44B867;
+        }
+
+        .btn-primary {
+            background-color: #1DB954;
+            color: #121212;
+            font-weight: bold;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+            transition: all 0.3s ease-in-out;
+        }
+
+        .btn-primary:hover {
+            background-color: #44B867;
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    @if (!SignInManager.IsSignedIn(User))
+    {
+        <div class="container mt-5">
+            <div class="text-center">
+                <h1 class="display-4">Discover Your Music Journey</h1>
+                <p>Immerse yourself in a world of music. <br> Log in to unlock a richer experience!</p>
+                <a class="btn btn-primary" href="Identity/Account/Login">Login</a>
+            </div>
+        </div>
+    }
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+</body>
+</html>

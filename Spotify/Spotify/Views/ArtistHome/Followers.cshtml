@@ -1,0 +1,47 @@
+﻿@{
+    ViewData["Title"] = "Artist Followers";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>@ViewData["Title"] - Spotify</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true"/>
+    <link rel="stylesheet" href="~/css/styles.css" asp-append-version="true"/>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <a asp-controller="ArtistHome" asp-action="Index">Home</a>
+            <a asp-controller="ArtistHome" asp-action="Musics">My Musics</a>
+            <a asp-controller="ArtistHome" asp-action="NewMusic">Publish New Music</a>
+            <a asp-controller="ArtistHome" asp-action="Followers" class="active">My Followers</a>
+        </div>
+        <div class="content">
+            <h1 class="display-4">Your Followers</h1>
+            @if (ViewBag.Message != null)
+            {
+                <p>@ViewBag.Message</p>
+            }
+            else
+            {
+                <div class="followers-container">
+                    @foreach (var follower in Model)
+                    {
+                        <div class="follower-item">
+                            <p>@follower.FirstName @follower.LastName</p>
+                        </div>
+                    }
+                </div>
+            }
+        </div>
+    </div>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+</body>
+</html>

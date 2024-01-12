@@ -1,0 +1,95 @@
+﻿@page
+@model LoginModel
+
+@{
+    ViewData["Title"] = "Log in";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>@ViewData["Title"] - Spotify</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true"/>
+    <link rel="stylesheet" href="~/Spotify.styles.css" asp-append-version="true"/>
+    <style>
+        body {
+            background-color: #121212;
+            color: #ffffff;
+        }
+
+        .container {
+            max-width: 400px;
+            margin: auto;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .form-floating {
+            margin-bottom: 20px;
+        }
+
+        input.form-control {
+            background-color: #212121;
+            color: #ffffff;
+            border: 1px solid #1DB954;
+        }
+
+        label.form-label {
+            color: #1DB954;
+        }
+
+        .btn-spotify-green {
+            background-color: #1DB954;
+            color: #121212;
+            font-weight: bold;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        }
+
+        .btn-spotify-green:hover {
+            background-color: #44B867;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container mt-5">
+    <h1>Log in to Your Account</h1>
+    <form id="loginForm" method="post" class="mb-3">
+        <div asp-validation-summary="ModelOnly" class="text-danger" role="alert"></div>
+
+        <div class="form-floating">
+            <input asp-for="Input.Email" class="form-control" autocomplete="email" aria-required="true" placeholder="name@example.com" />
+            <label asp-for="Input.Email" class="form-label">Email</label>
+            <span asp-validation-for="Input.Email" class="text-danger"></span>
+        </div>
+
+        <div class="form-floating">
+            <input asp-for="Input.Password" class="form-control" autocomplete="current-password" aria-required="true" placeholder="Password" />
+            <label asp-for="Input.Password" class="form-label">Password</label>
+            <span asp-validation-for="Input.Password" class="text-danger"></span>
+        </div>
+
+        <button id="loginSubmit" type="submit" class="w-100 btn btn-lg btn-spotify-green">Log in</button>
+    </form>
+    <p>
+        <a id="forgot-password" asp-page="./ForgotPassword">Forgot your password?</a>
+    </p>
+    <p>
+        <a asp-page="./Register" asp-route-returnUrl="@Model.ReturnUrl">Don't have an account? Register here.</a>
+    </p>
+</div>
+
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="~/js/site.js" asp-append-version="true"></script>
+</body>
+</html>

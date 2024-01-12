@@ -1,0 +1,124 @@
+﻿@page
+@model RegisterModel
+@{
+    ViewData["Title"] = "Register";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>@ViewData["Title"] - Spotify</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true"/>
+    <link rel="stylesheet" href="~/Spotify.styles.css" asp-append-version="true"/>
+    <style>
+        body {
+            background-color: #121212;
+            color: #ffffff;
+        }
+        
+        .container {
+            max-width: 400px;
+            margin: auto;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .form-floating {
+            margin-bottom: 20px;
+        }
+
+        input.form-control {
+            background-color: #212121;
+            color: #ffffff;
+            border: 1px solid #1DB954;
+        }
+
+        label.form-label {
+            color: #1DB954;
+        }
+
+        .btn-spotify-green {
+            background-color: #1DB954;
+            color: #121212;
+            font-weight: bold;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        }
+
+        .btn-spotify-green:hover {
+            background-color: #44B867;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container mt-5">
+    <h2>Create a New Account</h2>
+    <form id="registerForm" asp-route-returnUrl="@Model.ReturnUrl" method="post" class="mb-3">
+        <div asp-validation-summary="ModelOnly" class="text-danger" role="alert"></div>
+
+        <div class="row">
+            <div class="col">
+                <div class="form-floating">
+                    <input asp-for="Input.FirstName" class="form-control" autocomplete="given-name" aria-required="true" placeholder="First Name" />
+                    <label asp-for="Input.FirstName" class="form-label">First Name</label>
+                    <span asp-validation-for="Input.FirstName" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="col">
+                <div class="form-floating">
+                    <input asp-for="Input.LastName" class="form-control" autocomplete="family-name" aria-required="true" placeholder="Last Name" />
+                    <label asp-for="Input.LastName" class="form-label">Last Name</label>
+                    <span asp-validation-for="Input.LastName" class="text-danger"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-floating">
+            <input asp-for="Input.Email" class="form-control" autocomplete="email" aria-required="true" placeholder="name@example.com" />
+            <label asp-for="Input.Email" class="form-label">Email</label>
+            <span asp-validation-for="Input.Email" class="text-danger"></span>
+        </div>
+
+        <div class="form-floating">
+            <input asp-for="Input.Password" class="form-control" autocomplete="new-password" aria-required="true" placeholder="Password" />
+            <label asp-for="Input.Password" class="form-label">Password</label>
+            <span asp-validation-for="Input.Password" class="text-danger"></span>
+        </div>
+
+        <div class="form-floating">
+            <input asp-for="Input.ConfirmPassword" class="form-control" autocomplete="new-password" aria-required="true" placeholder="Confirm Password" />
+            <label asp-for="Input.ConfirmPassword" class="form-label">Confirm Password</label>
+            <span asp-validation-for="Input.ConfirmPassword" class="text-danger"></span>
+        </div>
+        
+        <div class="form-check form-check-inline">
+            <input asp-for="Input.AccountType" class="form-check-input" type="radio" value="User" checked />
+            <label class="form-check-label">User</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input asp-for="Input.AccountType" class="form-check-input" type="radio" value="Artist" />
+            <label class="form-check-label">Artist</label>
+        </div>
+
+        <button id="registerSubmit" type="submit" class="w-100 btn btn-lg btn-spotify-green">Register</button>
+    </form>
+</div>
+
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="~/js/site.js" asp-append-version="true"></script>
+</body>
+</html>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
