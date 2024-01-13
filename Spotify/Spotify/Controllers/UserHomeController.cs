@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Spotify.Models;
+using Spotify.ViewModels;
 
 namespace Spotify.Controllers;
 
@@ -22,9 +23,35 @@ public class UserHomeController : Controller
         return View();
     }
     
-    public IActionResult Artists()
+    public IActionResult Artists(string searchString)
     {
-        return View();
+        var currentUser = _userManager.GetUserAsync(User).Result;
+        var allArtists = _userManager.Users.OfType<Artist>().ToList();
+        
+        if (allArtists == null || !allArtists.Any())
+        {
+            ViewBag.Message = "No artists found.";
+        }
+
+        // Filter artists based on search string
+        if (!string.IsNullOrEmpty(searchString))
+        {
+            allArtists = allArtists!.Where(a =>
+                    a.FirstName.Contains(searchString, StringComparison.OrdinalIgnoreCase) ||
+                    a.LastName.Contains(searchString, StringComparison.OrdinalIgnoreCase))
+                .ToList();
+        }
+        
+        var randomArtists = allArtists!.OrderBy(a => Guid.NewGuid()).Take(5).ToList();
+
+        var viewModel = new ArtistsViewModel
+        {
+            Artists = randomArtists,
+            SearchString = searchString,
+            CurrentUser = currentUser!
+        };
+
+        return View(viewModel);
     }
     
     public async Task<IActionResult> FollowedArtists()

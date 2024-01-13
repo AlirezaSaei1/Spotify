@@ -1,14 +1,16 @@
-﻿@{
+﻿@model Spotify.ViewModels.ArtistsViewModel
+
+@{
     ViewData["Title"] = "Artists";
 }
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - Spotify</title>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true"/>
     <link rel="stylesheet" href="~/css/styles.css" asp-append-version="true"/>
 </head>
@@ -22,12 +24,31 @@
             <a asp-controller="UserHome" asp-action="SavedMusics">Saved Musics</a>
         </div>
         <div class="content">
-            <h1 class="display-4"> Artists</h1>
+            <h1 class="display-4">Artists</h1>
+            <p>@ViewBag.Message</p>
+
+            <form asp-controller="UserHome" asp-action="Artists" method="get">
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Search for artists" name="searchString" value="@Model.SearchString" />
+                    <div class="input-group-append">
+                        <button class="btn btn-outline-secondary" type="submit">Search</button>
+                    </div>
+                </div>
+            </form>
+
+            <div class="artist-list">
+                @foreach (var artist in Model.Artists)
+                {
+                    <div class="artist-item">
+                        <p>@artist.FirstName @artist.LastName</p>
+                    </div>
+                }
+            </div>
         </div>
     </div>
 
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="~/js/site.js"></script>
 </body>
 </html>
