@@ -30,12 +30,11 @@ public class UserHomeController : Controller
         var currentUser = _userManager.GetUserAsync(User).Result;
         var allArtists = _userManager.Users.OfType<Artist>().ToList();
         
-        if (allArtists == null || !allArtists.Any())
+        if (!allArtists.Any())
         {
             ViewBag.Message = "No artists found.";
         }
-
-        // Filter artists based on search string
+        
         if (!string.IsNullOrEmpty(searchString))
         {
             allArtists = allArtists!.Where(a =>
@@ -44,16 +43,28 @@ public class UserHomeController : Controller
                 .ToList();
         }
         
-        var randomArtists = allArtists!.OrderBy(a => Guid.NewGuid()).Take(5).ToList();
+        var randomArtists = allArtists.Take(5).ToList();
 
         var viewModel = new ArtistsViewModel
         {
             Artists = randomArtists,
             SearchString = searchString,
-            CurrentUser = currentUser!
+            CurrentUser = (User)currentUser
         };
 
         return View(viewModel);
+    }
+    
+    public  RedirectToActionResult FollowArtist(string artistId)
+    {
+        Console.WriteLine("--------------UserFollowButton--------------");
+        return RedirectToAction("Artists");
+    }
+
+    public RedirectToActionResult UnfollowArtist(string artistId)
+    {
+        Console.WriteLine("--------------UserUnfollowButton--------------");
+        return RedirectToAction("Artists");
     }
     
     public async Task<IActionResult> FollowedArtists()
@@ -67,7 +78,7 @@ public class UserHomeController : Controller
             ViewBag.Message = "You are following no artists.";
         }
 
-        return View(followedArtists);
+        return View(user);
     }
     
     public IActionResult SavedMusics()

@@ -6,6 +6,6 @@ namespace Spotify.Models;
 // arthur@gmail.com - Arthur.1234
 public class Artist : ApplicationUser
 {
-    public List<Music> PublishedMusics { get; init; }
-    public List<User> Followers { get; init; }
+    public List<Music> PublishedMusics { get; init; } = new ();
+    public List<User> Followers { get; init; } = new ();
 }
