@@ -1,4 +1,6 @@
-﻿namespace Spotify.Models;
+﻿using System.Collections.Generic;
+
+namespace Spotify.Models;
 
 // alirezaartist@gmail.com - Alireza.1234
 // arthur@gmail.com - Arthur.1234

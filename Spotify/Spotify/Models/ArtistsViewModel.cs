@@ -1,6 +1,7 @@
-﻿using Spotify.Models;
+﻿using System.Collections.Generic;
+using Spotify.Models;
 
-namespace Spotify.ViewModels;
+namespace Spotify.Models;
 
 public class ArtistsViewModel
 {

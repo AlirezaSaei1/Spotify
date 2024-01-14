@@ -1,4 +1,6 @@
-﻿namespace Spotify.Models;
+﻿using System.Collections.Generic;
+
+namespace Spotify.Models;
 
 // alirezauser@gmail.com - Alireza.1234
 public class User : ApplicationUser
