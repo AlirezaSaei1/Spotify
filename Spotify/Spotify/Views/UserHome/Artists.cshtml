@@ -13,6 +13,27 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true"/>
     <link rel="stylesheet" href="~/css/styles.css" asp-append-version="true"/>
+    <style>
+        /* Added styles for border-radius and hover effect */
+        .artist-item {
+            background-color: #999;
+            padding: 10px;
+            margin-bottom: 10px;
+            width: 100%;
+            border-radius: 10px;
+            transition: background-color 0.3s;
+        }
+
+        .artist-item:hover {
+            background-color: #777;
+        }
+
+        .artist-item img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
@@ -36,13 +57,12 @@
                 </div>
             </form>
             
-            
             <div class="artist-list" style="width: 500px;">
                 @foreach (var artist in Model.Artists)
                 {
-                    <div class="artist-item" style="background-color: #999; padding: 10px; margin-bottom: 10px; width: 100%;">
+                    <div class="artist-item">
                         <div style="float: left; margin-right: 10px;">
-                            <img src="~/logo/default_profile.png" alt="User Picture" style="width: 50px; height: 50px; border-radius: 50%;" />
+                            <img src="~/logo/default_profile.png" alt="User Picture" />
                         </div>
                         <div style="float: left; margin-top: 5px; margin-right: 10px;">
                             <p>@artist.FirstName @artist.LastName</p>
@@ -67,8 +87,6 @@
                     </div>
                 }
             </div>
-            
-
         </div>
     </div>
 
