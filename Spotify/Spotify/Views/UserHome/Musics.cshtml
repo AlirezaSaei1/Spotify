@@ -38,7 +38,15 @@
                             <source src="@music.Url" type="audio/mpeg">
                             Your browser does not support the audio element.
                         </audio>
-                        <a href="@music.Url" download>Download</a>
+                        <p>Saved @music.Saved times</p>
+                        <form asp-controller="UserHome" asp-action="DownloadMusic" method="post">
+                            <input type="hidden" name="musicId" value="@music.Id" />
+                            <button class="btn btn-success" type="submit">Download Music</button>
+                            </form>
+                        <form asp-controller="UserHome" asp-action="SaveMusic" method="post">
+                            <input type="hidden" name="musicId" value="@music.Id" />
+                            <button class="btn btn-success" type="submit">Save Music</button>
+                            </form>
                     </div>
                 }
             }

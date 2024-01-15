@@ -35,6 +35,30 @@ public class UserHomeController : Controller
         return View(allMusics);
     }
     
+    [HttpPost]
+    public IActionResult SaveMusic(int musicId)
+    {
+        var music = _dbContext.Musics.FirstOrDefault(m => m.Id == musicId);
+        var currentUser = _userManager.GetUserAsync(User).Result as User;
+        
+        if (music != null)
+        {
+            currentUser!.SavedMusics.Add(music);
+            music.Saved++;
+            _dbContext.SaveChanges();
+            return RedirectToAction("Musics");
+        }
+
+        return RedirectToAction("Musics");
+    }
+
+    [HttpPost]
+    public IActionResult DownloadMusic(int musicId)
+    {
+        return RedirectToAction("Musics");
+    }
+
+
     public IActionResult Artists(string searchString)
     {
         var currentUser = _userManager.GetUserAsync(User).Result;

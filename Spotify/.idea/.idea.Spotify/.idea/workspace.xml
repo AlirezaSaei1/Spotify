@@ -20,7 +20,11 @@
       <change beforePath="$PROJECT_DIR$/Spotify.Tests/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Spotify.Tests/obj/project.packagespec.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Spotify.Tests/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/Spotify.Tests/obj/rider.project.model.nuget.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Spotify.Tests/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Spotify.Tests/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spotify/Views/ArtistHome/NewMusic.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Spotify/Views/ArtistHome/NewMusic.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spotify/Controllers/ArtistHomeController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Spotify/Controllers/ArtistHomeController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spotify/Controllers/UserHomeController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Spotify/Controllers/UserHomeController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spotify/Models/Music.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Spotify/Models/Music.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spotify/Views/ArtistHome/Musics.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Spotify/Views/ArtistHome/Musics.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spotify/Views/UserHome/Musics.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Spotify/Views/UserHome/Musics.cshtml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

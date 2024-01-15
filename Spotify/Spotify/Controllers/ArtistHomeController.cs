@@ -31,9 +31,14 @@ public class ArtistHomeController : Controller
         return View();
     }
     
-    public IActionResult Musics()
+    public async Task<IActionResult> Musics()
     {
-        return View();
+        var artist = await _userManager.GetUserAsync(User) as Artist;
+        var artistMusics = _dbContext.Musics
+            .Where(music => music.Artist.Id == artist!.Id)
+            .ToList();
+        
+        return View(artistMusics);
     }
     
     public IActionResult NewMusic()
