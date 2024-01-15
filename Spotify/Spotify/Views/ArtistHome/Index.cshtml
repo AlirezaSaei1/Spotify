@@ -5,12 +5,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - Spotify</title>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true"/>
-    <link rel="stylesheet" href="~/css/styles.css" asp-append-version="true"/>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/styles.css" asp-append-version="true" />
+    <style>
+        .square-div {
+            background-color: #888;
+            margin-bottom: 20px;
+            width: 350px;
+            height: 170px;
+            border-radius: 10px;
+            color: white;
+        }
+
+        .head {
+            background-color: green;
+            border-radius: 10px 10px 0 0;
+            padding: 10px;
+        }
+
+        .grey-text {
+            background-color: #888;
+            border-radius: 0 0 10px 10px;
+            padding-bottom: 20px;
+            margin-left: 20px;
+        }
+
+        .notifications-div {
+            background-color: #888;
+            color: white;
+            margin-bottom: 20px;
+            border-radius: 10px;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
@@ -21,12 +51,61 @@
             <a asp-controller="ArtistHome" asp-action="Followers">My Followers</a>
         </div>
         <div class="content">
-            <p class="display-4">Artist Dashboard</p>
-        </div>
+                <p class="display-4">User Dashboard</p>
+                <div class="row">
+                    <div class="col-6">
+                        <div class="square-div">
+                            <div class="head">
+                                <h4>Real Time</h4>
+                            </div>
+                            <div class="grey-text">
+                                <p id="real-time"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="square-div">
+                            <div class="head">
+                                <h4>Account Age</h4>
+                            </div>
+                            <div class="grey-text">
+                                <p id="account-age"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="notifications-div">
+                            <div class="head">
+                                <h4>Notifications</h4>
+                            </div>
+                            <div class="grey-text">
+                                <p>No notifications</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
     </div>
+
 
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
+<script>
+        setInterval(function () {
+            var currentDate = new Date();
+            var year = currentDate.getFullYear();
+            var month = currentDate.toLocaleString('default', { month: 'short' });
+            var date = currentDate.getDate();
+            var time = currentDate.toLocaleTimeString();
+
+            document.getElementById("real-time").innerText = year + " " + month + " " + date + "\n" + time;
+        }, 1000);
+
+        var accountAgeInDays = @ViewData["AccountAge"];
+        document.getElementById("account-age").innerText = accountAgeInDays + " days";
+    </script>
 </body>
 </html>

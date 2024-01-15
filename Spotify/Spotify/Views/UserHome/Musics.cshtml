@@ -5,12 +5,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - Spotify</title>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true"/>
-    <link rel="stylesheet" href="~/css/styles.css" asp-append-version="true"/>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/styles.css" asp-append-version="true" />
 </head>
 <body>
     <div class="container">
@@ -23,6 +23,25 @@
         </div>
         <div class="content">
             <h1 class="display-4">Musics</h1>
+            
+            @if (Model.Count == 0)
+            {
+                <p>No musics found.</p>
+            }
+            else
+            {
+                foreach (var music in Model)
+                {
+                    <div>
+                        <h3>@music.Name</h3>
+                        <audio controls>
+                            <source src="@music.Url" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                        <a href="@music.Url" download>Download</a>
+                    </div>
+                }
+            }
         </div>
     </div>
 

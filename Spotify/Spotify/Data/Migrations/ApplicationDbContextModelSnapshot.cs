@@ -17,19 +17,19 @@ namespace Spotify.Data.Migrations
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "7.0.15");
 
-            modelBuilder.Entity("ArtistFollower", b =>
+            modelBuilder.Entity("ArtistUser", b =>
                 {
-                    b.Property<string>("UserId")
+                    b.Property<string>("FollowedArtistsId")
                         .HasColumnType("TEXT");
 
-                    b.Property<string>("ArtistId")
+                    b.Property<string>("FollowersId")
                         .HasColumnType("TEXT");
 
-                    b.HasKey("UserId", "ArtistId");
+                    b.HasKey("FollowedArtistsId", "FollowersId");
 
-                    b.HasIndex("ArtistId");
+                    b.HasIndex("FollowersId");
 
-                    b.ToTable("ArtistFollowers", (string)null);
+                    b.ToTable("ArtistUser");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
@@ -268,26 +268,16 @@ namespace Spotify.Data.Migrations
                         .IsRequired()
                         .HasColumnType("TEXT");
 
+                    b.Property<string>("UserId")
+                        .HasColumnType("TEXT");
+
                     b.HasKey("Id");
 
                     b.HasIndex("ArtistId");
 
-                    b.ToTable("Music");
-                });
+                    b.HasIndex("UserId");
 
-            modelBuilder.Entity("UserSavedMusic", b =>
-                {
-                    b.Property<string>("UserId")
-                        .HasColumnType("TEXT");
-
-                    b.Property<int>("MusicId")
-                        .HasColumnType("INTEGER");
-
-                    b.HasKey("UserId", "MusicId");
-
-                    b.HasIndex("MusicId");
-
-                    b.ToTable("UserSavedMusics", (string)null);
+                    b.ToTable("Musics");
                 });
 
             modelBuilder.Entity("Spotify.Models.Artist", b =>
@@ -304,21 +294,19 @@ namespace Spotify.Data.Migrations
                     b.HasDiscriminator().HasValue("User");
                 });
 
-            modelBuilder.Entity("ArtistFollower", b =>
+            modelBuilder.Entity("ArtistUser", b =>
                 {
                     b.HasOne("Spotify.Models.Artist", null)
                         .WithMany()
-                        .HasForeignKey("ArtistId")
+                        .HasForeignKey("FollowedArtistsId")
                         .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired()
-                        .HasConstraintName("FK_ArtistFollower_Artists_ArtistId");
+                        .IsRequired();
 
                     b.HasOne("Spotify.Models.User", null)
                         .WithMany()
-                        .HasForeignKey("UserId")
+                        .HasForeignKey("FollowersId")
                         .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired()
-                        .HasConstraintName("FK_ArtistFollower_AspNetUsers_UserId");
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
@@ -377,32 +365,24 @@ namespace Spotify.Data.Migrations
                     b.HasOne("Spotify.Models.Artist", "Artist")
                         .WithMany("PublishedMusics")
                         .HasForeignKey("ArtistId")
-                        .OnDelete(DeleteBehavior.Restrict)
+                        .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("Artist");
-                });
-
-            modelBuilder.Entity("UserSavedMusic", b =>
-                {
-                    b.HasOne("Spotify.Models.Music", null)
-                        .WithMany()
-                        .HasForeignKey("MusicId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired()
-                        .HasConstraintName("FK_UserSavedMusic_Music_MusicId");
-
                     b.HasOne("Spotify.Models.User", null)
-                        .WithMany()
-                        .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired()
-                        .HasConstraintName("FK_UserSavedMusic_AspNetUsers_UserId");
+                        .WithMany("SavedMusics")
+                        .HasForeignKey("UserId");
+
+                    b.Navigation("Artist");
                 });
 
             modelBuilder.Entity("Spotify.Models.Artist", b =>
                 {
                     b.Navigation("PublishedMusics");
+                });
+
+            modelBuilder.Entity("Spotify.Models.User", b =>
+                {
+                    b.Navigation("SavedMusics");
                 });
 #pragma warning restore 612, 618
         }
