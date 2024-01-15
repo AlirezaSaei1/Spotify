@@ -1,12 +1,8 @@
-using System;
-using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
 using Spotify.Data;
 using Spotify.Models;
+using Spotify.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -20,6 +16,20 @@ builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 builder.Services.AddDefaultIdentity<ApplicationUser>(options => options.SignIn.RequireConfirmedAccount = true)
     .AddEntityFrameworkStores<ApplicationDbContext>();
 builder.Services.AddControllersWithViews();
+
+builder.Services.AddSingleton<IEmailService>(p =>
+    new EmailService("smtp.gmail.com", 587, "uiwebonlineshop@gmail.com", "bzwclevnwzgdcnxd"));
+builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+
+builder.Services.ConfigureApplicationCookie(o => {
+    o.ExpireTimeSpan = TimeSpan.FromDays(5);
+    o.SlidingExpiration = true;
+});
+
+builder.Services.Configure<DataProtectionTokenProviderOptions>(o =>
+    o.TokenLifespan = TimeSpan.FromHours(3));
+
+
 
 var app = builder.Build();
 

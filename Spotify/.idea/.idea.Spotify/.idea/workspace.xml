@@ -20,8 +20,7 @@
       <change beforePath="$PROJECT_DIR$/Spotify.Tests/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Spotify.Tests/obj/project.packagespec.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Spotify.Tests/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/Spotify.Tests/obj/rider.project.model.nuget.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Spotify.Tests/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Spotify.Tests/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spotify/Controllers/ArtistHomeController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Spotify/Controllers/ArtistHomeController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spotify/Controllers/UserHomeController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Spotify/Controllers/UserHomeController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spotify/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Spotify/Program.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,6 +129,7 @@
       <workItem from="1705046176877" duration="3906000" />
       <workItem from="1705259589851" duration="365000" />
       <workItem from="1705320532267" duration="649000" />
+      <workItem from="1705347735251" duration="856000" />
     </task>
     <servers />
   </component>
@@ -139,5 +139,9 @@
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
