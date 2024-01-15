@@ -11,22 +11,31 @@
   <component name="ChangeListManager">
     <list default="true" id="6845310d-c7e7-459a-b8cf-35421b5f6c02" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Spotify/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Spotify/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spotify.Tests/Spotify.Tests.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Spotify.Tests/Spotify.Tests.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spotify.Tests/UnitTest2.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Spotify.Tests/UnitTest2.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spotify.Tests/UnitTest3.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Spotify.Tests/UnitTest3.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spotify.Tests/bin/Debug/net7.0/Spotify.Tests.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/Spotify.Tests/bin/Debug/net7.0/Spotify.Tests.deps.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Spotify.Tests/bin/Debug/net7.0/Spotify.Tests.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Spotify.Tests/bin/Debug/net7.0/Spotify.Tests.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Spotify.Tests/bin/Debug/net7.0/Spotify.Tests.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Spotify.Tests/bin/Debug/net7.0/Spotify.Tests.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Spotify.Tests/bin/Debug/net7.0/Spotify.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Spotify.Tests/bin/Debug/net7.0/Spotify.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Spotify.Tests/bin/Debug/net7.0/Spotify.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Spotify.Tests/bin/Debug/net7.0/Spotify.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Spotify.Tests/bin/Debug/net7.0/app.db" beforeDir="false" afterPath="$PROJECT_DIR$/Spotify.Tests/bin/Debug/net7.0/app.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spotify.Tests/obj/Debug/net7.0/Spotify.Tests.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Spotify.Tests/obj/Debug/net7.0/Spotify.Tests.assets.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Spotify.Tests/obj/Debug/net7.0/Spotify.Tests.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Spotify.Tests/obj/Debug/net7.0/Spotify.Tests.csproj.AssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Spotify.Tests/obj/Debug/net7.0/Spotify.Tests.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Spotify.Tests/obj/Debug/net7.0/Spotify.Tests.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spotify.Tests/obj/Debug/net7.0/Spotify.Tests.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Spotify.Tests/obj/Debug/net7.0/Spotify.Tests.csproj.FileListAbsolute.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Spotify.Tests/obj/Debug/net7.0/Spotify.Tests.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Spotify.Tests/obj/Debug/net7.0/Spotify.Tests.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Spotify.Tests/obj/Debug/net7.0/Spotify.Tests.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Spotify.Tests/obj/Debug/net7.0/Spotify.Tests.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Spotify.Tests/obj/Debug/net7.0/ref/Spotify.Tests.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Spotify.Tests/obj/Debug/net7.0/ref/Spotify.Tests.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Spotify.Tests/obj/Debug/net7.0/refint/Spotify.Tests.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Spotify.Tests/obj/Debug/net7.0/refint/Spotify.Tests.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spotify.Tests/obj/Spotify.Tests.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Spotify.Tests/obj/Spotify.Tests.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spotify.Tests/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/Spotify.Tests/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spotify.Tests/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Spotify.Tests/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spotify.Tests/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Spotify.Tests/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spotify.Tests/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/Spotify.Tests/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spotify.Tests/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Spotify.Tests/obj/rider.project.restore.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Spotify.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/Spotify.sln.DotSettings.user" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spotify/Controllers/ArtistHomeController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Spotify/Controllers/ArtistHomeController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spotify/Controllers/UserHomeController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Spotify/Controllers/UserHomeController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Spotify/Data/ApplicationDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Spotify/Data/ApplicationDbContext.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spotify/Views/UserHome/Musics.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Spotify/Views/UserHome/Musics.cshtml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -134,6 +143,7 @@
       <workItem from="1704957965301" duration="1244000" />
       <workItem from="1705046176877" duration="3906000" />
       <workItem from="1705259589851" duration="365000" />
+      <workItem from="1705320532267" duration="649000" />
     </task>
     <servers />
   </component>

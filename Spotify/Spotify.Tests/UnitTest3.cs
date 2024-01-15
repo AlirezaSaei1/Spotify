@@ -1,8 +1,10 @@
 ﻿using System.Security.Claims;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Moq;
 using Spotify.Controllers;
+using Spotify.Data;
 using Spotify.Models;
 
 namespace Spotify.Tests;
@@ -25,7 +27,7 @@ public class UnitTest3
         userManagerMock.Setup(um => um.GetUserAsync(It.IsAny<ClaimsPrincipal>()))
             .ReturnsAsync(artist);
 
-        var controller = new ArtistHomeController(userManagerMock.Object);
+        var controller = new ArtistHomeController(userManagerMock.Object, MockDbContext().Object);
 
         // Act
         var result = await controller.Followers();
@@ -45,7 +47,7 @@ public class UnitTest3
         userManagerMock.Setup(um => um.GetUserAsync(It.IsAny<ClaimsPrincipal>()))
             .ReturnsAsync(artist);
 
-        var controller = new ArtistHomeController(userManagerMock.Object);
+        var controller = new ArtistHomeController(userManagerMock.Object, MockDbContext().Object);
 
         // Act
         var result = await controller.Followers();
@@ -54,5 +56,11 @@ public class UnitTest3
         var viewResult = Assert.IsType<ViewResult>(result);
         var model = Assert.IsType<List<User>>(viewResult.Model);
         Assert.Empty(model);
+    }
+    private Mock<ApplicationDbContext> MockDbContext()
+    {
+        var dbContext = new Mock<ApplicationDbContext>(new DbContextOptions<ApplicationDbContext>());
+
+        return dbContext;
     }
 }

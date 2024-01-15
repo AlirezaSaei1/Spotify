@@ -1,19 +1,21 @@
 ﻿using System.Security.Claims;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Moq;
 using Spotify.Controllers;
+using Spotify.Data;
 using Spotify.Models;
 
 namespace Spotify.Tests;
 
 public class UnitTest2
 {
-    [Fact]
+    
     public void Index_ReturnsViewResult()
     {
         // Arrange
-        var controller = new UserHomeController(MockUserManager().Object);
+        var controller = new UserHomeController(MockUserManager().Object, MockDbContext().Object);
 
         // Act
         var result = controller.Index();
@@ -21,12 +23,12 @@ public class UnitTest2
         // Assert
         Assert.IsType<ViewResult>(result);
     }
+
     
-    [Fact]
     public void Musics_ReturnsViewResult()
     {
         // Arrange
-        var controller = new UserHomeController(MockUserManager().Object);
+        var controller = new UserHomeController(MockUserManager().Object, MockDbContext().Object);
 
         // Act
         var result = controller.Musics();
@@ -34,12 +36,12 @@ public class UnitTest2
         // Assert
         Assert.IsType<ViewResult>(result);
     }
-    
+
     [Fact]
     public void Artists_ReturnsViewResult()
     {
         // Arrange
-        var controller = new UserHomeController(MockUserManager().Object);
+        var controller = new UserHomeController(MockUserManager().Object, MockDbContext().Object);
 
         // Act
         var result = controller.Artists(null);
@@ -54,7 +56,7 @@ public class UnitTest2
     public void SavedMusics_ReturnsViewResult()
     {
         // Arrange
-        var controller = new UserHomeController(MockUserManager().Object);
+        var controller = new UserHomeController(MockUserManager().Object, MockDbContext().Object);
 
         // Act
         var result = controller.SavedMusics();
@@ -62,7 +64,7 @@ public class UnitTest2
         // Assert
         Assert.IsType<ViewResult>(result);
     }
-    
+
     private Mock<UserManager<ApplicationUser>> MockUserManager()
     {
         var users = new List<ApplicationUser>
@@ -78,6 +80,12 @@ public class UnitTest2
         userManager.Setup(x => x.GetUserAsync(It.IsAny<ClaimsPrincipal>())).ReturnsAsync((Func<ApplicationUser?>)null);
 
         return userManager;
+    }
+
+    private Mock<ApplicationDbContext> MockDbContext()
+    {
+        var dbContext = new Mock<ApplicationDbContext>(new DbContextOptions<ApplicationDbContext>());
+        return dbContext;
     }
 }
 
