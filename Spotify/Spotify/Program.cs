@@ -18,7 +18,7 @@ builder.Services.AddDefaultIdentity<ApplicationUser>(options => options.SignIn.R
 builder.Services.AddControllersWithViews();
 
 builder.Services.AddSingleton<IEmailService>(p =>
-    new EmailService("smtp.gmail.com", 587, "uiwebonlineshop@gmail.com", "bzwclevnwzgdcnxd")); // todo move to appsettings.json
+    new EmailService("smtp.gmail.com", 587, "uiwebonlineshop@gmail.com", "bzwclevnwzgdcnxd"));
 builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
 
 builder.Services.ConfigureApplicationCookie(o => {
