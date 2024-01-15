@@ -20,4 +20,17 @@ public class UnitTest1
         // Assert
         Assert.IsType<ViewResult>(result);
     }
+    
+    [Fact]
+    public void Privacy_ReturnsViewResult()
+    {
+        // Arrange
+        var controller = new HomeController();
+
+        // Act
+        var result = controller.Privacy();
+
+        // Assert
+        Assert.IsType<ViewResult>(result);
+    }
 }
