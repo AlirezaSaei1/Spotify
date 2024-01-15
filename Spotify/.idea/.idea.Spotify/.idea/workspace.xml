@@ -10,7 +10,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6845310d-c7e7-459a-b8cf-35421b5f6c02" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Spotify.Tests/UnitTest1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Spotify.Tests/UnitTest1.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spotify.Tests/bin/Debug/net7.0/Spotify.Tests.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Spotify.Tests/bin/Debug/net7.0/Spotify.Tests.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spotify.Tests/bin/Debug/net7.0/Spotify.Tests.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Spotify.Tests/bin/Debug/net7.0/Spotify.Tests.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spotify.Tests/obj/Debug/net7.0/Spotify.Tests.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Spotify.Tests/obj/Debug/net7.0/Spotify.Tests.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spotify.Tests/obj/Debug/net7.0/Spotify.Tests.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Spotify.Tests/obj/Debug/net7.0/Spotify.Tests.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spotify.Tests/obj/Debug/net7.0/Spotify.Tests.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Spotify.Tests/obj/Debug/net7.0/Spotify.Tests.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spotify.Tests/obj/Debug/net7.0/ref/Spotify.Tests.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Spotify.Tests/obj/Debug/net7.0/ref/Spotify.Tests.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spotify.Tests/obj/Debug/net7.0/refint/Spotify.Tests.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Spotify.Tests/obj/Debug/net7.0/refint/Spotify.Tests.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spotify.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/Spotify.sln.DotSettings.user" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
