@@ -58,17 +58,42 @@
     <script>
         function validateForm() {
             var fileInput = document.getElementById("musicFile");
-
+            var selectedFileName = document.getElementById("selectedFileName");
+    
             if (fileInput.files.length === 0) {
+                document.getElementById("errorPopup").innerText = "Please upload a file!";
                 document.getElementById("errorPopup").style.display = "block";
-
+    
                 setTimeout(function () {
                     document.getElementById("errorPopup").style.display = "none";
                 }, 5000);
-
+    
                 return false;
             }
-
+    
+            if (!isValidFileType(fileInput.files[0])) {
+                document.getElementById("errorPopup").innerText = "Only music files are allowed!";
+                document.getElementById("errorPopup").style.display = "block";
+    
+                setTimeout(function () {
+                    document.getElementById("errorPopup").style.display = "none";
+                }, 5000);
+    
+                return false;
+            }
+    
+            // Display the selected file name
+            selectedFileName.innerHTML = "Selected File: " + fileInput.files[0].name;
+    
+            return true;
+        }
+    
+        function isValidFileType(file) {
+            var allowedTypes = ["audio/mpeg", "audio/wav", "video/mp4"];
+            if (!allowedTypes.includes(file.type)) {
+                return false;
+            }
+            
             return true;
         }
     </script>
