@@ -17,6 +17,14 @@ public class UserHomeController : Controller
     }
     public IActionResult Index()
     {
+        var currentUser = _userManager.GetUserAsync(User).Result;
+        var currentDate = DateTime.Now;
+        var accountCreationTime = currentUser!.AccountCreationTime;
+        var accountAge = (currentDate - accountCreationTime).Days;
+    
+        ViewData["CurrentDate"] = currentDate;
+        ViewData["AccountAge"] = accountAge;
+        
         return View();
     }
     
