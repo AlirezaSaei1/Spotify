@@ -2,6 +2,7 @@
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Spotify.Data;
 using Spotify.Models;
 
 namespace Spotify.Controllers;
@@ -9,10 +10,12 @@ namespace Spotify.Controllers;
 public class ArtistHomeController : Controller
 {
     private readonly UserManager<ApplicationUser> _userManager;
+    private readonly ApplicationDbContext _dbContext;
 
-    public ArtistHomeController(UserManager<ApplicationUser> userManager)
+    public ArtistHomeController(UserManager<ApplicationUser> userManager, ApplicationDbContext dbContext)
     {
         _userManager = userManager;
+        _dbContext = dbContext;
     }
     public IActionResult Index()
     {

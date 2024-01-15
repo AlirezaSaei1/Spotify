@@ -1,8 +1,6 @@
-﻿using System;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Identity;
+﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Spotify.Data;
 using Spotify.Models;
 
 namespace Spotify.Controllers;
@@ -10,10 +8,12 @@ namespace Spotify.Controllers;
 public class UserHomeController : Controller
 {
     private readonly UserManager<ApplicationUser> _userManager;
+    private readonly ApplicationDbContext _dbContext;
 
-    public UserHomeController(UserManager<ApplicationUser> userManager)
+    public UserHomeController(UserManager<ApplicationUser> userManager, ApplicationDbContext dbContext)
     {
         _userManager = userManager;
+        _dbContext = dbContext;
     }
     public IActionResult Index()
     {
@@ -30,7 +30,9 @@ public class UserHomeController : Controller
     
     public IActionResult Musics()
     {
-        return View();
+        var allMusics = _dbContext.Musics.ToList();
+        
+        return View(allMusics);
     }
     
     public IActionResult Artists(string searchString)

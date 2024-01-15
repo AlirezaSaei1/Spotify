@@ -7,7 +7,7 @@ namespace Spotify.Data;
 
 public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
 {
-    private DbSet<Music> Musics { get; set; }
+    public DbSet<Music> Musics { get; set; }
     
     public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
         : base(options)
