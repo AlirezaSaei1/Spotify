@@ -1,10 +1,7 @@
-﻿using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Identity;
+﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Spotify.Data;
 using Spotify.Models;
-using Spotify.Storage;
 
 namespace Spotify.Controllers;
 

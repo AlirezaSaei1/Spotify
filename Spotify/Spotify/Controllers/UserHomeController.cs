@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿using System.Diagnostics.CodeAnalysis;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Spotify.Data;
 using Spotify.Models;
@@ -47,16 +48,14 @@ public class UserHomeController : Controller
     {
         var music = _dbContext.Musics.FirstOrDefault(m => m.Id == musicId);
         var currentUser = _userManager.GetUserAsync(User).Result as User;
-        
-        if (music != null)
-        {
-            currentUser!.SavedMusics.Add(music);
-            music.Saved++;
-            _dbContext.SaveChanges();
-            return RedirectToAction("Musics");
-        }
 
+        if (music == null) return RedirectToAction("Musics");
+        
+        currentUser!.SavedMusics.Add(music);
+        music.Saved++;
+        _dbContext.SaveChanges();
         return RedirectToAction("Musics");
+
     }
 
     [HttpPost]
@@ -68,7 +67,7 @@ public class UserHomeController : Controller
 
     public IActionResult Artists(string searchString)
     {
-        var currentUser = _userManager.GetUserAsync(User).Result;
+        var currentUser = _userManager.GetUserAsync(User).Result as User;
         var allArtists = _userManager.Users.OfType<Artist>().ToList();
         
         if (!allArtists.Any())
@@ -78,7 +77,7 @@ public class UserHomeController : Controller
         
         if (!string.IsNullOrEmpty(searchString))
         {
-            allArtists = allArtists!.Where(a =>
+            allArtists = allArtists.Where(a =>
                     a.FirstName.Contains(searchString, StringComparison.OrdinalIgnoreCase) ||
                     a.LastName.Contains(searchString, StringComparison.OrdinalIgnoreCase))
                 .ToList();
@@ -90,21 +89,39 @@ public class UserHomeController : Controller
         {
             Artists = randomArtists,
             SearchString = searchString,
-            CurrentUser = (User)currentUser
+            CurrentUser = currentUser!
         };
 
         return View(viewModel);
     }
     
-    public  RedirectToActionResult FollowArtist(string artistId)
+    [SuppressMessage("ReSharper.DPA", "DPA0011: High execution time of MVC action")]
+    public async Task<RedirectToActionResult> FollowArtist(string artistId)
     {
-        Console.WriteLine("--------------UserFollowButton--------------");
+        var user = await _userManager.GetUserAsync(User) as User;
+        var artistToFollow = await _userManager.FindByIdAsync(artistId) as Artist;
+        
+        user!.FollowedArtists.Add(artistToFollow!);
+        artistToFollow!.Followers.Add(user);
+        
+        await _userManager.UpdateAsync(user);
+        await _userManager.UpdateAsync(artistToFollow);
+        
         return RedirectToAction("Artists");
     }
 
-    public RedirectToActionResult UnfollowArtist(string artistId)
+    [SuppressMessage("ReSharper.DPA", "DPA0011: High execution time of MVC action")]
+    public async Task<RedirectToActionResult> UnfollowArtist(string artistId)
     {
-        Console.WriteLine("--------------UserUnfollowButton--------------");
+        var user = await _userManager.GetUserAsync(User) as User;
+        var artistToUnfollow = await _userManager.FindByIdAsync(artistId) as Artist;
+        
+        user!.FollowedArtists.Remove(artistToUnfollow!);
+        artistToUnfollow!.Followers.Remove(user);
+            
+        await _userManager.UpdateAsync(user);
+        await _userManager.UpdateAsync(artistToUnfollow);
+
         return RedirectToAction("Artists");
     }
     
