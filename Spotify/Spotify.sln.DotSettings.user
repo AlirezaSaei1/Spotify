@@ -3,5 +3,6 @@
   &lt;TestAncestor&gt;&#xD;
     &lt;TestId&gt;xUnit::AF314DD1-15A1-4634-AC7B-B15B042D9D16::net7.0::Spotify.Tests.UnitTest1&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;xUnit::AF314DD1-15A1-4634-AC7B-B15B042D9D16::net7.0::Spotify.Tests.UnitTest2&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::AF314DD1-15A1-4634-AC7B-B15B042D9D16::net7.0::Spotify.Tests.UnitTest3&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
