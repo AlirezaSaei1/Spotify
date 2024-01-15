@@ -1,4 +1,4 @@
-﻿namespace Spotify.Storage;
+﻿namespace Spotify.Services;
 
 // Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 // SPDX-License-Identifier:  Apache - 2.0
@@ -19,7 +19,7 @@ using System.Reflection;
   // file containing the text supplied to the method. The application
   // was created using AWS SDK for .NET 3.5 and .NET 5.0.
 
-public class ArvanStorage
+public class ArvanStorageService : IArvanStorageService
 {
   private static IAmazonS3 _s3Client;
 
@@ -28,7 +28,7 @@ public class ArvanStorage
 
   private static string LOCAL_PATH = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
 
-  static async Task MainUpload()
+  public async Task MainUpload()
   {
       var awsCredentials = new Amazon.Runtime.BasicAWSCredentials("53940f0c-4b40-442b-bed0-e8025f6d3463",
           "8c6ec26471b8a2eb21de140e601445e8df750f0d89a744b736154a85b1a35eaa");
@@ -52,7 +52,7 @@ public class ArvanStorage
   /// <param name="filePath">The full path, including file name, to the
   /// file to upload. This doesn't necessarily have to be the same as the
   /// name of the destination file.</param>
-  static async Task UploadObjectFromFileAsync(IAmazonS3 client, string bucketName, string objectName, 
+  private async Task UploadObjectFromFileAsync(IAmazonS3 client, string bucketName, string objectName, 
       string filePath)
   {
       try
@@ -83,7 +83,7 @@ public class ArvanStorage
   }
   
 
-  public static async Task MainDownload()
+  public async Task MainDownload()
   {
       const string bucketName = "<BUCKET_NAME>";
       var keyName = OBJECT_NAME;
@@ -95,7 +95,7 @@ public class ArvanStorage
       await ReadObjectDataAsync(_s3Client, bucketName, keyName);
   }
   
-  static async Task ReadObjectDataAsync(IAmazonS3 client, string bucketName, string keyName)
+  private async Task ReadObjectDataAsync(IAmazonS3 client, string bucketName, string keyName)
   {
       string responseBody = string.Empty;
 
