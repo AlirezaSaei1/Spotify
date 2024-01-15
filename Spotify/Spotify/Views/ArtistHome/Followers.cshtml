@@ -11,6 +11,26 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true"/>
     <link rel="stylesheet" href="~/css/styles.css" asp-append-version="true"/>
+    <style>
+                .follower-item {
+                    background-color: #999;
+                    padding: 10px;
+                    margin-bottom: 10px;
+                    width: 100%;
+                    border-radius: 10px;
+                    transition: background-color 0.3s;
+                }
+                
+                .follower-item:hover {
+                    background-color: #777;
+                }
+                
+                .follower-item img {
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                }
+    </style>
 </head>
 <body>
     <div class="container">
@@ -32,6 +52,9 @@
                     @foreach (var follower in Model)
                     {
                         <div class="follower-item">
+                            <div style="float: left; margin-right: 10px;">
+                                <img src="~/logo/default_profile.png" alt="User Picture" />
+                            </div>
                             <p>@follower.FirstName @follower.LastName</p>
                         </div>
                     }

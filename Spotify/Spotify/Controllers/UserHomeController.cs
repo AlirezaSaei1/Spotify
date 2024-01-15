@@ -124,6 +124,8 @@ public class UserHomeController : Controller
     
     public IActionResult SavedMusics()
     {
-        return View();
+        var currentUser = _userManager.GetUserAsync(User).Result as User;
+        var savedMusics = currentUser!.SavedMusics.ToList();
+        return View(savedMusics);
     }
 }
