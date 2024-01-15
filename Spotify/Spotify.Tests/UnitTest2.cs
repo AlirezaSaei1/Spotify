@@ -49,6 +49,19 @@ public class UnitTest2
         var model = Assert.IsType<ArtistsViewModel>(viewResult.Model);
         Assert.NotNull(model);
     }
+
+    [Fact]
+    public void SavedMusics_ReturnsViewResult()
+    {
+        // Arrange
+        var controller = new UserHomeController(MockUserManager().Object);
+
+        // Act
+        var result = controller.SavedMusics();
+
+        // Assert
+        Assert.IsType<ViewResult>(result);
+    }
     
     private Mock<UserManager<ApplicationUser>> MockUserManager()
     {
