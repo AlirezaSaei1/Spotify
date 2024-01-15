@@ -31,7 +31,7 @@ public class UnitTest2
         var controller = new UserHomeController(MockUserManager().Object, MockDbContext().Object);
 
         // Act
-        var result = controller.Musics();
+        var result = controller.Musics("");
 
         // Assert
         Assert.IsType<ViewResult>(result);

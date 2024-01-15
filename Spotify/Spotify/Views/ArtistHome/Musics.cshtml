@@ -1,32 +1,53 @@
-﻿@{
+﻿@model List<Music>
+
+@{
     ViewData["Title"] = "Artist Musics";
 }
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - Spotify</title>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true"/>
-    <link rel="stylesheet" href="~/css/styles.css" asp-append-version="true"/>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/styles.css" asp-append-version="true" />
 </head>
 <body>
-<div class="container">
-    <div class="sidebar">
-        <a asp-controller="ArtistHome" asp-action="Index">Home</a>
-        <a asp-controller="ArtistHome" asp-action="Musics" class="active">My Musics</a>
-        <a asp-controller="ArtistHome" asp-action="NewMusic">Publish New Music</a>
-        <a asp-controller="ArtistHome" asp-action="Followers">My Followers</a>
-    </div>
-    <div class="content">
-        <p class="display-4">Your Musics</p>
-    </div>
-</div>
+    <div class="container">
+        <div class="sidebar">
+            <a asp-controller="ArtistHome" asp-action="Index">Home</a>
+            <a asp-controller="ArtistHome" asp-action="Musics" class="active">My Musics</a>
+            <a asp-controller="ArtistHome" asp-action="NewMusic">Publish New Music</a>
+            <a asp-controller="ArtistHome" asp-action="Followers">My Followers</a>
+        </div>
+        <div class="content">
+            <p class="display-4">Your Musics</p>
 
-<script src="~/lib/jquery/dist/jquery.min.js"></script>
-<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-<script src="~/js/site.js" asp-append-version="true"></script>
+            @if (Model.Count == 0)
+            {
+                <p>No musics found. You have not published any musics. <a asp-controller="ArtistHome" asp-action="NewMusic">Publish one</a>.</p>
+            }
+            else
+            {
+                foreach (var music in Model)
+                {
+                    <div>
+                        <h3>@music.Name</h3>
+                        <audio controls>
+                            <source src="@music.Url" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                        <p>Saved @music.Saved times</p>
+                    </div>
+                }
+            }
+        </div>
+    </div>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
 </body>
 </html>

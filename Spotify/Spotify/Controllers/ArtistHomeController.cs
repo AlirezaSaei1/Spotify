@@ -1,6 +1,4 @@
-﻿using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Identity;
+﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Spotify.Data;
 using Spotify.Models;
@@ -30,15 +28,27 @@ public class ArtistHomeController : Controller
         return View();
     }
     
-    public IActionResult Musics()
+    public async Task<IActionResult> Musics()
     {
-        return View();
+        var artist = await _userManager.GetUserAsync(User) as Artist;
+        var artistMusics = _dbContext.Musics
+            .Where(music => music.Artist.Id == artist!.Id)
+            .ToList();
+        
+        return View(artistMusics);
     }
     
     public IActionResult NewMusic()
     {
         return View();
     }
+    
+    [HttpPost]
+    public async Task<IActionResult> UploadMusic(IFormFile musicFile)
+    {
+        return View("Index");
+    }
+    
     
     public async Task<IActionResult> Followers()
     {
