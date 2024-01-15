@@ -28,9 +28,16 @@ public class UserHomeController : Controller
         return View();
     }
     
-    public IActionResult Musics()
+    public IActionResult Musics(string searchString)
     {
         var allMusics = _dbContext.Musics.ToList();
+        
+        if (!string.IsNullOrEmpty(searchString))
+        {
+            allMusics = allMusics.Where(m =>
+                    m.Name.Contains(searchString, StringComparison.OrdinalIgnoreCase))
+                .ToList();
+        }
         
         return View(allMusics);
     }
