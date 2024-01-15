@@ -10,16 +10,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6845310d-c7e7-459a-b8cf-35421b5f6c02" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Spotify/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Spotify/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Spotify.Tests/UnitTest1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Spotify.Tests/UnitTest1.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spotify.Tests/bin/Debug/net7.0/Spotify.Tests.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Spotify.Tests/bin/Debug/net7.0/Spotify.Tests.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spotify.Tests/bin/Debug/net7.0/Spotify.Tests.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Spotify.Tests/bin/Debug/net7.0/Spotify.Tests.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spotify.Tests/bin/Debug/net7.0/Spotify.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Spotify.Tests/bin/Debug/net7.0/Spotify.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spotify.Tests/bin/Debug/net7.0/Spotify.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Spotify.Tests/bin/Debug/net7.0/Spotify.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spotify.Tests/obj/Debug/net7.0/Spotify.Tests.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Spotify.Tests/obj/Debug/net7.0/Spotify.Tests.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spotify.Tests/obj/Debug/net7.0/Spotify.Tests.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Spotify.Tests/obj/Debug/net7.0/Spotify.Tests.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spotify.Tests/obj/Debug/net7.0/Spotify.Tests.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Spotify.Tests/obj/Debug/net7.0/Spotify.Tests.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spotify/Controllers/HomeController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Spotify/Controllers/HomeController.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
