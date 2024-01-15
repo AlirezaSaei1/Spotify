@@ -22,6 +22,34 @@ public class UnitTest2
         Assert.IsType<ViewResult>(result);
     }
     
+    [Fact]
+    public void Musics_ReturnsViewResult()
+    {
+        // Arrange
+        var controller = new UserHomeController(MockUserManager().Object);
+
+        // Act
+        var result = controller.Musics();
+
+        // Assert
+        Assert.IsType<ViewResult>(result);
+    }
+    
+    [Fact]
+    public void Artists_ReturnsViewResult()
+    {
+        // Arrange
+        var controller = new UserHomeController(MockUserManager().Object);
+
+        // Act
+        var result = controller.Artists(null);
+
+        // Assert
+        var viewResult = Assert.IsType<ViewResult>(result);
+        var model = Assert.IsType<ArtistsViewModel>(viewResult.Model);
+        Assert.NotNull(model);
+    }
+    
     private Mock<UserManager<ApplicationUser>> MockUserManager()
     {
         var users = new List<ApplicationUser>
