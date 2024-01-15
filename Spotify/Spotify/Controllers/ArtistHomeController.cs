@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Spotify.Data;
 using Spotify.Models;
+using Spotify.Storage;
 
 namespace Spotify.Controllers;
 
@@ -39,6 +40,13 @@ public class ArtistHomeController : Controller
     {
         return View();
     }
+    
+    [HttpPost]
+    public async Task<IActionResult> UploadMusic(IFormFile musicFile)
+    {
+        return View("Index");
+    }
+    
     
     public async Task<IActionResult> Followers()
     {
