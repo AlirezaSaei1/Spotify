@@ -4,33 +4,36 @@ using Moq;
 using Spotify.Controllers;
 using Spotify.Models;
 
-namespace Spotify.Tests;
-
-public class UnitTest1
+namespace Spotify.Tests
 {
-    [Fact]
-    public void Index_ReturnsViewResult()
+    public class UnitTest1
     {
-        // Arrange
-        var controller = new HomeController();
+        [Fact]
+        public void Index_ReturnsViewResult()
+        {
+            // Arrange
+            var userManagerMock = new Mock<UserManager<ApplicationUser>>(Mock.Of<IUserStore<ApplicationUser>>(), null, null, null, null, null, null, null, null);
+            var controller = new HomeController(userManagerMock.Object);
 
-        // Act
-        var result = controller.Index();
+            // Act
+            var result = controller.Index();
 
-        // Assert
-        Assert.IsType<ViewResult>(result);
-    }
-    
-    [Fact]
-    public void Privacy_ReturnsViewResult()
-    {
-        // Arrange
-        var controller = new HomeController();
+            // Assert
+            Assert.IsType<ViewResult>(result);
+        }
 
-        // Act
-        var result = controller.Privacy();
+        [Fact]
+        public void Privacy_ReturnsViewResult()
+        {
+            // Arrange
+            var userManagerMock = new Mock<UserManager<ApplicationUser>>(Mock.Of<IUserStore<ApplicationUser>>(), null, null, null, null, null, null, null, null);
+            var controller = new HomeController(userManagerMock.Object);
 
-        // Assert
-        Assert.IsType<ViewResult>(result);
+            // Act
+            var result = controller.Privacy();
+
+            // Assert
+            Assert.IsType<ViewResult>(result);
+        }
     }
 }
