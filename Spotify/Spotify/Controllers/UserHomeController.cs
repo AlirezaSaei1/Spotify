@@ -15,6 +15,12 @@ public class UserHomeController : Controller
         _userManager = userManager;
         _dbContext = dbContext;
     }
+
+    public UserHomeController(UserManager<ApplicationUser> userManager)
+    {
+        throw new NotImplementedException();
+    }
+
     public IActionResult Index()
     {
         var currentUser = _userManager.GetUserAsync(User).Result;

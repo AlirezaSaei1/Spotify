@@ -17,6 +17,12 @@ public class ArtistHomeController : Controller
         _userManager = userManager;
         _dbContext = dbContext;
     }
+
+    public ArtistHomeController(UserManager<ApplicationUser> userManager)
+    {
+        throw new NotImplementedException();
+    }
+
     public IActionResult Index()
     {
         var currentUser = _userManager.GetUserAsync(User).Result;
