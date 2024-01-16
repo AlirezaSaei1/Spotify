@@ -51,11 +51,19 @@ public class UserHomeController : Controller
 
         if (music == null) return RedirectToAction("Musics");
         
-        currentUser!.SavedMusics.Add(music);
+        var userMusic = new UserMusic
+        {
+            UserId = currentUser!.Id,
+            SavedMusicId = music.Id
+        };
+        
+        _dbContext.UserMusics.Add(userMusic);
         music.Saved++;
+        // currentUser.SavedMusics.Add(music);
+        
         _dbContext.SaveChanges();
+        
         return RedirectToAction("Musics");
-
     }
 
     [HttpPost]
@@ -69,12 +77,12 @@ public class UserHomeController : Controller
     {
         var currentUser = _userManager.GetUserAsync(User).Result as User;
         var allArtists = _userManager.Users.OfType<Artist>().ToList();
-        
+
         if (!allArtists.Any())
         {
             ViewBag.Message = "No artists found.";
         }
-        
+
         if (!string.IsNullOrEmpty(searchString))
         {
             allArtists = allArtists.Where(a =>
@@ -82,18 +90,30 @@ public class UserHomeController : Controller
                     a.LastName.Contains(searchString, StringComparison.OrdinalIgnoreCase))
                 .ToList();
         }
-        
+
         var randomArtists = allArtists.Take(5).ToList();
+
+        var followedArtistIds = _dbContext.UserFollowings
+            .Where(uf => uf.UserId == currentUser!.Id)
+            .Select(uf => uf.FollowingArtistId)
+            .ToList();
+
+        var currentUserFollowingArtists = _dbContext.UserFollowings
+            .Where(uf => uf.UserId == currentUser.Id)
+            .ToList();
 
         var viewModel = new ArtistsViewModel
         {
             Artists = randomArtists,
             SearchString = searchString,
-            CurrentUser = currentUser!
+            CurrentUser = currentUser,
+            CurrentUserFollowingArtists = currentUserFollowingArtists,
         };
 
         return View(viewModel);
     }
+
+    
     
     [SuppressMessage("ReSharper.DPA", "DPA0011: High execution time of MVC action")]
     public async Task<RedirectToActionResult> FollowArtist(string artistId)
@@ -101,11 +121,30 @@ public class UserHomeController : Controller
         var user = await _userManager.GetUserAsync(User) as User;
         var artistToFollow = await _userManager.FindByIdAsync(artistId) as Artist;
         
-        user!.FollowedArtists.Add(artistToFollow!);
-        artistToFollow!.Followers.Add(user);
-        
-        await _userManager.UpdateAsync(user);
-        await _userManager.UpdateAsync(artistToFollow);
+        if (!_dbContext.UserFollowings.Any(uf => uf.UserId == user!.Id && uf.FollowingArtistId == artistToFollow.Id))
+        {
+            var userFollowing = new UserFollowing
+            {
+                UserId = user!.Id,
+                FollowingArtistId = artistToFollow!.Id
+            };
+            
+            var artistFollower = new ArtistFollower
+            {
+                ArtistId = artistToFollow.Id,
+                FollowerUsertId = user.Id
+            };
+            
+            _dbContext.UserFollowings.Add(userFollowing);
+            _dbContext.ArtistFollowers.Add(artistFollower);
+            
+            // user.FollowedArtists.Add(artistToFollow);
+            // artistToFollow.Followers.Add(user);
+            // await _userManager.UpdateAsync(user);
+            // await _userManager.UpdateAsync(artistToFollow);
+            
+            await _dbContext.SaveChangesAsync();
+        }
         
         return RedirectToAction("Artists");
     }
@@ -116,33 +155,61 @@ public class UserHomeController : Controller
         var user = await _userManager.GetUserAsync(User) as User;
         var artistToUnfollow = await _userManager.FindByIdAsync(artistId) as Artist;
         
-        user!.FollowedArtists.Remove(artistToUnfollow!);
-        artistToUnfollow!.Followers.Remove(user);
+        var userFollowing = _dbContext.UserFollowings.FirstOrDefault(uf => uf.UserId == user.Id && uf.FollowingArtistId == artistToUnfollow.Id);
+        if (userFollowing != null)
+        {
+            _dbContext.UserFollowings.Remove(userFollowing);
             
-        await _userManager.UpdateAsync(user);
-        await _userManager.UpdateAsync(artistToUnfollow);
+            var artistFollower = _dbContext.ArtistFollowers.FirstOrDefault(af => af.ArtistId == artistToUnfollow.Id && af.FollowerUsertId == user.Id);
+            if (artistFollower != null)
+            {
+                _dbContext.ArtistFollowers.Remove(artistFollower);
+            }
+            
+            await _dbContext.SaveChangesAsync();
+        }
 
         return RedirectToAction("Artists");
     }
+
     
     public async Task<IActionResult> FollowedArtists()
     {
         var user = await _userManager.GetUserAsync(User);
         
-        var followedArtists = (user as User)?.FollowedArtists;
+        var followedArtistIds = _dbContext.UserFollowings
+            .Where(uf => uf.UserId == user!.Id)
+            .Select(uf => uf.FollowingArtistId)
+            .ToList();
 
-        if (followedArtists == null || !followedArtists.Any())
+        var followedArtists = _userManager.Users
+            .OfType<Artist>()
+            .Where(a => followedArtistIds.Contains(a.Id))
+            .ToList();
+
+        if (!followedArtists.Any())
         {
             ViewBag.Message = "You are following no artists.";
         }
 
-        return View(user);
+        return View(followedArtists);
     }
+
     
     public IActionResult SavedMusics()
     {
         var currentUser = _userManager.GetUserAsync(User).Result as User;
-        var savedMusics = currentUser!.SavedMusics.ToList();
+
+        var savedMusicIds = _dbContext.UserMusics
+            .Where(um => um.UserId == currentUser!.Id)
+            .Select(um => um.SavedMusicId)
+            .ToList();
+
+        var savedMusics = _dbContext.Musics
+            .Where(m => savedMusicIds.Contains(m.Id))
+            .ToList();
+
         return View(savedMusics);
     }
+
 }
