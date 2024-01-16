@@ -8,7 +8,11 @@ namespace Spotify.Data;
 public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
 {
     public DbSet<Music> Musics { get; init; }
-    
+    public DbSet<ArtistFollower> ArtistFollowers { get; init; }
+    public DbSet<ArtistMusic> ArtistMusics { get; init; }
+    public DbSet<UserFollowing> UserFollowings { get; init; }
+    public DbSet<UserMusic> UserMusics { get; init; }
+
     public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
         : base(options)
     {

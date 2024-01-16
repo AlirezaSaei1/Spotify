@@ -53,14 +53,22 @@ public class ArtistHomeController : Controller
     public async Task<IActionResult> Followers()
     {
         var user = await _userManager.GetUserAsync(User);
-        
-        var followers = (user as Artist)?.Followers;
 
-        if (followers == null || !followers.Any())
+        var artistFollowers = _dbContext.ArtistFollowers
+            .Where(af => af.ArtistId == user!.Id)
+            .Select(af => af.FollowerUsertId)
+            .ToList();
+
+        var followers = _userManager.Users.OfType<User>()
+            .Where(u => artistFollowers.Contains(u.Id))
+            .ToList();
+
+        if (!followers.Any())
         {
             ViewBag.Message = "You have no followers";
         }
 
         return View(followers);
     }
+
 }

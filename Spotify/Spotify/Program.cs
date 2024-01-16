@@ -25,7 +25,7 @@ builder.Services.ConfigureApplicationCookie(o => {
 builder.Services.Configure<DataProtectionTokenProviderOptions>(o =>
     o.TokenLifespan = TimeSpan.FromHours(3));
 
-
+builder.Services.AddSingleton<IMusicStorageService, MusicStorageService>();
 
 var app = builder.Build();
 

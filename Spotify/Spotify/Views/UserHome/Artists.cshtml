@@ -74,17 +74,20 @@
                                 <p>@artist.FirstName @artist.LastName</p>
                             </div>
                             <div style="float: right;">
-                                @if (Model.CurrentUser.FollowedArtists.Contains(artist))
+                                @{
+                                    var isFollowing = Model.CurrentUserFollowingArtists.Any(a => a.FollowingArtistId == artist.Id);
+                                }
+                                @if (isFollowing)
                                 {
                                     <form asp-controller="UserHome" asp-action="UnfollowArtist" method="post">
-                                        <input type="hidden" name="artistId" value="@artist.Id" />
+                                        <input type="hidden" name="artistId" value="@artist.Id"/>
                                         <button class="btn btn-danger" type="submit">Unfollow</button>
                                     </form>
                                 }
                                 else
                                 {
                                     <form asp-controller="UserHome" asp-action="FollowArtist" method="post">
-                                        <input type="hidden" name="artistId" value="@artist.Id" />
+                                        <input type="hidden" name="artistId" value="@artist.Id"/>
                                         <button class="btn btn-success" type="submit">Follow</button>
                                     </form>
                                 }
