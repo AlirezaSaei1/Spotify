@@ -10,7 +10,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6845310d-c7e7-459a-b8cf-35421b5f6c02" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Spotify/.idea/dataSources/7279a97e-d8c1-4b0d-9707-d88cd9147979.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Spotify/.idea/dataSources/7279a97e-d8c1-4b0d-9707-d88cd9147979.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Spotify/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Spotify/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Spotify.Tests/obj/Debug/net7.0/Spotify.Tests.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Spotify.Tests/obj/Debug/net7.0/Spotify.Tests.assets.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Spotify.Tests/obj/Debug/net7.0/Spotify.Tests.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Spotify.Tests/obj/Debug/net7.0/Spotify.Tests.csproj.AssemblyReference.cache" afterDir="false" />
@@ -21,9 +20,9 @@
       <change beforePath="$PROJECT_DIR$/Spotify.Tests/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Spotify.Tests/obj/project.packagespec.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Spotify.Tests/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/Spotify.Tests/obj/rider.project.model.nuget.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Spotify.Tests/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Spotify.Tests/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spotify/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Spotify/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spotify/Services/ArvanStorageService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Spotify/Services/MusicStorageService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spotify/Services/IArvanStorageService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Spotify/Services/IMusicStorageService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spotify/Models/Music.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Spotify/Models/Music.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spotify/Services/IMusicStorageService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Spotify/Services/IMusicStorageService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spotify/Services/MusicStorageService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Spotify/Services/MusicStorageService.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -133,7 +132,8 @@
       <workItem from="1705259589851" duration="365000" />
       <workItem from="1705320532267" duration="649000" />
       <workItem from="1705347735251" duration="856000" />
-      <workItem from="1705413802309" duration="2748000" />
+      <workItem from="1705413802309" duration="2942000" />
+      <workItem from="1705435064144" duration="2970000" />
     </task>
     <servers />
   </component>
