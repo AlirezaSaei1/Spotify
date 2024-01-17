@@ -211,5 +211,25 @@ public class UserHomeController : Controller
 
         return View(savedMusics);
     }
-
+    
+    [HttpPost]
+    public async Task<IActionResult> RemoveSavedMusic(int savedMusicId)
+    {
+        var user = await _userManager.GetUserAsync(User) as User;
+        var userMusicEntry = _dbContext.UserMusics
+            .FirstOrDefault(um => um.UserId == user!.Id && um.SavedMusicId == savedMusicId);
+        
+        if (userMusicEntry != null)
+        {
+            var music = _dbContext.Musics.FirstOrDefault(m => m.Id == savedMusicId);
+            if (music!.Saved > 0)
+            {
+                music.Saved--;
+            }
+            _dbContext.UserMusics.Remove(userMusicEntry);
+            await _dbContext.SaveChangesAsync();
+        }
+        
+        return RedirectToAction("SavedMusics");
+    }
 }

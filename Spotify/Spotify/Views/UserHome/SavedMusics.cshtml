@@ -21,7 +21,7 @@
             <a asp-controller="UserHome" asp-action="Musics">Musics</a>
             <a asp-controller="UserHome" asp-action="Artists">Artists</a>
             <a asp-controller="UserHome" asp-action="FollowedArtists">Followed Artists</a>
-            <a asp-controller="UserHome" asp-action="SavedMusics"  class="active">Saved Musics</a>
+            <a asp-controller="UserHome" asp-action="SavedMusics" class="active">Saved Musics</a>
         </div>
         <div class="content">
             <h1 class="display-4">Saved Musics</h1>
@@ -41,6 +41,11 @@
                             Your browser does not support the audio element.
                         </audio>
                         <p>This music has been saved @music.Saved times</p>
+                        
+                        <form asp-controller="UserHome" asp-action="RemoveSavedMusic" method="post">
+                            <input type="hidden" name="savedMusicId" value="@music.Id" />
+                            <button type="submit" class="btn btn-danger">Remove</button>
+                        </form>
                     </div>
                 }
             }

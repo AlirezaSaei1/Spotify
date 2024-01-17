@@ -6,6 +6,7 @@ using Moq;
 using Spotify.Controllers;
 using Spotify.Data;
 using Spotify.Models;
+using Spotify.Services;
 
 namespace Spotify.Tests;
 
