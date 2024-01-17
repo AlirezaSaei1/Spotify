@@ -55,6 +55,7 @@ public class ArtistHomeController : Controller
             Artist = artist!,
             Saved = 0
         };
+        
         var musicStorageService = new MusicStorageService();
         var s3Url = musicStorageService.UploadObjectFromFile(musicFile, $"{newMusic.Id}.mp3");
         newMusic.Url = s3Url;
@@ -62,7 +63,7 @@ public class ArtistHomeController : Controller
         _dbContext.Musics.Add(newMusic);
         await _dbContext.SaveChangesAsync();
         
-        return RedirectToAction("Index");
+        return RedirectToAction("Musics");
     }
     
     

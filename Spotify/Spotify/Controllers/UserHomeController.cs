@@ -1,6 +1,7 @@
 ﻿using System.Diagnostics.CodeAnalysis;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Spotify.Data;
 using Spotify.Models;
 
@@ -44,33 +45,36 @@ public class UserHomeController : Controller
     }
     
     [HttpPost]
-    public IActionResult SaveMusic(int musicId)
+    [SuppressMessage("ReSharper.DPA", "DPA0011: High execution time of MVC action")]
+    public async Task<IActionResult> SaveMusic(int musicId)
     {
-        var music = _dbContext.Musics.FirstOrDefault(m => m.Id == musicId);
-        var currentUser = _userManager.GetUserAsync(User).Result as User;
+        var currentUser = await _userManager.GetUserAsync(User) as User;
 
-        if (music == null) return RedirectToAction("Musics");
-        
-        var userMusic = new UserMusic
+        var hasSavedMusic = await _dbContext.UserMusics
+            .AnyAsync(um => um.UserId == currentUser!.Id && um.SavedMusicId == musicId);
+
+        if (!hasSavedMusic)
         {
-            UserId = currentUser!.Id,
-            SavedMusicId = music.Id
-        };
-        
-        _dbContext.UserMusics.Add(userMusic);
-        music.Saved++;
-        // currentUser.SavedMusics.Add(music);
-        
-        _dbContext.SaveChanges();
-        
+            var music = await _dbContext.Musics.FirstOrDefaultAsync(m => m.Id == musicId);
+
+            if (music != null)
+            {
+                var userMusic = new UserMusic
+                {
+                    UserId = currentUser!.Id,
+                    SavedMusicId = music.Id
+                };
+
+                _dbContext.UserMusics.Add(userMusic);
+                music.Saved++;
+
+                await _dbContext.SaveChangesAsync();
+            }
+        }
+
         return RedirectToAction("Musics");
     }
 
-    [HttpPost]
-    public IActionResult DownloadMusic(int musicId)
-    {
-        return RedirectToAction("Musics");
-    }
 
 
     public IActionResult Artists(string searchString)
@@ -99,14 +103,14 @@ public class UserHomeController : Controller
             .ToList();
 
         var currentUserFollowingArtists = _dbContext.UserFollowings
-            .Where(uf => uf.UserId == currentUser.Id)
+            .Where(uf => uf.UserId == currentUser!.Id)
             .ToList();
 
         var viewModel = new ArtistsViewModel
         {
             Artists = randomArtists,
             SearchString = searchString,
-            CurrentUser = currentUser,
+            CurrentUser = currentUser!,
             CurrentUserFollowingArtists = currentUserFollowingArtists,
         };
 
@@ -212,24 +216,28 @@ public class UserHomeController : Controller
         return View(savedMusics);
     }
     
+    
     [HttpPost]
     public async Task<IActionResult> RemoveSavedMusic(int savedMusicId)
     {
         var user = await _userManager.GetUserAsync(User) as User;
+        
         var userMusicEntry = _dbContext.UserMusics
             .FirstOrDefault(um => um.UserId == user!.Id && um.SavedMusicId == savedMusicId);
-        
+
         if (userMusicEntry != null)
         {
             var music = _dbContext.Musics.FirstOrDefault(m => m.Id == savedMusicId);
-            if (music!.Saved > 0)
+            
+            if (music is { Saved: > 0 })
             {
                 music.Saved--;
+                _dbContext.UserMusics.Remove(userMusicEntry);
+                await _dbContext.SaveChangesAsync();
             }
-            _dbContext.UserMusics.Remove(userMusicEntry);
-            await _dbContext.SaveChangesAsync();
         }
-        
+
         return RedirectToAction("SavedMusics");
     }
+
 }

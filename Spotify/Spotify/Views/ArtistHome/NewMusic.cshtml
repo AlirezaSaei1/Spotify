@@ -41,11 +41,9 @@
             <div id="errorPopup" class="error-popup">Please select a music file!</div>
 
             <form asp-controller="ArtistHome" asp-action="UploadMusic" method="post" enctype="multipart/form-data" onsubmit="return validateForm()">
-                <!-- Input for selecting a music file -->
                 <input type="file" name="musicFile" id="musicFile" accept=".mp3, .wav" />
                 <br />
                 <br />
-                <!-- Submit button -->
                 <button type="submit" class="btn btn-primary">Upload Music</button>
             </form>
         </div>
