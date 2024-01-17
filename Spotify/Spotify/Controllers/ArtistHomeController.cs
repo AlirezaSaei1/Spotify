@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Spotify.Data;
 using Spotify.Models;
+using Spotify.Services;
 
 namespace Spotify.Controllers;
 
@@ -46,7 +47,23 @@ public class ArtistHomeController : Controller
     [HttpPost]
     public async Task<IActionResult> UploadMusic(IFormFile musicFile)
     {
-        return View("Index");
+        var artist = await _userManager.GetUserAsync(User) as Artist;
+        
+        var newMusic = new Music
+        {
+            Name = musicFile.FileName,
+            Artist = artist!,
+            Saved = 0
+        };
+        
+        var musicStorageService = new MusicStorageService();
+        var s3Url = musicStorageService.UploadObjectFromFile(musicFile, $"{newMusic.Id}.mp3");
+        newMusic.Url = s3Url;
+        
+        _dbContext.Musics.Add(newMusic);
+        await _dbContext.SaveChangesAsync();
+        
+        return RedirectToAction("Musics");
     }
     
     

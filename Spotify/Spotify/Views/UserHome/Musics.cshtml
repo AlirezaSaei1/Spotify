@@ -4,6 +4,18 @@
     ViewData["Title"] = "Musics";
 }
 
+@inject Spotify.Data.ApplicationDbContext DbContext
+
+@functions {
+    bool UserHasSavedMusic(string userId, int musicId)
+    {
+        var savedMusicEntry = DbContext.UserMusics
+            .FirstOrDefault(um => um.UserId == userId && um.SavedMusicId == musicId);
+        
+        return savedMusicEntry != null;
+    }
+}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -51,15 +63,20 @@
                         </audio>
                         <p>Saved @music.Saved times</p>
                         
-                        <form asp-controller="UserHome" asp-action="DownloadMusic" method="post">
-                            <input type="hidden" name="musicId" value="@music.Id" />
-                            <button class="btn btn-success" type="submit">Download Music</button>
-                        </form>
-                        
-                        <form asp-controller="UserHome" asp-action="SaveMusic" method="post">
-                            <input type="hidden" name="musicId" value="@music.Id" />
-                            <button class="btn btn-success" type="submit">Save Music</button>
-                        </form>
+                        @if (UserHasSavedMusic(User.Identity!.Name!, music.Id))
+                        {
+                            <form asp-controller="UserHome" asp-action="RemoveSavedMusic" method="post">
+                                <input type="hidden" name="musicId" value="@music.Id" />
+                                <button class="btn btn-danger" type="submit">Remove Music</button>
+                            </form>
+                        }
+                        else
+                        {
+                            <form asp-controller="UserHome" asp-action="SaveMusic" method="post">
+                                <input type="hidden" name="musicId" value="@music.Id" />
+                                <button class="btn btn-success" type="submit">Save Music</button>
+                            </form>
+                        }
                     </div>
                 }
             }

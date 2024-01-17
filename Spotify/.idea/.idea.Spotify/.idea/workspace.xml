@@ -11,8 +11,20 @@
   <component name="ChangeListManager">
     <list default="true" id="6845310d-c7e7-459a-b8cf-35421b5f6c02" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Spotify/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Spotify/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spotify.Tests/bin/Debug/net7.0/Spotify.Tests.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/Spotify.Tests/bin/Debug/net7.0/Spotify.Tests.deps.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spotify.Tests/bin/Debug/net7.0/Spotify.Tests.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Spotify.Tests/bin/Debug/net7.0/Spotify.Tests.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spotify.Tests/bin/Debug/net7.0/Spotify.Tests.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Spotify.Tests/bin/Debug/net7.0/Spotify.Tests.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spotify.Tests/bin/Debug/net7.0/Spotify.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/Spotify.Tests/bin/Debug/net7.0/Spotify.deps.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spotify.Tests/bin/Debug/net7.0/Spotify.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Spotify.Tests/bin/Debug/net7.0/Spotify.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spotify.Tests/bin/Debug/net7.0/Spotify.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Spotify.Tests/bin/Debug/net7.0/Spotify.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Spotify.Tests/obj/Debug/net7.0/Spotify.Tests.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Spotify.Tests/obj/Debug/net7.0/Spotify.Tests.assets.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Spotify.Tests/obj/Debug/net7.0/Spotify.Tests.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Spotify.Tests/obj/Debug/net7.0/Spotify.Tests.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spotify.Tests/obj/Debug/net7.0/Spotify.Tests.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Spotify.Tests/obj/Debug/net7.0/Spotify.Tests.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spotify.Tests/obj/Debug/net7.0/Spotify.Tests.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Spotify.Tests/obj/Debug/net7.0/Spotify.Tests.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spotify.Tests/obj/Debug/net7.0/Spotify.Tests.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Spotify.Tests/obj/Debug/net7.0/Spotify.Tests.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spotify.Tests/obj/Debug/net7.0/Spotify.Tests.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Spotify.Tests/obj/Debug/net7.0/Spotify.Tests.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spotify.Tests/obj/Debug/net7.0/ref/Spotify.Tests.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Spotify.Tests/obj/Debug/net7.0/ref/Spotify.Tests.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spotify.Tests/obj/Debug/net7.0/refint/Spotify.Tests.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Spotify.Tests/obj/Debug/net7.0/refint/Spotify.Tests.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Spotify.Tests/obj/Spotify.Tests.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Spotify.Tests/obj/Spotify.Tests.csproj.nuget.dgspec.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Spotify.Tests/obj/Spotify.Tests.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/Spotify.Tests/obj/Spotify.Tests.csproj.nuget.g.props" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Spotify.Tests/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/Spotify.Tests/obj/project.assets.json" afterDir="false" />
@@ -22,11 +34,9 @@
       <change beforePath="$PROJECT_DIR$/Spotify.Tests/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Spotify.Tests/obj/rider.project.restore.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Spotify/Controllers/ArtistHomeController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Spotify/Controllers/ArtistHomeController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Spotify/Controllers/UserHomeController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Spotify/Controllers/UserHomeController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spotify/Data/ApplicationDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Spotify/Data/ApplicationDbContext.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spotify/Data/Migrations/ApplicationDbContextModelSnapshot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Spotify/Data/Migrations/ApplicationDbContextModelSnapshot.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spotify/Models/ArtistsViewModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Spotify/Models/ArtistsViewModel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spotify/Views/UserHome/Artists.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Spotify/Views/UserHome/Artists.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spotify/Views/UserHome/FollowedArtists.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Spotify/Views/UserHome/FollowedArtists.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spotify/Models/Music.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Spotify/Models/Music.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spotify/Views/ArtistHome/NewMusic.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Spotify/Views/ArtistHome/NewMusic.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spotify/Views/UserHome/Musics.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Spotify/Views/UserHome/Musics.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Spotify/app.db" beforeDir="false" afterPath="$PROJECT_DIR$/Spotify/app.db" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -138,7 +148,8 @@
       <workItem from="1705320532267" duration="649000" />
       <workItem from="1705347735251" duration="856000" />
       <workItem from="1705413802309" duration="2942000" />
-      <workItem from="1705435064144" duration="7299000" />
+      <workItem from="1705435064144" duration="9952000" />
+      <workItem from="1705521488978" duration="5717000" />
     </task>
     <servers />
   </component>
