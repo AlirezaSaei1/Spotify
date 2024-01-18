@@ -33,16 +33,28 @@ public class UserHomeController : Controller
     public IActionResult Musics(string searchString)
     {
         var allMusics = _dbContext.Musics.ToList();
+        var userId = _userManager.GetUserAsync(User).Result!.Id;
         
+        var musicList = new List<Tuple<Music, bool>>();
+
         if (!string.IsNullOrEmpty(searchString))
         {
-            allMusics = allMusics.Where(m =>
-                    m.Name.Contains(searchString, StringComparison.OrdinalIgnoreCase))
+            allMusics = allMusics
+                .Where(m => m.Name.Contains(searchString, StringComparison.OrdinalIgnoreCase))
                 .ToList();
         }
-        
-        return View(allMusics);
+
+        foreach (var music in allMusics)
+        {
+            var hasSaved = _dbContext.UserMusics.Any(um => um.UserId == userId && um.SavedMusicId == music.Id);
+            
+            var tuple = new Tuple<Music, bool>(music, hasSaved);
+            musicList.Add(tuple);
+        }
+
+        return View(musicList);
     }
+
     
     [HttpPost]
     [SuppressMessage("ReSharper.DPA", "DPA0011: High execution time of MVC action")]
@@ -74,9 +86,7 @@ public class UserHomeController : Controller
 
         return RedirectToAction("Musics");
     }
-
-
-
+    
     public IActionResult Artists(string searchString)
     {
         var currentUser = _userManager.GetUserAsync(User).Result as User;
@@ -218,6 +228,7 @@ public class UserHomeController : Controller
     
     
     [HttpPost]
+    [SuppressMessage("ReSharper.DPA", "DPA0011: High execution time of MVC action")]
     public async Task<IActionResult> RemoveSavedMusic(int savedMusicId)
     {
         var user = await _userManager.GetUserAsync(User) as User;
@@ -239,5 +250,4 @@ public class UserHomeController : Controller
 
         return RedirectToAction("SavedMusics");
     }
-
 }

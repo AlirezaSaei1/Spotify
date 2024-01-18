@@ -1,20 +1,4 @@
-﻿@model List<Music>
-
-@{
-    ViewData["Title"] = "Musics";
-}
-
-@inject Spotify.Data.ApplicationDbContext DbContext
-
-@functions {
-    bool UserHasSavedMusic(string userId, int musicId)
-    {
-        var savedMusicEntry = DbContext.UserMusics
-            .FirstOrDefault(um => um.UserId == userId && um.SavedMusicId == musicId);
-        
-        return savedMusicEntry != null;
-    }
-}
+﻿@model List<Tuple<Music, bool>>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -53,8 +37,11 @@
             }
             else
             {
-                foreach (var music in Model)
+                foreach (var tuple in Model)
                 {
+                    var music = tuple.Item1;
+                    var hasSaved = tuple.Item2;
+
                     <div>
                         <h3>@music.Name</h3>
                         <audio controls>
@@ -63,12 +50,9 @@
                         </audio>
                         <p>Saved @music.Saved times</p>
                         
-                        @if (UserHasSavedMusic(User.Identity!.Name!, music.Id))
+                        @if (hasSaved)
                         {
-                            <form asp-controller="UserHome" asp-action="RemoveSavedMusic" method="post">
-                                <input type="hidden" name="musicId" value="@music.Id" />
-                                <button class="btn btn-danger" type="submit">Remove Music</button>
-                            </form>
+                            <button class="btn btn-secondary" disabled>Saved</button>
                         }
                         else
                         {
