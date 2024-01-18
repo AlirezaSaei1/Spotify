@@ -1,18 +1,47 @@
 ﻿@model List<Music>
 
-@{
-    ViewData["Title"] = "Saved Musics";
-}
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>@ViewData["Title"] - Spotify</title>
+    <title>@ViewData["Title"] Spotify: Saved Musics</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true"/>
     <link rel="stylesheet" href="~/css/styles.css" asp-append-version="true"/>
+    <style>
+        .music-item {
+            background-color: #555;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 8px;
+            transition: background-color 0.3s;
+        }
+
+        .music-item:hover {
+            background-color: #777;
+        }
+
+        .music-item h3,
+        .music-item p {
+            margin: 0;
+        }
+
+        .music-controls {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 10px;
+        }
+
+        .music-controls audio {
+            margin-right: 10px;
+        }
+
+        .music-controls form {
+            margin-left: 10px;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
@@ -34,18 +63,21 @@
             {
                 foreach (var music in Model)
                 {
-                    <div>
+                    <div class="music-item">
                         <h3>@music.Name</h3>
-                        <audio controls>
-                            <source src="@music.Url" type="audio/mpeg">
-                            Your browser does not support the audio element.
-                        </audio>
-                        <p>This music has been saved @music.Saved times</p>
-                        
-                        <form asp-controller="UserHome" asp-action="RemoveSavedMusic" method="post">
-                            <input type="hidden" name="savedMusicId" value="@music.Id" />
-                            <button type="submit" class="btn btn-danger">Remove</button>
-                        </form>
+                        <div class="music-controls">
+                            <div style="flex-grow: 1;">
+                                <audio controls>
+                                    <source src="@music.Url" type="audio/mpeg">
+                                    Your browser does not support the audio element.
+                                </audio>
+                                <p>Saved @music.Saved time(s)</p>
+                            </div>
+                            <form asp-controller="UserHome" asp-action="RemoveSavedMusic" method="post">
+                                <input type="hidden" name="savedMusicId" value="@music.Id" />
+                                <button type="submit" class="btn btn-danger">Remove</button>
+                            </form>
+                        </div>
                     </div>
                 }
             }

@@ -5,10 +5,55 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - Spotify</title>
+    <title>@ViewData["Title"] Spotify: Musics</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/css/styles.css" asp-append-version="true" />
+    <style>
+        .music-item {
+            background-color: #555;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 8px;
+            transition: background-color 0.3s;
+        }
+
+        .music-item:hover {
+            background-color: #777;
+        }
+
+        .music-item h3,
+        .music-item p {
+            margin: 0;
+            color: white;
+        }
+
+        .music-controls {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 10px;
+        }
+
+        .music-controls audio {
+            margin-right: 10px;
+        }
+
+        .music-controls form button {
+            margin-left: 10px;
+        }
+
+        .btn-saved {
+            background-color: #5cb85c;
+            border-color: #5cb85c;
+            color: white;
+        }
+
+        .btn-saved:hover {
+            background-color: #4cae4c;
+            border-color: #4cae4c;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
@@ -42,25 +87,28 @@
                     var music = tuple.Item1;
                     var hasSaved = tuple.Item2;
 
-                    <div>
+                    <div class="music-item">
                         <h3>@music.Name</h3>
-                        <audio controls>
-                            <source src="@music.Url" type="audio/mpeg">
-                            Your browser does not support the audio element.
-                        </audio>
-                        <p>Saved @music.Saved times</p>
-                        
-                        @if (hasSaved)
-                        {
-                            <button class="btn btn-secondary" disabled>Saved</button>
-                        }
-                        else
-                        {
-                            <form asp-controller="UserHome" asp-action="SaveMusic" method="post">
-                                <input type="hidden" name="musicId" value="@music.Id" />
-                                <button class="btn btn-success" type="submit">Save Music</button>
-                            </form>
-                        }
+                        <div class="music-controls">
+                            <div style="flex-grow: 1;">
+                                <audio controls>
+                                    <source src="@music.Url" type="audio/mpeg">
+                                    Your browser does not support the audio element.
+                                </audio>
+                                <p>Saved @music.Saved time(s)</p>
+                            </div>
+                            @if (hasSaved)
+                            {
+                                <button class="btn btn-saved" disabled>Saved</button>
+                            }
+                            else
+                            {
+                                <form asp-controller="UserHome" asp-action="SaveMusic" method="post">
+                                    <input type="hidden" name="musicId" value="@music.Id" />
+                                    <button class="btn btn-success" type="submit">Save Music</button>
+                                </form>
+                            }
+                        </div>
                     </div>
                 }
             }

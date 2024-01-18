@@ -32,9 +32,16 @@
       <change beforePath="$PROJECT_DIR$/Spotify.Tests/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Spotify.Tests/obj/project.packagespec.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Spotify.Tests/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/Spotify.Tests/obj/rider.project.model.nuget.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Spotify.Tests/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Spotify.Tests/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spotify/Controllers/UserHomeController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Spotify/Controllers/UserHomeController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spotify/Views/ArtistHome/Followers.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Spotify/Views/ArtistHome/Followers.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spotify/Views/ArtistHome/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Spotify/Views/ArtistHome/Index.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spotify/Views/ArtistHome/Musics.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Spotify/Views/ArtistHome/Musics.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spotify/Views/ArtistHome/NewMusic.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Spotify/Views/ArtistHome/NewMusic.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spotify/Views/UserHome/Artists.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Spotify/Views/UserHome/Artists.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spotify/Views/UserHome/FollowedArtists.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Spotify/Views/UserHome/FollowedArtists.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spotify/Views/UserHome/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Spotify/Views/UserHome/Index.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Spotify/Views/UserHome/Musics.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Spotify/Views/UserHome/Musics.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Spotify/Views/UserHome/SavedMusics.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Spotify/Views/UserHome/SavedMusics.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spotify/app.db" beforeDir="false" afterPath="$PROJECT_DIR$/Spotify/app.db" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -147,7 +154,7 @@
       <workItem from="1705413802309" duration="2942000" />
       <workItem from="1705435064144" duration="9952000" />
       <workItem from="1705521488978" duration="6233000" />
-      <workItem from="1705557861192" duration="676000" />
+      <workItem from="1705557861192" duration="2015000" />
     </task>
     <servers />
   </component>
