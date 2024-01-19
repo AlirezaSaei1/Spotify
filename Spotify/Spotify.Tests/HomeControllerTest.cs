@@ -8,7 +8,7 @@ using Spotify.Models;
 
 namespace Spotify.Tests
 {
-    public class UnitTest1
+    public class HomeControllerTest
     {
         [Fact]
         public void Index_ReturnsViewResult()
