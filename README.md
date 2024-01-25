@@ -23,13 +23,13 @@ Welcome to the Spotify Clone project! This application aims to provide a music s
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/your-username/spotify-clone.git
+    git clone https://github.com/AlirezaSaei1/Spotify.git
     ```
 
 2. Navigate to the project directory:
 
     ```bash
-    cd spotify-clone
+    cd Spotify
     ```
 
 3. Restore dependencies:
